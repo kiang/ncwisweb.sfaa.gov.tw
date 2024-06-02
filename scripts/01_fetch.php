@@ -127,7 +127,9 @@ foreach ($cities as $cityKey => $city) {
       $detailPosEnd = strpos($detailContent, '</main>', $detailPos);
       $detailParts = explode('<div class="data-row', substr($detailContent, $detailPos, $detailPosEnd - $detailPos));
       array_shift($detailParts);
-      $data = [];
+      $data = [
+        'id' => $detailId,
+      ];
       foreach ($detailParts as $detailPart) {
         $detailPos = strpos($detailPart, '>');
         $detailPart = substr($detailPart, $detailPos + 1);
@@ -289,6 +291,7 @@ EOD;
         $fc['features'][] = [
           'type' => 'Feature',
           'properties' => [
+            'id' => $data['id'],
             'name' => $data['機構名稱'],
             'address' => $data['所在地'],
             'phone' => $data['聯絡電話'],
