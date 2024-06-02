@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="copyright" content="本網頁著作權屬衛生福利部社會及家庭署">
+<meta name="keywords" content="衛生福利部社會及家庭署,衛服部,社家署,托育人員,保母,登記管理資訊網,托育,媒合平臺">
+<meta name="description" content="托育媒合平臺。">
+<meta name="_csrf_parameter" content="_csrf"/>
+<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+<meta name="_csrf" content="4896dc07-b8ed-4167-882b-c97f97d5a9fb"/>
+<link rel="shortcut icon" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<link rel="bookmark" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/css/libs/bootstrap/4.1.1/bootstrap.min-e59aa29ac4a3d18d092f6ba813ae1997.css" >
+<link rel="stylesheet" href="/css/libs/jquery-ui/1.12.1/jquery-ui-0f844d2de01e1e6a907010529d33fb98.css" />
+<link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min-269550530cc127b6aa5a35925a7de6ce.css">
+<link rel="stylesheet" href="/css/admin/bootstrap-clockpicker.min.css">
+<!-- custom -->
+<link rel="stylesheet" href="/css/libs/material-design-iconic-font/2.2.0/material-design-iconic-font.min-e9365fe85b7e4db79a87015e52c3db6c.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-datepicker/2.0/datepicker-1d825165f86029aee99dacae845d26b3.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload.min-ef3e2fd3fdc35a565f5ff264892f4cd4.css" >
+<link rel="stylesheet" href="/css/home/main-bc6ecd7915e55ffa44788a274ea173ce.css" >
+<link rel="stylesheet" href="/css/home/page-7eeb71affc72a6420ba5388f5ab167b6.css" >
+
+<!-- javascript -->
+<script src="/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min-5869c96cc8f19086aee625d670d741f9.js"></script>
+<script src="/webjars/bootstrap-notify/3.1.3/bootstrap-notify.min-35eb2c2185524eecb2b772b667552014.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/jquery.validate.min-9346ec27896981bc4c0b146cf327727a.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/additional-methods.min-3a53c5eac97b98ed3833970d43bf7fc9.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/src/localization/messages_zh_TW-3d6e5c045471c66bff6842b1da45a9bf.js"></script>
+<script src="/webjars/clockpicker/0.0.7/dist/bootstrap-clockpicker.min-28af1dfd23b1a43c8094fb6440d18170.js"></script>
+<script src="/js/libs/jquery-ui/1.12.1/jquery-ui.min.js" ></script>
+<script src="/js/protection/csrf-f0e3e1f500a85b6b6788567ab7932223.js"></script>
+<script src="/js/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload-ecf2e43ccdcac1db33db73ee46464340.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/bootstrap-datepicker.min-6e8f1d598eb2e0d67db27b31eff6372e.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/locales/bootstrap-datepicker.zh-TW-0a863b57d8e4c67ee40c124c9bae4691.js"></script>
+<script src="/js/libs/hammer/2.0.8/hammer-946daea10fec9462a94ee2cb059810ff.js"></script>
+<script src="/js/libs/hammer/jquery.hammer.min-7d68c32753bca956f663f3be0f04b8ba.js"></script>
+<script src="/js/home/page-5107698bc0a215fbafb29dc06600a428.js"></script>
+<script src="/js/home/main-bd692a73dd55452e2dad7caf8dce3f8b.js"></script>
+<script src="/js/home/base-d8efe836e4b23f3375d9e5bf0adc341a.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170492183-1"></script>
+<script>
+    com.tist.BASE_URL = "";
+    var modal = com.tist.util.ModalDialog;
+
+    function refreshCaptcha() {
+        document.getElementById('kaptcha')
+            .setAttribute('src', '/images/kaptcha.jpg?t=' + Math.random());
+    }
+
+    // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-170492183-1');
+</script>
+    <title>托嬰中心資訊-托嬰中心查詢-托育媒合平臺-衛生福利部社會及家庭署</title>
+</head>
+<body>
+    <a href="#main" id="js-asky_main" class="acesKy">跳至主要內容區塊</a>
+    <!--導覽列-->
+<nav class="navbar navbar-light">
+  <a href="#U" id="Up" title="上方功能區塊" accesskey="U" name="U" class="acesKy">:::</a>
+  <div class="container">
+    <h1 class="navbar-brand"><a href="/home/index" class="logo"><img src="/css/images/home/logo-6b9dc660f7df42f4a63674076d1dfcc8.png"
+                                                                     class="img-fluid"
+                                                                     alt="托育媒合平臺-衛生福利部社會及家庭署"></a>
+    </h1>
+    <div class="nav-pack">
+      <div id="js-dpdnList_top" class="top-dpdnList">
+        <a href="/home/sitemap" class="fa-sitemap nav-item">網站導覽</a>
+        <a href="/member"
+           class="fa-user-circle nav-item">會員登入</a>
+      </div>
+      <button id="js-navfold" class="btn nav-fold fa-bars nav-item"><span class="d-none">選單</span></button>
+    </div>
+    <div id="js-dpdnList_btm" class="mainNav text-center">
+      <div class="listItem">
+        <a href="#js-hvrlist1" class="js-hvr_btn hvrbtn news">網站公告</a>
+        <div class="childlist" id="js-hvrlist1">
+          <a href="/home/news">最新消息</a>
+          <a href="/home/charge-refund">收退費規定</a>
+          <a href="/home/laws">托育相關法令</a>
+          <a href="https://crc.sfaa.gov.tw/ChildYoungLaw/Sanction"
+             target="_blank">裁罰公告</a>
+          <a href="/home/shutdown-org">停(歇)業機構</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home"
+           class="js-hvr_btn hvrbtn train">教育訓練</a>
+        <div class="childlist" id="js-hvrlist2">
+          <a href="/home/openclass">托育人員專業訓練課程開課資訊專區</a>
+          <a href="/home/jobtraining">在職教育訓練</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home/question" class="js-hvr_btn hvrbtn QA">Q&A</a>
+      </div>
+      <div class="listItem">
+        <a href="#js-hvrlist3" class="js-hvr_btn hvrbtn Srh">托育查詢</a>
+        <div class="childlist" id="js-hvrlist3">
+          <a href="/home/nanny">居家托育人員(保母)查詢</a>
+          <a href="/home/childcare-center">托嬰中心查詢</a>
+        </div>
+      </div>
+      <a href="/home/link" class="listItem hvrbtn link">相關連結</a>
+    </div>
+  </div>
+</nav>
+    <!--主要內頁區塊-->
+    <main class="container page" id="main">
+        <div class="w-95 center-block">
+            <!--內頁標題-->
+            <div class="page-title">
+                <a accesskey="C" title="中央區塊" href="#" class="acesKy">:::</a>
+                <h2 class="fa-building">托嬰中心查詢</h2>
+                <span class="pg-pos fa-map-marker"><a href="/home/index" title="回首頁">首頁</a> &gt; <a href="/home/childcare-center">托嬰中心查詢</a> &gt; 托嬰中心資訊</span><br clear="all">
+            </div>
+            <!--主要內容區塊-->
+            <div class="dataPG style1">
+                <div class="dataBlock w-0 main">
+                    <h3 class="text-title cus-icon2">托嬰中心機構資訊</h3>
+                    <div class="data-row sgl name">
+                        <div class="cell">機構名稱<span> 臺中市私立彩虹屋托嬰中心</span></div>
+                    </div>
+                    <div class="data-row sgl">
+                        <span class="tag">所在地</span> 411臺中市太平區樹孝路341號1樓,2樓3樓
+                    </div>
+                  <div class="data-row">
+                        <span class="tag">負責人姓名</span> 莊博仁
+                    </div><div class="data-row">
+                        <span class="tag">聯絡電話</span> (04)23938672
+                    </div>
+                    <div class="data-row">
+                        <span class="tag">核定收托</span> 52 人
+                    </div><div class="data-row">
+                        <span class="tag">實際收托</span> 49 人
+                    </div>
+                    <div class="data-row">
+                        <span class="tag">評鑑等級</span> 乙等
+                    </div><div class="data-row">
+                        <span class="tag">最近一次評鑑年度</span> 112
+                    </div>
+                    <div class="data-row">
+                        <span class="tag">總面積</span> 117.48 平方公尺
+                    </div>
+                    <div class="data-row">
+                        <span class="tag">室內面積</span> 61.96 平方公尺
+                    </div><div class="data-row">
+                        <span class="tag">室外面積</span> 19.58 平方公尺
+                    </div>
+                    <div class="data-row">
+                        <span class="tag">公共安全說明</span> 核備文號:40C3D02900(核備日期:1120109)
+                    </div><div class="data-row">
+                        <span class="tag">消防安全說明</span> 核備文號:249726(核備日期:1111019)
+                    </div>
+                    <div class="data-row">
+                        <span class="tag">準公共化資格</span> 是
+                    </div>
+                    <div class="data-row sgl flex-wrap">
+                        <span class="tag">核備工作人員數</span>
+                        <div class="d-inline-block mr-3 p-1 alert-warning rounded my-1">主管人員 1 人</div>
+                        <div class="d-inline-block mr-3 p-1 alert-warning rounded my-1">托育人員 11 人</div>
+                        <div class="d-inline-block mr-3 p-1 alert-warning rounded my-1">特約醫師 0 人</div>
+                        <div class="d-inline-block mr-3 p-1 alert-warning rounded my-1">專任護理人員 0 人</div>
+                        <div class="d-inline-block mr-3 p-1 alert-warning rounded my-1">行政人員 0 人</div>
+                        <div class="d-inline-block mr-3 p-1 alert-warning rounded my-1">廚工 1 人</div>
+                        <div class="d-inline-block mr-3 p-1 alert-warning rounded my-1">其他人員 0 人</div>
+                    </div>
+                    <div class="data-row sgl flex-wrap align-items-start">
+                        <span class="tag">收費情形</span>
+                        <div class="p-0 col-xl-10 ">
+                                    <p class="h6">托育方式：日間托育</p>
+                                    <table class="d-table mt-xl-0 mt-1 mb-1 data-table w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>費用名稱</th>
+                                                <th>費用金額</th>
+                                                <th>費用說明</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="alert-primary">
+                                                <td class="w-20 border-bottom border-white" data-label="費用名稱｜">托育費</td>
+                                                <td class="w-20 border-bottom border-white" data-label="費用金額｜">15551</td>
+                                                <td class="w-60 border-bottom border-white" data-label="費用說明｜">含註冊費等之平均每月托育費用</td>
+                                            </tr>
+                                            <tr class="alert-warning table-warning">
+                                                <td class="w-20 border-bottom border-white" data-label="費用名稱｜">餐點費</td>
+                                                <td class="w-20 border-bottom border-white" data-label="費用金額｜">1000</td>
+                                                <td class="w-60 border-bottom border-white" data-label="費用說明｜">副食品每月1000元</td>
+                                            </tr>
+                                            <tr class="alert-primary">
+                                                <td class="w-20 border-bottom border-white" data-label="費用名稱｜">其他</td>
+                                                <td class="w-20 border-bottom border-white" data-label="費用金額｜">118</td>
+                                                <td class="w-60 border-bottom border-white" data-label="費用說明｜">延長托育費每半小時118元 逾時費每半小時147元</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            <span class="text-primary">註：若為臨時托育，費用金額以小時計。</span>
+                        </div>
+                    </div>
+                    <div class="data-row sgl">
+                        <span class="tag">退費說明</span> 常態性延托收費<br>0730-0800按月收取1000元<br>1800-1830按月收取1000元<br>延長托育費:半小時118元<br>逾時費:每半小時147元<br>註冊費<br>1.適應期滿後未逾一個月終止契約者,退還三分之二費用<br>            逾一個月未滿二個月終止契約者,退還三分之一費用<br>            逾二個月終止契約者,不予退費<br>月費.餐費.(含副食品)費<br>1.當月已繳月費.餐點.(含副食品)費,按比例依所剩日數退還<br>      (月費以每月三十日計算,包含例假日,國定假日)<br>保險費<br>1.自契約終止日之次月起,依所剩月數比例退還<br>請假退費方式<br>1.兒童連續請病假5日以上者,依請假日數退還當月餐費(含副食品)費<br>         (連續請病假係包含例假日計算)<br>2.兒童罹患腸病毒、衛生福利部公告之法定傳染病或其他傳染病,因而配合停托者,<br> 依請假日數退還平均月費新台幣210元(不得少於百分之四十)<br>         (平均月費指學期註冊費除以六個月再加上月費)<br>雙方當事人均不終止契約之退費方式<br>1.因天災、事變或配合全國一致性之政府法令等不可抗力或不可歸責於當事人事由,致本<br> 契約所定事項無法履行,雙方均不終止本契約時,關於無法履行期間之退費,依未履行日數<br> 退還平均月費新台幣263元(不得少於百分之五十)辦理<br>         (平均月費指學期註冊費除以六個月再加上月費)
+                    </div>
+                    <div class="data-row sgl">
+                        <span class="tag">違反法令紀錄</span>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--footer-->
+<footer>
+    <div class="container">
+        <a href="#B" id="bottom" title="下方功能區塊" accesskey="B" name="B" class="acesKy">:::</a>
+        <span class="cell left">
+                <a class="btn btn-danger" href="/home/handicap">無障礙說明</a>
+                <a class="btn btn-danger" href="/home/privacy">隱私權保護及安全政策</a>
+                <a class="btn btn-danger" href="/home/copyright">著作權聲明</a>
+                <p>本署地址：11558臺北市南港區忠孝東路六段488號12樓，聯絡電話：02-26531776<br>建議使用瀏覽器 Edge、Firefox 74、Chrome 77 以上版本；最佳瀏覽畫面設定 1440*900<br>版權所有©衛生福利部社會及家庭署</p>
+            </span><span class="cell right">
+               <a href="#"><img src="/css/images/home/gov-f7056ba07c62c76381a4e1eb8753e879.gif" alt="另開新視窗-GOV"></a><br><br>
+                <p>參訪累計：2111437人次<br></p>
+            </span>
+    </div>
+</footer></body>
+</html>

@@ -1,0 +1,2692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="copyright" content="本網頁著作權屬衛生福利部社會及家庭署">
+<meta name="keywords" content="衛生福利部社會及家庭署,衛服部,社家署,托育人員,保母,登記管理資訊網,托育,媒合平臺">
+<meta name="description" content="托育媒合平臺。">
+<meta name="_csrf_parameter" content="_csrf"/>
+<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+<meta name="_csrf" content="51b12807-550c-446a-a886-1332d779d637"/>
+<link rel="shortcut icon" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<link rel="bookmark" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/css/libs/bootstrap/4.1.1/bootstrap.min-e59aa29ac4a3d18d092f6ba813ae1997.css" >
+<link rel="stylesheet" href="/css/libs/jquery-ui/1.12.1/jquery-ui-0f844d2de01e1e6a907010529d33fb98.css" />
+<link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min-269550530cc127b6aa5a35925a7de6ce.css">
+<link rel="stylesheet" href="/css/admin/bootstrap-clockpicker.min.css">
+<!-- custom -->
+<link rel="stylesheet" href="/css/libs/material-design-iconic-font/2.2.0/material-design-iconic-font.min-e9365fe85b7e4db79a87015e52c3db6c.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-datepicker/2.0/datepicker-1d825165f86029aee99dacae845d26b3.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload.min-ef3e2fd3fdc35a565f5ff264892f4cd4.css" >
+<link rel="stylesheet" href="/css/home/main-bc6ecd7915e55ffa44788a274ea173ce.css" >
+<link rel="stylesheet" href="/css/home/page-7eeb71affc72a6420ba5388f5ab167b6.css" >
+
+<!-- javascript -->
+<script src="/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min-5869c96cc8f19086aee625d670d741f9.js"></script>
+<script src="/webjars/bootstrap-notify/3.1.3/bootstrap-notify.min-35eb2c2185524eecb2b772b667552014.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/jquery.validate.min-9346ec27896981bc4c0b146cf327727a.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/additional-methods.min-3a53c5eac97b98ed3833970d43bf7fc9.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/src/localization/messages_zh_TW-3d6e5c045471c66bff6842b1da45a9bf.js"></script>
+<script src="/webjars/clockpicker/0.0.7/dist/bootstrap-clockpicker.min-28af1dfd23b1a43c8094fb6440d18170.js"></script>
+<script src="/js/libs/jquery-ui/1.12.1/jquery-ui.min.js" ></script>
+<script src="/js/protection/csrf-f0e3e1f500a85b6b6788567ab7932223.js"></script>
+<script src="/js/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload-ecf2e43ccdcac1db33db73ee46464340.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/bootstrap-datepicker.min-6e8f1d598eb2e0d67db27b31eff6372e.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/locales/bootstrap-datepicker.zh-TW-0a863b57d8e4c67ee40c124c9bae4691.js"></script>
+<script src="/js/libs/hammer/2.0.8/hammer-946daea10fec9462a94ee2cb059810ff.js"></script>
+<script src="/js/libs/hammer/jquery.hammer.min-7d68c32753bca956f663f3be0f04b8ba.js"></script>
+<script src="/js/home/page-5107698bc0a215fbafb29dc06600a428.js"></script>
+<script src="/js/home/main-bd692a73dd55452e2dad7caf8dce3f8b.js"></script>
+<script src="/js/home/base-d8efe836e4b23f3375d9e5bf0adc341a.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170492183-1"></script>
+<script>
+    com.tist.BASE_URL = "";
+    var modal = com.tist.util.ModalDialog;
+
+    function refreshCaptcha() {
+        document.getElementById('kaptcha')
+            .setAttribute('src', '/images/kaptcha.jpg?t=' + Math.random());
+    }
+
+    // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-170492183-1');
+</script>
+  <script src="https://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=esDUigaoFdkDwrqd+/TlAXz50rLVCmR4wpHF/KfmegkPX4WlTyHofA==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6ujpCGaccQeRrEfn9q5A3drHZnXt7MZItT9TuVS1/ts0i863up8WZRpPVKotb9qyDTZJL9otSSvNzkwcdhKB+cZSWPn0k5d/OP4Jg/pu+qHccFBzZHwNuuTQWL2mK2XhynVCA8mawwIwUgn4kg+oUAtZccQ3WzQOY8pycD59JmFFgHSH6mxWLCoa5/fSr13kUszahZG0+xSbvGV6ODPX08wS0YafoqhiAF7Zoo5/h5GRiTjUrh+JbsZA3UA3xe8YIdmEetg9P6w68PU4zwKHAin9D+fYf8bpjdiV7XPjleiyDARgP/s+/D7ZxJ/IDv599QK350QfS4F+LmOZwvENvyANAK78fJqn+5K5IQN/ZkDnDKWKFQtWS93JM6BWlIUQRrIP8yYGiWrg8GEh03QR32I5xrZF5mvWbu1hxAhfejzGiNcRZZNBaFPLzPKHm1M20q0K/9RS2iKak=" charset="utf-8"></script>
+  <title>托嬰中心查詢-托育媒合平臺-衛生福利部社會及家庭署</title>
+</head>
+<body>
+<a href="#main" id="js-asky_main" class="acesKy">跳至主要內容區塊</a>
+<!--導覽列-->
+<nav class="navbar navbar-light">
+  <a href="#U" id="Up" title="上方功能區塊" accesskey="U" name="U" class="acesKy">:::</a>
+  <div class="container">
+    <h1 class="navbar-brand"><a href="/home/index" class="logo"><img src="/css/images/home/logo-6b9dc660f7df42f4a63674076d1dfcc8.png"
+                                                                     class="img-fluid"
+                                                                     alt="托育媒合平臺-衛生福利部社會及家庭署"></a>
+    </h1>
+    <div class="nav-pack">
+      <div id="js-dpdnList_top" class="top-dpdnList">
+        <a href="/home/sitemap" class="fa-sitemap nav-item">網站導覽</a>
+        <a href="/member"
+           class="fa-user-circle nav-item">會員登入</a>
+      </div>
+      <button id="js-navfold" class="btn nav-fold fa-bars nav-item"><span class="d-none">選單</span></button>
+    </div>
+    <div id="js-dpdnList_btm" class="mainNav text-center">
+      <div class="listItem">
+        <a href="#js-hvrlist1" class="js-hvr_btn hvrbtn news">網站公告</a>
+        <div class="childlist" id="js-hvrlist1">
+          <a href="/home/news">最新消息</a>
+          <a href="/home/charge-refund">收退費規定</a>
+          <a href="/home/laws">托育相關法令</a>
+          <a href="https://crc.sfaa.gov.tw/ChildYoungLaw/Sanction"
+             target="_blank">裁罰公告</a>
+          <a href="/home/shutdown-org">停(歇)業機構</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home"
+           class="js-hvr_btn hvrbtn train">教育訓練</a>
+        <div class="childlist" id="js-hvrlist2">
+          <a href="/home/openclass">托育人員專業訓練課程開課資訊專區</a>
+          <a href="/home/jobtraining">在職教育訓練</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home/question" class="js-hvr_btn hvrbtn QA">Q&A</a>
+      </div>
+      <div class="listItem">
+        <a href="#js-hvrlist3" class="js-hvr_btn hvrbtn Srh">托育查詢</a>
+        <div class="childlist" id="js-hvrlist3">
+          <a href="/home/nanny">居家托育人員(保母)查詢</a>
+          <a href="/home/childcare-center">托嬰中心查詢</a>
+        </div>
+      </div>
+      <a href="/home/link" class="listItem hvrbtn link">相關連結</a>
+    </div>
+  </div>
+</nav>
+<!--主要內頁區塊-->
+<main class="container page" id="main">
+  <form id="main-form" class="w-95 center-block" action="/home/childcare-center" method="post">
+    <input type="hidden" name="_csrf" value="51b12807-550c-446a-a886-1332d779d637"/>
+    <!--內頁標題-->
+    <div class="page-title">
+      <a accesskey="C" title="中央區塊" href="#" class="acesKy">:::</a>
+      <h2 class="fa-building">托嬰中心查詢</h2>
+      <span class="pg-pos fa-map-marker"><a href="/home/index"
+                                            title="回首頁">首頁</a> &gt; 托嬰中心查詢</span><br
+              clear="all">
+    </div>
+    <!--主要內容區塊_搜尋表單-->
+    <div class="search form">
+    <input type="hidden" id="cityId" name="cityId" value="4bc1e2f27af6e832017af6eeff4a0162"     >
+
+    <input type="hidden" id="townId" name="townId" value=""     >
+
+    <input type="hidden" id="latitude" name="latitude" value=""     >
+
+    <input type="hidden" id="longitude" name="longitude" value=""     >
+
+      <div class="row sgl">
+          <label class="fa-search Lb_cell" for="locateType_1">*定位方式(必填)</label><span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_1" value="1"
+                   checked="checked" required/>
+            <label for="locateType_1"
+                   class="form-check-label">所在縣市區域</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_2" value="2"
+                    required/>
+            <label for="locateType_2"
+                   class="form-check-label">自動定位</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_3" value="3"
+                    required/>
+            <label for="locateType_3"
+                   class="form-check-label">輸入地址</label>
+            
+        </div>
+          </span>
+      </div>
+      <div id="local-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="city">縣市及鄉鎮市區</label>
+        <span class="Cn_cell form-inline">
+          <select id="city" class="form-control" aria-label="所在縣市" required>
+              <option value="">
+請選擇縣市              </option>
+                  <option value="4bc1e2f27af6e832017af6eeff7a0172">新北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff750170">臺北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff7d0173">桃園市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff860176">臺中市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff4a0162">臺南市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff8c0178">高雄市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff580166">宜蘭縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff890177">新竹縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff72016f">苗栗縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff5d0168">彰化縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff830175">南投縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6f016e">雲林縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff63016a">嘉義縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff3e015d">屏東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff67016b">臺東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff600169">花蓮縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff770171">澎湖縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff460160">基隆市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff480161">新竹市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff43015f">嘉義市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6c016d">連江縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff38015c">金門縣</option>
+          </select>
+          <select id="town" class="form-control" aria-label="所在鄉鎮">
+              <option value="">
+請選擇鄉鎮              </option>
+                      <option value="4bc1e2f27af6e832017af6ef00dc01f1">新營區</option>
+                      <option value="4bc1e2f27af6e832017af6ef001201a2">鹽水區</option>
+                      <option value="4bc1e2f27af6e832017af6ef001901a5">白河區</option>
+                      <option value="4bc1e2f27af6e832017af6ef001c01a6">柳營區</option>
+                      <option value="4bc1e2f27af6e832017af6ef0290026a">後壁區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00d201ed">東山區</option>
+                      <option value="4bc1e2f27af6e832017af6ef0294026b">麻豆區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04aa032e">下營區</option>
+                      <option value="4bc1e2f27af6e832017af6ef05680369">六甲區</option>
+                      <option value="4bc1e2f27af6e832017af6ef056b036a">官田區</option>
+                      <option value="4bc1e2f27af6e832017af6ef01c20237">大內區</option>
+                      <option value="4bc1e2f27af6e832017af6ef035402ac">佳里區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00e601f4">學甲區</option>
+                      <option value="4bc1e2f27af6e832017af6ef040b02f1">西港區</option>
+                      <option value="4bc1e2f27af6e832017af6ef035902ad">七股區</option>
+                      <option value="4bc1e2f27af6e832017af6ef05660368">將軍區</option>
+                      <option value="4bc1e2f27af6e832017af6ef036602b0">北門區</option>
+                      <option value="4bc1e2f27af6e832017af6ef036902b1">新化區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00ca01ea">善化區</option>
+                      <option value="4bc1e2f27af6e832017af6ef001001a1">新市區</option>
+                      <option value="4bc1e2f27af6e832017af6ef040102ed">安定區</option>
+                      <option value="4bc1e2f27af6e832017af6ef03fc02eb">山上區</option>
+                      <option value="4bc1e2f27af6e832017af6ef002101a8">玉井區</option>
+                      <option value="4bc1e2f27af6e832017af6ef02a50273">楠西區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04be0334">南化區</option>
+                      <option value="4bc1e2f27af6e832017af6ef040602ef">左鎮區</option>
+                      <option value="4bc1e2f27af6e832017af6ef02810265">仁德區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00be01e6">歸仁區</option>
+                      <option value="4bc1e2f27af6e832017af6ef002301a9">關廟區</option>
+                      <option value="4bc1e2f27af6e832017af6ef040402ee">龍崎區</option>
+                      <option value="4bc1e2f27af6e832017af6ef0571036c">永康區</option>
+                      <option value="4bc1e2f27af6e832017af6ef05590363">東區</option>
+                      <option value="4bc1e2f27af6e832017af6ef02890267">南區</option>
+                      <option value="4bc1e2f27af6e832017af6ef057c0370">北區</option>
+                      <option value="4bc1e2f27af6e832017af6ef05540361">安南區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04c10335">安平區</option>
+                      <option value="4bc1e2f27af6e832017af6ef01b30232">中西區</option>
+          </select>
+        </span>
+      </div>
+      <div id="address-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="address">定位設定</label>
+        <span class="Cn_cell form-inline">
+    <input type="text" id="address" name="address" value="" class='form-control' placeholder='範例：臺北市南港區忠孝東路六段' style='width:300px;'    >
+
+            <button id="address-locate" type="button" class="btn btn-danger">地址定位</button>
+          </span>
+      </div>
+      <div id="locate-distance" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="distance">定位資訊</label>
+        <div class="Cn_cell form-inline">
+          緯度：<span id="latitude-info"></span><br/>
+          經度：<span id="longitude-info"></span><br/>
+          地區：<span id="area-name"></span>
+              <input type="number" id="distance" name="distance" value="1.0" style='width:70px; display:inline-block;' min="0" max="10" class="form-control "    >
+
+ 公里(預設值：1公里)
+        </div>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="organ2type_4">托嬰中心類別</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_4" value=""
+                    />
+            <label for="organ2type_4"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_5" value="1"
+                    />
+            <label for="organ2type_5"
+                   class="form-check-label">私立托嬰中心</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_6" value="2"
+                    />
+            <label for="organ2type_6"
+                   class="form-check-label">托育家園</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_7" value="3"
+                    />
+            <label for="organ2type_7"
+                   class="form-check-label">公托中心</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="publicFlag_8">準公共化資格</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_8" value=""
+                    />
+            <label for="publicFlag_8"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_9" value="Y"
+                    />
+            <label for="publicFlag_9"
+                   class="form-check-label">已簽約</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_10" value="N"
+                    />
+            <label for="publicFlag_10"
+                   class="form-check-label">未簽約</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="conditions[centerNurseryTimeIdS]_11">托育時段</label>
+        <span class="Cn_cell text">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_11" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6455e0002"  />
+                <label for="conditions[centerNurseryTimeIdS]_11"
+                   class="form-check-label">半日托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_12" class="form-check-input"
+                       value="40285e816c21e8ff016c22b671a40003"  />
+                <label for="conditions[centerNurseryTimeIdS]_12"
+                   class="form-check-label">日間托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_13" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6921b0004"  />
+                <label for="conditions[centerNurseryTimeIdS]_13"
+                   class="form-check-label">臨時托育</label>
+            </div>
+            
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="gradeFlag_14">評鑑等級(以上)</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_14" value="1"
+                    />
+            <label for="gradeFlag_14"
+                   class="form-check-label">優等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_15" value="2"
+                    />
+            <label for="gradeFlag_15"
+                   class="form-check-label">甲等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_16" value="3"
+                    />
+            <label for="gradeFlag_16"
+                   class="form-check-label">乙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_17" value="4"
+                    />
+            <label for="gradeFlag_17"
+                   class="form-check-label">丙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_18" value="5"
+                    />
+            <label for="gradeFlag_18"
+                   class="form-check-label">丁等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_19" value="9"
+                    />
+            <label for="gradeFlag_19"
+                   class="form-check-label">尚未評鑑</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="block btn-row text-center">
+        <button type="submit" class="btn btn-danger w-15">查詢</button>
+        <button type="reset" class="btn btn-danger w-15 clear">清除</button>
+        <noscript><br>若您的瀏覽器不支援JavaScript功能，則無法重置選項，請手動選擇，您要的選項</noscript>
+      </div>
+    </div>
+      <!--主要內容區塊_搜尋結果-->
+      <div class="result-list tab">
+        <a href="#List1" class="tabBtn click">托嬰中心名冊</a>
+        <table class="table table-striped table-hover tab-cntnt" summary="查詢結果清單區" id="List1">
+          <thead>
+          <tr>
+            <th class="text-center w-25">托嬰中心名稱</th>
+            <th class="text-center w-25">所在地</th>
+            <th class="text-center w-10">聯絡電話</th>
+            <th class="text-center w-10">核定收托數</th>
+            <th class="text-center w-10">準公共化資格</th>
+            <th class="text-center w-10">評鑑年度</th>
+            <th class="text-center w-10">評鑑等級</th>
+          </tr>
+          </thead>
+          <tbody class="tbody">
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112224"
+                       class="fa-external-link" title="臺南市私立平安托嬰中心" target="_blank">
+                        臺南市私立平安托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">712臺南市新化區和平街131之5號1-3樓</td>
+                  <td data-label="聯絡電話｜">06-5909871</td>
+                  <td data-label="核定收托數｜">30</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112225"
+                       class="fa-external-link" title="臺南市私立妙妙托嬰中心" target="_blank">
+                        臺南市私立妙妙托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">725臺南市將軍區西華里西華65-42號</td>
+                  <td data-label="聯絡電話｜">06-7945482</td>
+                  <td data-label="核定收托數｜">25</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112227"
+                       class="fa-external-link" title="臺南市私立晶晶托嬰中心" target="_blank">
+                        臺南市私立晶晶托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">741臺南市善化區永福路39號</td>
+                  <td data-label="聯絡電話｜">06-5810729</td>
+                  <td data-label="核定收托數｜">56</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112228"
+                       class="fa-external-link" title="臺南市私立慈恩托嬰中心" target="_blank">
+                        臺南市私立慈恩托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">710臺南市永康區臺南市永康區中華西街122巷49號</td>
+                  <td data-label="聯絡電話｜">06-3012918</td>
+                  <td data-label="核定收托數｜">18</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112232"
+                       class="fa-external-link" title="臺南市私立吉姆托嬰中心" target="_blank">
+                        臺南市私立吉姆托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">712臺南市新化區東榮里中興路755-1號</td>
+                  <td data-label="聯絡電話｜">06-5903913</td>
+                  <td data-label="核定收托數｜">30</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112236"
+                       class="fa-external-link" title="臺南市私立幼幼世界托嬰中心" target="_blank">
+                        臺南市私立幼幼世界托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">710臺南市永康區崑山里臺南市永康區永華路32巷23號</td>
+                  <td data-label="聯絡電話｜">06-2737977</td>
+                  <td data-label="核定收托數｜">25</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112238"
+                       class="fa-external-link" title="臺南市私立艾力克托嬰中心" target="_blank">
+                        臺南市私立艾力克托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">730臺南市新營區進修街8-1號1-2樓</td>
+                  <td data-label="聯絡電話｜">06-6569886</td>
+                  <td data-label="核定收托數｜">40</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112239"
+                       class="fa-external-link" title="臺南市私立勁寶兒唯馨托嬰中心" target="_blank">
+                        臺南市私立勁寶兒唯馨托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">722臺南市佳里區安西里光明街41號</td>
+                  <td data-label="聯絡電話｜">06-7227375</td>
+                  <td data-label="核定收托數｜">47</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112241"
+                       class="fa-external-link" title="臺南市私立蓮馨托嬰中心" target="_blank">
+                        臺南市私立蓮馨托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">710臺南市永康區正強里臺南市永康區自強路188巷99號</td>
+                  <td data-label="聯絡電話｜">06-2013389</td>
+                  <td data-label="核定收托數｜">14</td>
+                  <td data-label="準公共化資格｜">否</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">丁等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112389"
+                       class="fa-external-link" title="臺南市私立德妮勁寶兒托嬰中心" target="_blank">
+                        臺南市私立德妮勁寶兒托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">701臺南市東區臺南市東區中華東路三段44巷41號</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">30</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112394"
+                       class="fa-external-link" title="臺南市私立心貝托嬰中心" target="_blank">
+                        臺南市私立心貝托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">701臺南市東區崇學路59巷7號、9號1樓</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">37</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112396"
+                       class="fa-external-link" title="臺南市私立向日葵托嬰中心" target="_blank">
+                        臺南市私立向日葵托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">704臺南市北區臺南市北區武聖路6號</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">20</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112398"
+                       class="fa-external-link" title="臺南市私立喬登貝比托嬰中心" target="_blank">
+                        臺南市私立喬登貝比托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">708臺南市安平區育平路203號1-2樓</td>
+                  <td data-label="聯絡電話｜">06-2990003</td>
+                  <td data-label="核定收托數｜">50</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112400"
+                       class="fa-external-link" title="臺南市私立德妮培安托嬰中心" target="_blank">
+                        臺南市私立德妮培安托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">708臺南市安平區台南市怡平路390號</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">35</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112403"
+                       class="fa-external-link" title="臺南市私立皇家寶貝托嬰中心" target="_blank">
+                        臺南市私立皇家寶貝托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">704臺南市北區臺南市北區大興街517號1+2樓</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">20</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+          </tbody>
+        </table>
+        <!--地理資訊區塊-->
+        <a href="#TGMap" class="tabBtn right">地理資訊</a>
+        <div id="TGMap" style="height: 516px;" class="table tab-cntnt"></div>
+        <!--頁數按鈕-->
+    <input type="hidden" name="page" value="0" />
+    <label id="totalPage" style="display:none;">9</label>
+    <!-- 頁碼 Start -->
+    <div id="pagination" aria-label="Page navigation" class="text-center pg-end">
+        <label for="" class="visible-md visible-lg">
+            共 <span
+                class="text-danger"> 131 </span> 筆資料．第 <span
+                class="text-danger">1/9</span> 頁．每頁顯示 15 筆
+            <noscript><br>若您的瀏覽器不支援JavaScript功能，則請手動選擇要切換的頁數，再按送出按鈕</noscript>
+            <noscript><input type="submit" value="送出"></noscript>
+        </label>
+                    <ul class="pagination">
+                    <li class="page-item active select">
+                        <a href="#" class="page-link" title="1">1
+                                <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="2">2
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="3">3
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="4">4
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="5">5
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="6">6
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="7">7
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="8">8
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="9">9
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link nextPage" href="#" aria-label="Next">
+                            <span aria-hidden="true" class="fa-angle-right"></span>
+                            <span class="sr-only">後一頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link endPage" href="#" aria-label="End">
+                            <span aria-hidden="true" class="fa-angle-double-right"></span>
+                            <span class="sr-only">最後頁</span>
+                        </a>
+                    </li>
+            </ul>
+
+    </div>
+    <!-- 頁碼 End -->
+      </div>
+  </form>
+</main>
+<!--footer-->
+<footer>
+    <div class="container">
+        <a href="#B" id="bottom" title="下方功能區塊" accesskey="B" name="B" class="acesKy">:::</a>
+        <span class="cell left">
+                <a class="btn btn-danger" href="/home/handicap">無障礙說明</a>
+                <a class="btn btn-danger" href="/home/privacy">隱私權保護及安全政策</a>
+                <a class="btn btn-danger" href="/home/copyright">著作權聲明</a>
+                <p>本署地址：11558臺北市南港區忠孝東路六段488號12樓，聯絡電話：02-26531776<br>建議使用瀏覽器 Edge、Firefox 74、Chrome 77 以上版本；最佳瀏覽畫面設定 1440*900<br>版權所有©衛生福利部社會及家庭署</p>
+            </span><span class="cell right">
+               <a href="#"><img src="/css/images/home/gov-f7056ba07c62c76381a4e1eb8753e879.gif" alt="另開新視窗-GOV"></a><br><br>
+                <p>參訪累計：2111358人次<br></p>
+            </span>
+    </div>
+</footer></body>
+<script src="/js/home/browser-70fa5c1df74bd8f7fb0b7c9ec6d2da3f.js"></script>
+<script src="/js/home/tgos-2dea7ec50e8b2b639c3ad951defb36aa.js"></script>
+<script>
+    var pOMap = document.getElementById('TGMap');
+    var mapOptions = {
+        disableDefaultUI: true, //關閉所有地圖操作介面
+        navigationControl: true,  //navigationControl(是否開啟縮放控制列)
+        dbClickZoomIn: false
+    };
+    var pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826, mapOptions);
+    var locateTypes = document.getElementsByName('locateType');
+    var city = document.getElementById('city');
+    var cityId = document.getElementById("cityId");
+    var town = document.getElementById('town');
+    var townId = document.getElementById("townId");
+    var latitude = document.getElementById('latitude'); //緯度
+    var latitudeInfo = document.getElementById('latitude-info');
+    var longitude = document.getElementById('longitude'); //經度
+    var longitudeInfo = document.getElementById('longitude-info');
+    var markerImg = new TGOS.TGImage('/css/images/home/map-marker-alt-solid-d115da5c1415f939ed34315f1abb8a33.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var locateImg = new TGOS.TGImage('/css/images/home/street-view-solid-1379f0e6e4637325401e01ee76b9984e.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var markers = []; //標記點
+
+    window.onload = function () {
+        function initSearchForm(locateType) {
+            var localDistrict = document.getElementById('local-district');
+            var addressDistrict = document.getElementById('address-district');
+            var locateDistance = document.getElementById('locate-distance');
+            switch (locateType) {
+                case '1': // 所在縣市區域
+                    localDistrict.classList.remove('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.add('d-none');
+                    break;
+                case '2': // 自動定位
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.remove('d-none');
+                    getAutoLocate();
+                    break;
+                case '3': // 輸入地址
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.remove('d-none');
+                    locateDistance.classList.remove('d-none');
+                    latitudeInfo.textContent = latitude.value;
+                    longitudeInfo.textContent = longitude.value;
+                    getAddressLocate();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // 初始化標記點
+        function initMarkers() {
+            var baseUrl = '';
+            var i = '0';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立平安托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112224'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5909871' + '<br />'
+                + '712臺南市新化區和平街131之5號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '1';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立妙妙托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112225'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7945482' + '<br />'
+                + '725臺南市將軍區西華里西華65-42號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '2';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立晶晶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112227'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5810729' + '<br />'
+                + '741臺南市善化區永福路39號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '3';
+            var x = '170877.31';
+            var y = '2546240.81';
+            var markerName = '臺南市私立慈恩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112228'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3012918' + '<br />'
+                + '710臺南市永康區臺南市永康區中華西街122巷49號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '4';
+            var x = '179342.64';
+            var y = '2548200.259';
+            var markerName = '臺南市私立吉姆托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112232'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5903913' + '<br />'
+                + '712臺南市新化區東榮里中興路755-1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '5';
+            var x = '174146.28';
+            var y = '2545205.859';
+            var markerName = '臺南市私立幼幼世界托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112236'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2737977' + '<br />'
+                + '710臺南市永康區崑山里臺南市永康區永華路32巷23號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '6';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立艾力克托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112238'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-6569886' + '<br />'
+                + '730臺南市新營區進修街8-1號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '7';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立勁寶兒唯馨托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112239'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7227375' + '<br />'
+                + '722臺南市佳里區安西里光明街41號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '8';
+            var x = '173253.67';
+            var y = '2547209.24';
+            var markerName = '臺南市私立蓮馨托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112241'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2013389' + '<br />'
+                + '710臺南市永康區正強里臺南市永康區自強路188巷99號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '9';
+            var x = '170831.2';
+            var y = '2542398.589';
+            var markerName = '臺南市私立德妮勁寶兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112389'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '701臺南市東區臺南市東區中華東路三段44巷41號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '10';
+            var x = '170055.82';
+            var y = '2542100.35';
+            var markerName = '臺南市私立心貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112394'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '701臺南市東區崇學路59巷7號、9號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '11';
+            var x = '167298.45';
+            var y = '2545109.68';
+            var markerName = '臺南市私立向日葵托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112396'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '704臺南市北區臺南市北區武聖路6號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '12';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立喬登貝比托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112398'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2990003' + '<br />'
+                + '708臺南市安平區育平路203號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '13';
+            var x = '165642.54';
+            var y = '2543827.319';
+            var markerName = '臺南市私立德妮培安托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112400'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '708臺南市安平區台南市怡平路390號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '14';
+            var x = '166114.34';
+            var y = '2545476.299';
+            var markerName = '臺南市私立皇家寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112403'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '704臺南市北區臺南市北區大興街517號1+2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '15';
+            var x = '164686.19';
+            var y = '2543382.189';
+            var markerName = '臺南市私立喬丹貝比托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112405'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '708臺南市安平區臺南市安平區育平四街67、69號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '16';
+            var x = '168459.81';
+            var y = '2542811.75';
+            var markerName = '臺南市私立幼寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112409'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '700臺南市中西區臺南市中西區南寧街22號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '17';
+            var x = '170677.09';
+            var y = '2545356.259';
+            var markerName = '臺南市私立東東托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112411'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '704臺南市北區臺南市南園街109巷5號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '18';
+            var x = '172068.37';
+            var y = '2542666.319';
+            var markerName = '臺南市私立福祿貝爾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112412'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '701臺南市東區臺南市東區裕興街77號2、3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '19';
+            var x = '168439.905';
+            var y = '2546291.841';
+            var markerName = '臺南市私立小天使托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112413'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '704臺南市北區臺南市北區文成二街212巷21弄2號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '20';
+            var x = '170256.899';
+            var y = '2542575.129';
+            var markerName = '臺南市私立夏綠蒂國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112417'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '701臺南市東區臺南市東區龍山街57號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '21';
+            var x = '169145.04';
+            var y = '2549298.859';
+            var markerName = '臺南市私立法王子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112418'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '709臺南市安南區臺南市安南區頂安街339巷28號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '22';
+            var x = '166924.769';
+            var y = '2542391.049';
+            var markerName = '臺南市私立快樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112555'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2637941' + '<br />'
+                + '702臺南市南區臺南市南區金華路2段147巷56號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '23';
+            var x = '178967.109';
+            var y = '2548920.25';
+            var markerName = '臺南市私立銘幼托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112559'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5985216' + '<br />'
+                + '712臺南市新化區太平里中正路542巷9號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '24';
+            var x = '171342.48';
+            var y = '2546751.009';
+            var markerName = '臺南市私立勁寶兒晨光托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112603'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '710臺南市永康區臺南市永康區東橋八街9號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '25';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立興儀托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10208003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '708臺南市安平區臺南市安平區育平八街128號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '26';
+            var x = '171275.28';
+            var y = '2543219.799';
+            var markerName = '臺南市私立愛麗兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10306008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2006156' + '<br />'
+                + '701臺南市東區東寧路562號2樓、2樓-1';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '27';
+            var x = '173932.94';
+            var y = '2538560.464';
+            var markerName = '臺南市私立安祺兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10306011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2497660' + '<br />'
+                + '717臺南市仁德區後壁里德善路270號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '28';
+            var x = '171144.442';
+            var y = '2541027.754';
+            var markerName = '臺南市私立夏洛蒂國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10307003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 0939852916' + '<br />'
+                + '701臺南市東區崇善路642號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '29';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立小熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10309002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5051288' + '<br />'
+                + '744臺南市新市區大順三路125號2樓C210室、C211室、C212室';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '30';
+            var x = '170001.72';
+            var y = '2542027.56';
+            var markerName = '臺南市私立維多利亞國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10312003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2600708' + '<br />'
+                + '701臺南市東區崇明路300號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '31';
+            var x = '177938.899';
+            var y = '2551032';
+            var markerName = '臺南市私立小鹿托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10411005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5981556' + '<br />'
+                + '712臺南市新化區北勢里中正路1209號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '32';
+            var x = '170921.019';
+            var y = '2546457.99';
+            var markerName = '威爾森文教事業股份有限公司附設臺南市私立愛瑞汀托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10412001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3035600' + '<br />'
+                + '710臺南市永康區大橋里大橋一街73巷8號1-2樓(含夾層)';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '33';
+            var x = '0';
+            var y = '0';
+            var markerName = '樂芙文教事業股份有限公司附設臺南市私立樂芙托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10601006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2982220' + '<br />'
+                + '708臺南市安平區國平里32鄰健康路三段342號1至2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '34';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立帝寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10602005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 062051528' + '<br />'
+                + '710臺南市永康區大同街409號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '35';
+            var x = '174116.09';
+            var y = '2548373.779';
+            var markerName = '臺南市私立凱葳托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10603003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 2332009' + '<br />'
+                + '710臺南市永康區永大路三段426號1至3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '36';
+            var x = '171249.06';
+            var y = '2541390.143';
+            var markerName = '臺南市私立康泥爾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10607012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2675009' + '<br />'
+                + '701臺南市東區崇善里12鄰崇善九街60號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '37';
+            var x = '171144.01';
+            var y = '2541021.339';
+            var markerName = '臺南市私立夏樂蒂國際親子美育托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10607013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2890883' + '<br />'
+                + '701臺南市東區崇文里8鄰崇善路646號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '38';
+            var x = '174757.2';
+            var y = '2548569.81';
+            var markerName = '臺南市私立思恩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10608011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2036002' + '<br />'
+                + '710臺南市永康區龍安街270號1~2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '39';
+            var x = '166329.67';
+            var y = '2545312.6';
+            var markerName = '臺南市私立德妮新湖美托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10611001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2597796' + '<br />'
+                + '704臺南市北區賢北街38號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '40';
+            var x = '174549.269';
+            var y = '2548263.779';
+            var markerName = '臺南市私立永健托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10611011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2313282' + '<br />'
+                + '710臺南市永康區龍潭里龍埔街102號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '41';
+            var x = '173355.2';
+            var y = '2546624.009';
+            var markerName = '臺南市私立橙林托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10702002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2020129' + '<br />'
+                + '710臺南市永康區永勝街207號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '42';
+            var x = '167053.64';
+            var y = '2541466.299';
+            var markerName = '臺南市私立俏蘋果國際音樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10703003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2646789' + '<br />'
+                + '702臺南市南區金華路一段460巷1號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '43';
+            var x = '168798.97';
+            var y = '2549335.46';
+            var markerName = '臺南市私立扭來扭去托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10704003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2567827' + '<br />'
+                + '709臺南市安南區頂安街486號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '44';
+            var x = '168616.739';
+            var y = '2548579.24';
+            var markerName = '安南區慈雲公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10709001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2562143' + '<br />'
+                + '709臺南市安南區安中路一段213號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '45';
+            var x = '176957.929';
+            var y = '2559073.859';
+            var markerName = '臺南市私立童樂園國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10709008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5810910' + '<br />'
+                + '741臺南市善化區復興街48巷2之5號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '46';
+            var x = '167351.39';
+            var y = '2542641.819';
+            var markerName = '臺南市私立朵朵園國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10710003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2200708' + '<br />'
+                + '702臺南市南區福吉三街2號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '47';
+            var x = '174679.34';
+            var y = '2548402.89';
+            var markerName = '臺南市私立一心托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10710004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2321285' + '<br />'
+                + '710臺南市永康區龍橋街93巷9之1號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '48';
+            var x = '170835.929';
+            var y = '2545357.779';
+            var markerName = '臺南市私立寶貝家庭托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10711001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2002719' + '<br />'
+                + '704臺南市北區南園街127巷50之1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '49';
+            var x = '171272.109';
+            var y = '2542023.68';
+            var markerName = '臺南市私立才子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10711011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3351491' + '<br />'
+                + '701臺南市東區文化二街70號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '50';
+            var x = '165347.56';
+            var y = '2543946.919';
+            var markerName = '臺南市私立諾笙托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10711012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2999325' + '<br />'
+                + '708臺南市安平區育平九街43號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '51';
+            var x = '168548.016';
+            var y = '2546532.713';
+            var markerName = '臺南市私立桂田國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10802003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2828001' + '<br />'
+                + '704臺南市北區育德一街330號2-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '52';
+            var x = '181055.239';
+            var y = '2540376.25';
+            var markerName = '關廟區香洋公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10802004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5956303' + '<br />'
+                + '718臺南市關廟區忠孝街140號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '53';
+            var x = '176646.921';
+            var y = '2539824.725';
+            var markerName = '臺南市私立Baby托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10802006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3300139' + '<br />'
+                + '711臺南市歸仁區六甲里中正南路一段637巷2號1-2樓(含夾層)';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '54';
+            var x = '171677.73';
+            var y = '2546846.549';
+            var markerName = '臺南市私立小浣熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3025501' + '<br />'
+                + '710臺南市永康區東橋五路126號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '55';
+            var x = '178367.63';
+            var y = '2552728.049';
+            var markerName = '臺南市私立仁愛托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2757777' + '<br />'
+                + '744臺南市新市區中山路138之2號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '56';
+            var x = '178047.489';
+            var y = '2553053.049';
+            var markerName = '臺南市私立綵童托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5897823' + '<br />'
+                + '744臺南市新市區華美街61巷38號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '57';
+            var x = '170207.271';
+            var y = '2565672.144';
+            var markerName = '麻豆區大山公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10806011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5701321' + '<br />'
+                + '721臺南市麻豆區海埔里麻學路一段956號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '58';
+            var x = '179942.079';
+            var y = '2565862.77';
+            var markerName = '官田區隆田公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10806012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5795397' + '<br />'
+                + '720臺南市官田區中山路一段132-1號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '59';
+            var x = '174563.679';
+            var y = '2547035.27';
+            var markerName = '臺南市私立小巴洛可蒙特梭利托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10808004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2013600' + '<br />'
+                + '710臺南市永康區永平街759巷3號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '60';
+            var x = '170836.989';
+            var y = '2540372.12';
+            var markerName = '臺南市私立夏莉蒂國際蒙特梭利托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10808012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2890183' + '<br />'
+                + '701臺南市東區東智街77號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '61';
+            var x = '181606.959';
+            var y = '2575413.56';
+            var markerName = '柳營區柳中公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10809011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-6220612' + '<br />'
+                + '736臺南市柳營區東昇里中山東路二段956號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '62';
+            var x = '178264.299';
+            var y = '2558540.094';
+            var markerName = '臺南市私立貝恩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10810005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (06)5856049' + '<br />'
+                + '741臺南市善化區興安街151號1樓(含1樓夾層)';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '63';
+            var x = '169822.63';
+            var y = '2541738.299';
+            var markerName = '臺南市私立熊奶奶國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10810009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2908872' + '<br />'
+                + '701臺南市東區忠孝里14鄰榮譽街95號2-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '64';
+            var x = '168189.005';
+            var y = '2557701.856';
+            var markerName = '臺南市私立日日托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7960600' + '<br />'
+                + '723臺南市西港區新興街15巷5之13號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '65';
+            var x = '166133.459';
+            var y = '2549890.68';
+            var markerName = '臺南市私立森怪獸托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2478815' + '<br />'
+                + '709臺南市安南區功安二街25號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '66';
+            var x = '167753.94';
+            var y = '2546455.6';
+            var markerName = '臺南市私立朵芮咪托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10812013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 3589802' + '<br />'
+                + '704臺南市北區北成路481巷50號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '67';
+            var x = '166884.579';
+            var y = '2536421.529';
+            var markerName = '臺南市私立小卡羅國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10903002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 2623686' + '<br />'
+                + '702臺南市南區萬年五街40巷20號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '68';
+            var x = '165817.698';
+            var y = '2550185.001';
+            var markerName = '臺南市私立咕嘰咕嘰托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10903003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 2458723' + '<br />'
+                + '709臺南市安南區仁安路196號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '69';
+            var x = '0';
+            var y = '0';
+            var markerName = '樂芙文教事業股份有限公司附設臺南市私立愛樂芙托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10903004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 2981214' + '<br />'
+                + '708臺南市安平區光州五街116號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '70';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立樂融托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10906005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2496459' + '<br />'
+                + '717臺南市仁德區民安路二段153號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '71';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立蓓樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10907001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5850742' + '<br />'
+                + '741臺南市善化區善新大道135號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '72';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立克洛伊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10908002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5890505' + '<br />'
+                + '744臺南市新市區新市里10鄰中正路321之2號(2樓)、321之3號(2樓)';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '73';
+            var x = '0';
+            var y = '0';
+            var markerName = '威爾森文教事業股份有限公司附設臺南市私立威爾森托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10908021'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3027895' + '<br />'
+                + '710臺南市永康區東橋一路280號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '74';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立新生托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10909004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2898717' + '<br />'
+                + '701臺南市東區崇善里12鄰崇善九街43號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '75';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立愛兒寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10909007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3567347' + '<br />'
+                + '709臺南市安南區頂安街218號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '76';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立樂牧恩國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10909009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3012918' + '<br />'
+                + '710臺南市永康區中華路703巷53號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '77';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立安心幼兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10910002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-6994517' + '<br />'
+                + '734臺南市六甲區光復街76巷2號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '78';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立愛馜爾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10910004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2396829' + '<br />'
+                + '711臺南市歸仁區文化街三段167號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '79';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立明日之星國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10910011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2700290' + '<br />'
+                + '717臺南市仁德區中正路二段817號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '80';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立璽寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10910016'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2477217' + '<br />'
+                + '709臺南市安南區同安路322巷38號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '81';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立咕嚕嚕托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10912011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5907507' + '<br />'
+                + '712臺南市新化區頂山腳53-405號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '82';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立諾貝爾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11002008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7835511' + '<br />'
+                + '726臺南市學甲區中華路二段285號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '83';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立愛薇樂國際藝術托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11003002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2637588' + '<br />'
+                + '702臺南市南區夏林路154號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '84';
+            var x = '0';
+            var y = '0';
+            var markerName = '東區仁和公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11003003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2676508' + '<br />'
+                + '701臺南市東區仁和路113巷39號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '85';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立凱菲國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11005007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7957575' + '<br />'
+                + '723臺南市西港區慶安里中山路85之2號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '86';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立Q寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11005008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2972511' + '<br />'
+                + '708臺南市安平區臺南市安平區府平路267巷3號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '87';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立綵妮托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11007010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-589-0285' + '<br />'
+                + '744臺南市新市區信義街65之26號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '88';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立綵童新營托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11007011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-6358858' + '<br />'
+                + '730臺南市新營區中正路6之25號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '89';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立好好美育托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11008006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3585660' + '<br />'
+                + '709臺南市安南區樂活12街102號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '90';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立朝露托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11010004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2470642' + '<br />'
+                + '709臺南市安南區安中路三段153巷36號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '91';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立小桔兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11011010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5836848' + '<br />'
+                + '741臺南市善化區民生路265號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '92';
+            var x = '0';
+            var y = '0';
+            var markerName = '安平區安平公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11012011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2996690' + '<br />'
+                + '708臺南市安平區怡平路392號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '93';
+            var x = '0';
+            var y = '0';
+            var markerName = '永康區永埔公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11012016'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5816571' + '<br />'
+                + '710臺南市永康區永大路三段618巷111號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '94';
+            var x = '0';
+            var y = '0';
+            var markerName = '東區龍山公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11101004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2095007' + '<br />'
+                + '701臺南市東區林森路一段311號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '95';
+            var x = '0';
+            var y = '0';
+            var markerName = '善化區東關公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11101005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5813185' + '<br />'
+                + '741臺南市善化區中山路353號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '96';
+            var x = '0';
+            var y = '0';
+            var markerName = '北區光武公設民營托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11102006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2515824' + '<br />'
+                + '704臺南市北區大光里北門路二段591號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '97';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立成醫托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11102007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2095110' + '<br />'
+                + '704臺南市北區東豐路166號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '98';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立波比托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11105004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5939584' + '<br />'
+                + '741臺南市善化區蓮潭里陽光大道181號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '99';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立家禾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11105014'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '708臺南市安平區慶平路372號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '100';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立荷本國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11107003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3316367' + '<br />'
+                + '701臺南市東區關聖里15鄰裕英街101之1號1至2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '101';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立嬌生托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11107004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2044578' + '<br />'
+                + '710臺南市永康區大橋一街73巷60號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '102';
+            var x = '0';
+            var y = '0';
+            var markerName = '七股區七股公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11109035'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7871008' + '<br />'
+                + '724臺南市七股區大埕里大埕380號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '103';
+            var x = '0';
+            var y = '0';
+            var markerName = '樂芙文教事業股份有限公司附設臺南市私立愛樂芙永續托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11110012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3582252' + '<br />'
+                + '709臺南市安南區永續十街88號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '104';
+            var x = '0';
+            var y = '0';
+            var markerName = '樂芙文教事業股份有限公司附設臺南市私立樂芙永續托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11110013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-35882252' + '<br />'
+                + '709臺南市安南區永續十街86號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '105';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立小獅子雨果托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11111008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2474500' + '<br />'
+                + '709臺南市安南區同安路225巷218號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '106';
+            var x = '0';
+            var y = '0';
+            var markerName = '佳里區多摩公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11112004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7235979' + '<br />'
+                + '722臺南市佳里區安西里佳安東路10號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '107';
+            var x = '0';
+            var y = '0';
+            var markerName = '永康區西灣公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11112018'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2071477' + '<br />'
+                + '710臺南市永康區西灣里永華路201巷12號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '108';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立喬治亞托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11112021'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5716333' + '<br />'
+                + '721臺南市麻豆區新生南路758號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '109';
+            var x = '0';
+            var y = '0';
+            var markerName = '新市區三里公設民營托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5899681' + '<br />'
+                + '744臺南市新市區新和里民生路 112 號 2 樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '110';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立胖嘟嘟托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201038'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2080328' + '<br />'
+                + '710臺南市永康區中華二路340巷19號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '111';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立貝格爾南科托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202023'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5837883' + '<br />'
+                + '741臺南市善化區蓮潭里004鄰西拉雅大道412號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '112';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立好好美育文元托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202024'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '704臺南市北區海安路三段818號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '113';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立花兒種子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202029'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3961213' + '<br />'
+                + '709臺南市安南區東和里館安路65號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '114';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立美國國際蒙特梭利托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11205007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2891588' + '<br />'
+                + '701臺南市東區崇學路203巷9號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '115';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立蓓森托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11206010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3310860' + '<br />'
+                + '701臺南市東區裕孝三街8號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '116';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立子子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11208009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2906000' + '<br />'
+                + '701臺南市東區崇善里崇善十六街111巷37號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '117';
+            var x = '';
+            var y = '';
+            var markerName = '臺南市私立邦比諾音樂藝術托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11208012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2550115' + '<br />'
+                + '709臺南市安南區安通一街43號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '118';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立樂澄托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11208016'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5935168' + '<br />'
+                + '745臺南市安定區港口253之100號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '119';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立小豆芽托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11209009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3586630' + '<br />'
+                + '709臺南市安南區海南里宜居一街262號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '120';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立彤妡托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11209011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7237680' + '<br />'
+                + '722臺南市佳里區延平路462號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '121';
+            var x = '0';
+            var y = '0';
+            var markerName = '樂芙文教事業股份有限公司附設臺南市私立樂芙慶平自然托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11210001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2999862' + '<br />'
+                + '708臺南市安平區怡平里慶平路195號1-2樓(含1樓夾層)';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '122';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立嬰悅托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11210003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-5976732' + '<br />'
+                + '745臺南市安定區安加里安定287號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '123';
+            var x = '0';
+            var y = '0';
+            var markerName = '私立Jing Baby托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11212012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3585509' + '<br />'
+                + '704臺南市北區大和路252號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '124';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立子兒好好托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11301003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '708臺南市安平區育平五街38號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '125';
+            var x = '0';
+            var y = '0';
+            var markerName = '私立朝䒩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11301005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2267287' + '<br />'
+                + '700臺南市中西區民族路三段253號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '126';
+            var x = '0';
+            var y = '0';
+            var markerName = '樂芙文教事業股份有限公司附設臺南市私立樂芙新營自然托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11301008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-6321619' + '<br />'
+                + '730臺南市新營區府西路22巷50號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '127';
+            var x = '0';
+            var y = '0';
+            var markerName = '私立探索托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3587028' + '<br />'
+                + '709臺南市安南區宜居一街47號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '128';
+            var x = '0';
+            var y = '0';
+            var markerName = '私立小樹點托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-3121765' + '<br />'
+                + '710臺南市永康區勝華街98巷20號1樓、22號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '129';
+            var x = '0';
+            var y = '0';
+            var markerName = '臺南市私立凱恩國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11303005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-7217755' + '<br />'
+                + '722臺南市佳里區中山路430號（2-3樓）';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '130';
+            var x = '174152.79';
+            var y = '2548452.22';
+            var markerName = '私立樂幼幼托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11304006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 06-2315589' + '<br />'
+                + '710臺南市永康區八德街87巷19號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            if (markers.length > 0) {
+                addMarkerClusters(pMap, markers);
+            }
+            setZoomStyle(pOMap);
+            pOMap.classList.add('hide');
+        }
+
+        if (city.value !== '') {
+            findTowns();
+        }
+        if (cityId.value !== '') {
+            city.value = cityId.value;
+        }
+        if (townId.value !== '') {
+            town.value = townId.value;
+        }
+        // 縣市變動時處理
+        city.addEventListener('change', function () {
+            // 尋找鄉鎮資料
+            findTowns();
+            cityId.value = this.value
+            locateTypes.forEach(locateType => {
+                // 自動設定位方式
+                if (locateType.value === '1') {
+                    locateType.checked = true;
+                }
+            })
+        }, false);
+
+        // 鄉鎮市區變動時處理
+        town.addEventListener('change', function () {
+            townId.value = this.value
+        }, false);
+
+        initMarkers();
+        for (var i = 0; i < locateTypes.length; i++) {
+            if (locateTypes[i].checked === true) {
+                initSearchForm(locateTypes[i].value)
+            }
+            locateTypes[i].addEventListener('click', function () {
+                initSearchForm(this.value);
+            });
+        }
+
+        document.getElementById('main-form').addEventListener('submit', initMarkers, false);
+        document.getElementById('main-form').onsubmit = function (e) {
+            locateTypes.forEach(locateType => {
+                if (locateType.checked === true && locateType.value !== '1') { // 所在縣市區域
+                    if (latitude.value === '' || longitude.value === '') {
+                        alert('未取得定位。');
+                        e.preventDefault();
+                    }
+                }
+            })
+        }
+        document.getElementById('address-locate').addEventListener('click', getAddressLocate, false);
+    };
+</script>
+</html>

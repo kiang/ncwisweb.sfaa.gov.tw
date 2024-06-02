@@ -1,0 +1,3370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="copyright" content="本網頁著作權屬衛生福利部社會及家庭署">
+<meta name="keywords" content="衛生福利部社會及家庭署,衛服部,社家署,托育人員,保母,登記管理資訊網,托育,媒合平臺">
+<meta name="description" content="托育媒合平臺。">
+<meta name="_csrf_parameter" content="_csrf"/>
+<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+<meta name="_csrf" content="51b12807-550c-446a-a886-1332d779d637"/>
+<link rel="shortcut icon" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<link rel="bookmark" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/css/libs/bootstrap/4.1.1/bootstrap.min-e59aa29ac4a3d18d092f6ba813ae1997.css" >
+<link rel="stylesheet" href="/css/libs/jquery-ui/1.12.1/jquery-ui-0f844d2de01e1e6a907010529d33fb98.css" />
+<link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min-269550530cc127b6aa5a35925a7de6ce.css">
+<link rel="stylesheet" href="/css/admin/bootstrap-clockpicker.min.css">
+<!-- custom -->
+<link rel="stylesheet" href="/css/libs/material-design-iconic-font/2.2.0/material-design-iconic-font.min-e9365fe85b7e4db79a87015e52c3db6c.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-datepicker/2.0/datepicker-1d825165f86029aee99dacae845d26b3.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload.min-ef3e2fd3fdc35a565f5ff264892f4cd4.css" >
+<link rel="stylesheet" href="/css/home/main-bc6ecd7915e55ffa44788a274ea173ce.css" >
+<link rel="stylesheet" href="/css/home/page-7eeb71affc72a6420ba5388f5ab167b6.css" >
+
+<!-- javascript -->
+<script src="/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min-5869c96cc8f19086aee625d670d741f9.js"></script>
+<script src="/webjars/bootstrap-notify/3.1.3/bootstrap-notify.min-35eb2c2185524eecb2b772b667552014.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/jquery.validate.min-9346ec27896981bc4c0b146cf327727a.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/additional-methods.min-3a53c5eac97b98ed3833970d43bf7fc9.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/src/localization/messages_zh_TW-3d6e5c045471c66bff6842b1da45a9bf.js"></script>
+<script src="/webjars/clockpicker/0.0.7/dist/bootstrap-clockpicker.min-28af1dfd23b1a43c8094fb6440d18170.js"></script>
+<script src="/js/libs/jquery-ui/1.12.1/jquery-ui.min.js" ></script>
+<script src="/js/protection/csrf-f0e3e1f500a85b6b6788567ab7932223.js"></script>
+<script src="/js/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload-ecf2e43ccdcac1db33db73ee46464340.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/bootstrap-datepicker.min-6e8f1d598eb2e0d67db27b31eff6372e.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/locales/bootstrap-datepicker.zh-TW-0a863b57d8e4c67ee40c124c9bae4691.js"></script>
+<script src="/js/libs/hammer/2.0.8/hammer-946daea10fec9462a94ee2cb059810ff.js"></script>
+<script src="/js/libs/hammer/jquery.hammer.min-7d68c32753bca956f663f3be0f04b8ba.js"></script>
+<script src="/js/home/page-5107698bc0a215fbafb29dc06600a428.js"></script>
+<script src="/js/home/main-bd692a73dd55452e2dad7caf8dce3f8b.js"></script>
+<script src="/js/home/base-d8efe836e4b23f3375d9e5bf0adc341a.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170492183-1"></script>
+<script>
+    com.tist.BASE_URL = "";
+    var modal = com.tist.util.ModalDialog;
+
+    function refreshCaptcha() {
+        document.getElementById('kaptcha')
+            .setAttribute('src', '/images/kaptcha.jpg?t=' + Math.random());
+    }
+
+    // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-170492183-1');
+</script>
+  <script src="https://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=esDUigaoFdkDwrqd+/TlAXz50rLVCmR4wpHF/KfmegkPX4WlTyHofA==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6ujpCGaccQeRrEfn9q5A3drHZnXt7MZItT9TuVS1/ts0i863up8WZRpPVKotb9qyDTZJL9otSSvNzkwcdhKB+cZSWPn0k5d/OP4Jg/pu+qHccFBzZHwNuuTQWL2mK2XhynVCA8mawwIwUgn4kg+oUAtZccQ3WzQOY8pycD59JmFFgHSH6mxWLCoa5/fSr13kUszahZG0+xSbvGV6ODPX08wS0YafoqhiAF7Zoo5/h5GRiTjUrh+JbsZA3UA3xe8YIdmEetg9P6w68PU4zwKHAin9D+fYf8bpjdiV7XPjleiyDARgP/s+/D7ZxJ/IDv599QK350QfS4F+LmOZwvENvyANAK78fJqn+5K5IQN/ZkDnDKWKFQtWS93JM6BWlIUQRrIP8yYGiWrg8GEh03QR32I5xrZF5mvWbu1hxAhfejzGiNcRZZNBaFPLzPKHm1M20q0K/9RS2iKak=" charset="utf-8"></script>
+  <title>托嬰中心查詢-托育媒合平臺-衛生福利部社會及家庭署</title>
+</head>
+<body>
+<a href="#main" id="js-asky_main" class="acesKy">跳至主要內容區塊</a>
+<!--導覽列-->
+<nav class="navbar navbar-light">
+  <a href="#U" id="Up" title="上方功能區塊" accesskey="U" name="U" class="acesKy">:::</a>
+  <div class="container">
+    <h1 class="navbar-brand"><a href="/home/index" class="logo"><img src="/css/images/home/logo-6b9dc660f7df42f4a63674076d1dfcc8.png"
+                                                                     class="img-fluid"
+                                                                     alt="托育媒合平臺-衛生福利部社會及家庭署"></a>
+    </h1>
+    <div class="nav-pack">
+      <div id="js-dpdnList_top" class="top-dpdnList">
+        <a href="/home/sitemap" class="fa-sitemap nav-item">網站導覽</a>
+        <a href="/member"
+           class="fa-user-circle nav-item">會員登入</a>
+      </div>
+      <button id="js-navfold" class="btn nav-fold fa-bars nav-item"><span class="d-none">選單</span></button>
+    </div>
+    <div id="js-dpdnList_btm" class="mainNav text-center">
+      <div class="listItem">
+        <a href="#js-hvrlist1" class="js-hvr_btn hvrbtn news">網站公告</a>
+        <div class="childlist" id="js-hvrlist1">
+          <a href="/home/news">最新消息</a>
+          <a href="/home/charge-refund">收退費規定</a>
+          <a href="/home/laws">托育相關法令</a>
+          <a href="https://crc.sfaa.gov.tw/ChildYoungLaw/Sanction"
+             target="_blank">裁罰公告</a>
+          <a href="/home/shutdown-org">停(歇)業機構</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home"
+           class="js-hvr_btn hvrbtn train">教育訓練</a>
+        <div class="childlist" id="js-hvrlist2">
+          <a href="/home/openclass">托育人員專業訓練課程開課資訊專區</a>
+          <a href="/home/jobtraining">在職教育訓練</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home/question" class="js-hvr_btn hvrbtn QA">Q&A</a>
+      </div>
+      <div class="listItem">
+        <a href="#js-hvrlist3" class="js-hvr_btn hvrbtn Srh">托育查詢</a>
+        <div class="childlist" id="js-hvrlist3">
+          <a href="/home/nanny">居家托育人員(保母)查詢</a>
+          <a href="/home/childcare-center">托嬰中心查詢</a>
+        </div>
+      </div>
+      <a href="/home/link" class="listItem hvrbtn link">相關連結</a>
+    </div>
+  </div>
+</nav>
+<!--主要內頁區塊-->
+<main class="container page" id="main">
+  <form id="main-form" class="w-95 center-block" action="/home/childcare-center" method="post">
+    <input type="hidden" name="_csrf" value="51b12807-550c-446a-a886-1332d779d637"/>
+    <!--內頁標題-->
+    <div class="page-title">
+      <a accesskey="C" title="中央區塊" href="#" class="acesKy">:::</a>
+      <h2 class="fa-building">托嬰中心查詢</h2>
+      <span class="pg-pos fa-map-marker"><a href="/home/index"
+                                            title="回首頁">首頁</a> &gt; 托嬰中心查詢</span><br
+              clear="all">
+    </div>
+    <!--主要內容區塊_搜尋表單-->
+    <div class="search form">
+    <input type="hidden" id="cityId" name="cityId" value="4bc1e2f27af6e832017af6eeff7d0173"     >
+
+    <input type="hidden" id="townId" name="townId" value=""     >
+
+    <input type="hidden" id="latitude" name="latitude" value=""     >
+
+    <input type="hidden" id="longitude" name="longitude" value=""     >
+
+      <div class="row sgl">
+          <label class="fa-search Lb_cell" for="locateType_1">*定位方式(必填)</label><span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_1" value="1"
+                   checked="checked" required/>
+            <label for="locateType_1"
+                   class="form-check-label">所在縣市區域</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_2" value="2"
+                    required/>
+            <label for="locateType_2"
+                   class="form-check-label">自動定位</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_3" value="3"
+                    required/>
+            <label for="locateType_3"
+                   class="form-check-label">輸入地址</label>
+            
+        </div>
+          </span>
+      </div>
+      <div id="local-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="city">縣市及鄉鎮市區</label>
+        <span class="Cn_cell form-inline">
+          <select id="city" class="form-control" aria-label="所在縣市" required>
+              <option value="">
+請選擇縣市              </option>
+                  <option value="4bc1e2f27af6e832017af6eeff7a0172">新北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff750170">臺北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff7d0173">桃園市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff860176">臺中市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff4a0162">臺南市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff8c0178">高雄市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff580166">宜蘭縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff890177">新竹縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff72016f">苗栗縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff5d0168">彰化縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff830175">南投縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6f016e">雲林縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff63016a">嘉義縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff3e015d">屏東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff67016b">臺東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff600169">花蓮縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff770171">澎湖縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff460160">基隆市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff480161">新竹市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff43015f">嘉義市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6c016d">連江縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff38015c">金門縣</option>
+          </select>
+          <select id="town" class="form-control" aria-label="所在鄉鎮">
+              <option value="">
+請選擇鄉鎮              </option>
+                      <option value="4bc1e2f27af6e832017af6ef03f402e8">桃園區</option>
+                      <option value="4bc1e2f27af6e832017af6ef01b60233">中壢區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00ef01f7">大溪區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04a5032c">楊梅區</option>
+                      <option value="4bc1e2f27af6e832017af6ef01bb0235">蘆竹區</option>
+                      <option value="4bc1e2f27af6e832017af6ef001e01a7">大園區</option>
+                      <option value="4bc1e2f27af6e832017af6ef02a80274">龜山區</option>
+                      <option value="4bc1e2f27af6e832017af6ef037002b3">八德區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04c50336">龍潭區</option>
+                      <option value="4bc1e2f27af6e832017af6ef0298026d">平鎮區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00d501ee">新屋區</option>
+                      <option value="4bc1e2f27af6e832017af6ef036202af">觀音區</option>
+                      <option value="4bc1e2f27af6e832017af6ef002801ab">復興區</option>
+          </select>
+        </span>
+      </div>
+      <div id="address-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="address">定位設定</label>
+        <span class="Cn_cell form-inline">
+    <input type="text" id="address" name="address" value="" class='form-control' placeholder='範例：臺北市南港區忠孝東路六段' style='width:300px;'    >
+
+            <button id="address-locate" type="button" class="btn btn-danger">地址定位</button>
+          </span>
+      </div>
+      <div id="locate-distance" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="distance">定位資訊</label>
+        <div class="Cn_cell form-inline">
+          緯度：<span id="latitude-info"></span><br/>
+          經度：<span id="longitude-info"></span><br/>
+          地區：<span id="area-name"></span>
+              <input type="number" id="distance" name="distance" value="1.0" style='width:70px; display:inline-block;' min="0" max="10" class="form-control "    >
+
+ 公里(預設值：1公里)
+        </div>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="organ2type_4">托嬰中心類別</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_4" value=""
+                    />
+            <label for="organ2type_4"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_5" value="1"
+                    />
+            <label for="organ2type_5"
+                   class="form-check-label">私立托嬰中心</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_6" value="2"
+                    />
+            <label for="organ2type_6"
+                   class="form-check-label">托育家園</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_7" value="3"
+                    />
+            <label for="organ2type_7"
+                   class="form-check-label">公托中心</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="publicFlag_8">準公共化資格</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_8" value=""
+                    />
+            <label for="publicFlag_8"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_9" value="Y"
+                    />
+            <label for="publicFlag_9"
+                   class="form-check-label">已簽約</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_10" value="N"
+                    />
+            <label for="publicFlag_10"
+                   class="form-check-label">未簽約</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="conditions[centerNurseryTimeIdS]_11">托育時段</label>
+        <span class="Cn_cell text">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_11" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6455e0002"  />
+                <label for="conditions[centerNurseryTimeIdS]_11"
+                   class="form-check-label">半日托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_12" class="form-check-input"
+                       value="40285e816c21e8ff016c22b671a40003"  />
+                <label for="conditions[centerNurseryTimeIdS]_12"
+                   class="form-check-label">日間托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_13" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6921b0004"  />
+                <label for="conditions[centerNurseryTimeIdS]_13"
+                   class="form-check-label">臨時托育</label>
+            </div>
+            
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="gradeFlag_14">評鑑等級(以上)</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_14" value="1"
+                    />
+            <label for="gradeFlag_14"
+                   class="form-check-label">優等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_15" value="2"
+                    />
+            <label for="gradeFlag_15"
+                   class="form-check-label">甲等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_16" value="3"
+                    />
+            <label for="gradeFlag_16"
+                   class="form-check-label">乙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_17" value="4"
+                    />
+            <label for="gradeFlag_17"
+                   class="form-check-label">丙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_18" value="5"
+                    />
+            <label for="gradeFlag_18"
+                   class="form-check-label">丁等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_19" value="9"
+                    />
+            <label for="gradeFlag_19"
+                   class="form-check-label">尚未評鑑</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="block btn-row text-center">
+        <button type="submit" class="btn btn-danger w-15">查詢</button>
+        <button type="reset" class="btn btn-danger w-15 clear">清除</button>
+        <noscript><br>若您的瀏覽器不支援JavaScript功能，則無法重置選項，請手動選擇，您要的選項</noscript>
+      </div>
+    </div>
+      <!--主要內容區塊_搜尋結果-->
+      <div class="result-list tab">
+        <a href="#List1" class="tabBtn click">托嬰中心名冊</a>
+        <table class="table table-striped table-hover tab-cntnt" summary="查詢結果清單區" id="List1">
+          <thead>
+          <tr>
+            <th class="text-center w-25">托嬰中心名稱</th>
+            <th class="text-center w-25">所在地</th>
+            <th class="text-center w-10">聯絡電話</th>
+            <th class="text-center w-10">核定收托數</th>
+            <th class="text-center w-10">準公共化資格</th>
+            <th class="text-center w-10">評鑑年度</th>
+            <th class="text-center w-10">評鑑等級</th>
+          </tr>
+          </thead>
+          <tbody class="tbody">
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11301006"
+                       class="fa-external-link" title="桃園市私立心辰托嬰中心" target="_blank">
+                        桃園市私立心辰托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">330桃園市桃園區正光二街168號1樓</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">32</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11301011"
+                       class="fa-external-link" title="桃園市私立金培恩青埔托嬰中心" target="_blank">
+                        桃園市私立金培恩青埔托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">320桃園市中壢區芝芭里1鄰領航南路一段186號1樓</td>
+                  <td data-label="聯絡電話｜">032805350</td>
+                  <td data-label="核定收托數｜">46</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11301012"
+                       class="fa-external-link" title="桃園市私立快樂寶貝托嬰中心" target="_blank">
+                        桃園市私立快樂寶貝托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">320桃園市中壢區興和里15鄰環北路161號1樓</td>
+                  <td data-label="聯絡電話｜">03-4341168</td>
+                  <td data-label="核定收托數｜">43</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11301019"
+                       class="fa-external-link" title="桃園市私立春天托嬰中心" target="_blank">
+                        桃園市私立春天托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">338桃園市蘆竹區南興里5鄰南昌路263號1樓</td>
+                  <td data-label="聯絡電話｜">3212133</td>
+                  <td data-label="核定收托數｜">27</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11302002"
+                       class="fa-external-link" title="桃園市私立貝格爾八德托嬰中心" target="_blank">
+                        桃園市私立貝格爾八德托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">334桃園市八德區瑞豐里26鄰豐德路248號1樓</td>
+                  <td data-label="聯絡電話｜">03-3682210</td>
+                  <td data-label="核定收托數｜">35</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11302003"
+                       class="fa-external-link" title="桃園市私立靚寶貝托嬰中心" target="_blank">
+                        桃園市私立靚寶貝托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">330桃園市桃園區春日里16鄰大業路二段62、64、66號1樓</td>
+                  <td data-label="聯絡電話｜">03-3587456</td>
+                  <td data-label="核定收托數｜">46</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11302004"
+                       class="fa-external-link" title="公設民營楊梅埔心托嬰中心" target="_blank">
+                        公設民營楊梅埔心托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">326桃園市楊梅區金龍里26鄰中興路238號</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">60</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11302015"
+                       class="fa-external-link" title="桃園市私立童樂熊托嬰中心" target="_blank">
+                        桃園市私立童樂熊托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">338桃園市蘆竹區中山里7鄰中山路121號2樓</td>
+                  <td data-label="聯絡電話｜">03-2220609</td>
+                  <td data-label="核定收托數｜">28</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11303003"
+                       class="fa-external-link" title="公設民營桃園民富托嬰中心" target="_blank">
+                        公設民營桃園民富托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">330桃園市桃園區大有里18鄰民有十街216號3樓</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">40</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11303008"
+                       class="fa-external-link" title="桃園市私立幼貝兒托嬰中心" target="_blank">
+                        桃園市私立幼貝兒托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">334桃園市八德區瑞德里28鄰</td>
+                  <td data-label="聯絡電話｜">033686548</td>
+                  <td data-label="核定收托數｜">19</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11303009"
+                       class="fa-external-link" title="公設民營桃園崇法托嬰中心" target="_blank">
+                        公設民營桃園崇法托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">330桃園市桃園區崇法街58號3樓</td>
+                  <td data-label="聯絡電話｜">03-2150588</td>
+                  <td data-label="核定收托數｜">48</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11303010"
+                       class="fa-external-link" title="桃園市私立頂尖康嘩托嬰中心" target="_blank">
+                        桃園市私立頂尖康嘩托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">325桃園市龍潭區中興里19鄰中興路396-22號3樓</td>
+                  <td data-label="聯絡電話｜">03-4799866</td>
+                  <td data-label="核定收托數｜">52</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11303012"
+                       class="fa-external-link" title="桃園市私立采舍親托嬰中心" target="_blank">
+                        桃園市私立采舍親托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">330桃園市桃園區中正里守法路7鄰19-5號</td>
+                  <td data-label="聯絡電話｜">03-3318030</td>
+                  <td data-label="核定收托數｜">50</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11304001"
+                       class="fa-external-link" title="公設民營平鎮義民托嬰中心" target="_blank">
+                        公設民營平鎮義民托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">324桃園市平鎮區義民里14鄰復旦路二段115號3樓</td>
+                  <td data-label="聯絡電話｜">03-4913889</td>
+                  <td data-label="核定收托數｜">48</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW11304004"
+                       class="fa-external-link" title="桃園市私立和風煦煦托嬰中心" target="_blank">
+                        桃園市私立和風煦煦托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">320桃園市中壢區過嶺里21鄰松仁路215號1樓</td>
+                  <td data-label="聯絡電話｜">034206818</td>
+                  <td data-label="核定收托數｜">29</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜"></td>
+                  <td data-label="評鑑等級｜">尚未評鑑</td>
+                </tr>
+          </tbody>
+        </table>
+        <!--地理資訊區塊-->
+        <a href="#TGMap" class="tabBtn right">地理資訊</a>
+        <div id="TGMap" style="height: 516px;" class="table tab-cntnt"></div>
+        <!--頁數按鈕-->
+    <input type="hidden" name="page" value="11" />
+    <label id="totalPage" style="display:none;">13</label>
+    <!-- 頁碼 Start -->
+    <div id="pagination" aria-label="Page navigation" class="text-center pg-end">
+        <label for="" class="visible-md visible-lg">
+            共 <span
+                class="text-danger"> 182 </span> 筆資料．第 <span
+                class="text-danger">12/13</span> 頁．每頁顯示 15 筆
+            <noscript><br>若您的瀏覽器不支援JavaScript功能，則請手動選擇要切換的頁數，再按送出按鈕</noscript>
+            <noscript><input type="submit" value="送出"></noscript>
+        </label>
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a href="#" class="page-link firstPage" aria-label="Begin">
+                            <span aria-hidden="true" class="fa-angle-double-left"></span>
+                            <span class="sr-only">最前頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link previousPage" aria-label="Previous">
+                            <span aria-hidden="true" class="fa-angle-left"></span>
+                            <span class="sr-only">前一頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="11">11
+                        </a>
+                    </li>
+                    <li class="page-item active select">
+                        <a href="#" class="page-link" title="12">12
+                                <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="13">13
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link nextPage" href="#" aria-label="Next">
+                            <span aria-hidden="true" class="fa-angle-right"></span>
+                            <span class="sr-only">後一頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link endPage" href="#" aria-label="End">
+                            <span aria-hidden="true" class="fa-angle-double-right"></span>
+                            <span class="sr-only">最後頁</span>
+                        </a>
+                    </li>
+            </ul>
+
+    </div>
+    <!-- 頁碼 End -->
+      </div>
+  </form>
+</main>
+<!--footer-->
+<footer>
+    <div class="container">
+        <a href="#B" id="bottom" title="下方功能區塊" accesskey="B" name="B" class="acesKy">:::</a>
+        <span class="cell left">
+                <a class="btn btn-danger" href="/home/handicap">無障礙說明</a>
+                <a class="btn btn-danger" href="/home/privacy">隱私權保護及安全政策</a>
+                <a class="btn btn-danger" href="/home/copyright">著作權聲明</a>
+                <p>本署地址：11558臺北市南港區忠孝東路六段488號12樓，聯絡電話：02-26531776<br>建議使用瀏覽器 Edge、Firefox 74、Chrome 77 以上版本；最佳瀏覽畫面設定 1440*900<br>版權所有©衛生福利部社會及家庭署</p>
+            </span><span class="cell right">
+               <a href="#"><img src="/css/images/home/gov-f7056ba07c62c76381a4e1eb8753e879.gif" alt="另開新視窗-GOV"></a><br><br>
+                <p>參訪累計：2111358人次<br></p>
+            </span>
+    </div>
+</footer></body>
+<script src="/js/home/browser-70fa5c1df74bd8f7fb0b7c9ec6d2da3f.js"></script>
+<script src="/js/home/tgos-2dea7ec50e8b2b639c3ad951defb36aa.js"></script>
+<script>
+    var pOMap = document.getElementById('TGMap');
+    var mapOptions = {
+        disableDefaultUI: true, //關閉所有地圖操作介面
+        navigationControl: true,  //navigationControl(是否開啟縮放控制列)
+        dbClickZoomIn: false
+    };
+    var pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826, mapOptions);
+    var locateTypes = document.getElementsByName('locateType');
+    var city = document.getElementById('city');
+    var cityId = document.getElementById("cityId");
+    var town = document.getElementById('town');
+    var townId = document.getElementById("townId");
+    var latitude = document.getElementById('latitude'); //緯度
+    var latitudeInfo = document.getElementById('latitude-info');
+    var longitude = document.getElementById('longitude'); //經度
+    var longitudeInfo = document.getElementById('longitude-info');
+    var markerImg = new TGOS.TGImage('/css/images/home/map-marker-alt-solid-d115da5c1415f939ed34315f1abb8a33.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var locateImg = new TGOS.TGImage('/css/images/home/street-view-solid-1379f0e6e4637325401e01ee76b9984e.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var markers = []; //標記點
+
+    window.onload = function () {
+        function initSearchForm(locateType) {
+            var localDistrict = document.getElementById('local-district');
+            var addressDistrict = document.getElementById('address-district');
+            var locateDistance = document.getElementById('locate-distance');
+            switch (locateType) {
+                case '1': // 所在縣市區域
+                    localDistrict.classList.remove('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.add('d-none');
+                    break;
+                case '2': // 自動定位
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.remove('d-none');
+                    getAutoLocate();
+                    break;
+                case '3': // 輸入地址
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.remove('d-none');
+                    locateDistance.classList.remove('d-none');
+                    latitudeInfo.textContent = latitude.value;
+                    longitudeInfo.textContent = longitude.value;
+                    getAddressLocate();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // 初始化標記點
+        function initMarkers() {
+            var baseUrl = '';
+            var i = '0';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立小哈力托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112086'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3359035' + '<br />'
+                + '330桃園市桃園區中山路505號2樓之1';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '1';
+            var x = '280170.9';
+            var y = '2767082.22';
+            var markerName = '桃園市私立御寶兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112089'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3025188' + '<br />'
+                + '330桃園市桃園區大興西路二段55號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '2';
+            var x = '280811.71';
+            var y = '2767120.299';
+            var markerName = '桃園市私立愛兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112090'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3564960' + '<br />'
+                + '330桃園市桃園區同安里桃園區同安街41號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '3';
+            var x = '271449.75';
+            var y = '2761920.589';
+            var markerName = '桃園市私立安琪兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112091'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4918696' + '<br />'
+                + '320桃園市中壢區三民里11鄰環西路二段255號1樓至3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '4';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立福星寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112092'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4521045' + '<br />'
+                + '320桃園市中壢區幸福里中壢市福星五街22、24號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '5';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立美麗托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112093'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4622636' + '<br />'
+                + '320桃園市中壢區中壢市南園二路1巷18弄39號1-2樓、57巷21號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '6';
+            var x = '276013.169';
+            var y = '2761537.549';
+            var markerName = '桃園市私立小豆苗托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112094'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4351184' + '<br />'
+                + '320桃園市中壢區中興里8鄰榮安13街274之2號1樓及274-3號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '7';
+            var x = '288800.89';
+            var y = '2772441.669';
+            var markerName = '桃園市私立長庚醫療財團法人林口長庚紀念醫院附設托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112095'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3289281' + '<br />'
+                + '333桃園市龜山區長庚里11鄰長庚醫護新村77號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '8';
+            var x = '282095.049';
+            var y = '2767369.47';
+            var markerName = '桃園市私立寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112100'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3268443' + '<br />'
+                + '330桃園市桃園區大有里大有路560號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '9';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立宜禾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112103'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3118222' + '<br />'
+                + '338桃園市蘆竹區中山路167號1-3樓、169號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '10';
+            var x = '279456.15';
+            var y = '2764284.46';
+            var markerName = '桃園市私立新發現托嬰中心　';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112105'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2206855' + '<br />'
+                + '330桃園市桃園區中山里11鄰泰昌11街21號1樓、23號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '11';
+            var x = '273286.5';
+            var y = '2760412';
+            var markerName = '桃園市私立百合精緻托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112106'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4685958' + '<br />'
+                + '320桃園市中壢區廣州路128號1-2樓、130號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '12';
+            var x = '279050.77';
+            var y = '2764192.74';
+            var markerName = '桃園市私立國際長頸鹿托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112108'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3703123' + '<br />'
+                + '330桃園市桃園區中泰里宏昌八街71、81號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '13';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立熊寶堡托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112109'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3010685' + '<br />'
+                + '330桃園市桃園區桃園市瑞慶路389號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '14';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立喜美斯托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112113'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2184678' + '<br />'
+                + '330桃園市桃園區陽明12街23號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '15';
+            var x = '279569.349';
+            var y = '2764170.21';
+            var markerName = '桃園市私立金向日葵托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112115'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2200782' + '<br />'
+                + '330桃園市桃園區中山里宏昌十二街175號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '16';
+            var x = '276226.14';
+            var y = '2762147.91';
+            var markerName = '桃園市私立新自強種子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112116'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '320桃園市中壢區自治里5鄰強國路11巷5號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '17';
+            var x = '263698.359';
+            var y = '2770355.47';
+            var markerName = '桃園市私立心茵托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112118'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4160807' + '<br />'
+                + '328桃園市觀音區草漯里六合二街126號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '18';
+            var x = '279970.359';
+            var y = '2771828.029';
+            var markerName = '桃園市私立樂芙力托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112119'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3125823' + '<br />'
+                + '338桃園市蘆竹區五福里福祿一街19巷2號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '19';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立昱誠托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112120'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4334333' + '<br />'
+                + '320桃園市中壢區文化里21鄰長春二路82號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '20';
+            var x = '279373.87';
+            var y = '2765095.21';
+            var markerName = '桃園市私立巧倪托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112124'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3441711' + '<br />'
+                + '330桃園市桃園區中路里桃園市中路里7鄰延壽街121之7號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '21';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立堤沃莉托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112125'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4331683' + '<br />'
+                + '320桃園市中壢區文化里21鄰吉林路68-7號2樓及68-8號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '22';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立南榮媽咪休息站托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112126'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2123727' + '<br />'
+                + '338桃園市蘆竹區南崁里南華一街168號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '23';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立心寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112128'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4535900' + '<br />'
+                + '320桃園市中壢區普義里25鄰八德路51號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '24';
+            var x = '280400.299';
+            var y = '2771491.859';
+            var markerName = '桃園市私立安娜寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112587'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2222825' + '<br />'
+                + '338桃園市蘆竹區羊稠里蘆竹鄉羊稠村10鄰中山路18之1號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '25';
+            var x = '280775.429';
+            var y = '2761953.52';
+            var markerName = '桃園市私立喜美斯希望托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10201002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3752726' + '<br />'
+                + '334桃園市八德區忠勇五街22號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '26';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立瑞梅蒙氏托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10201004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4827745' + '<br />'
+                + '326桃園市楊梅區梅溪里20鄰中山北路二段210號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '27';
+            var x = '279116.28';
+            var y = '2770947.3';
+            var markerName = '桃園市私立快樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10205004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3214819' + '<br />'
+                + '338桃園市蘆竹區錦興里22鄰光復路146號1樓之11';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '28';
+            var x = '273442.489';
+            var y = '2762080.64';
+            var markerName = '桃園市私立貝比加托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10210007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4625915' + '<br />'
+                + '320桃園市中壢區幸福里5鄰福州一街102號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '29';
+            var x = '279450.169';
+            var y = '2770075.839';
+            var markerName = '桃園市私立愛芮絲托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10211007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3223049' + '<br />'
+                + '338桃園市蘆竹區南興里蘆竹鄉南興村2鄰南福街186巷37號1樓及1樓夾層';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '30';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立璦瑪托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10212005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2221113' + '<br />'
+                + '338桃園市蘆竹區福昌里16鄰奉化路229號2樓之1及2樓之2';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '31';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市公設民營龜山托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10303006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2133366' + '<br />'
+                + '333桃園市龜山區陸光里龜山鄉陸光村26鄰同心二路17號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '32';
+            var x = '276229.039';
+            var y = '2760391.45';
+            var markerName = '桃園市私立幸福種子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10306003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4560850' + '<br />'
+                + '320桃園市中壢區華勛街107號1樓及2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '33';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立種籽玫瑰托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10306004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3210179' + '<br />'
+                + '338桃園市蘆竹區南興里4鄰南順七街32巷2號1樓及32巷6號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '34';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立小種籽托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10307001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3117822' + '<br />'
+                + '338桃園市蘆竹區南興里4鄰奉化路66號1樓及68號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '35';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立璦瑪懷恩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10308002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3568180' + '<br />'
+                + '330桃園市桃園區寶安里25鄰南平路466號1~3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '36';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立喜美斯寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10310003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4660816' + '<br />'
+                + '320桃園市中壢區至善里21鄰後寮一路169號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '37';
+            var x = '279029.08';
+            var y = '2764353.919';
+            var markerName = '桃園市私立佳佳托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10310005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3609230' + '<br />'
+                + '330桃園市桃園區中聖里16鄰國鼎一街25號1樓之3';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '38';
+            var x = '258444.7';
+            var y = '2769568.26';
+            var markerName = '桃園市私立晴天小屋托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10310006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4627267' + '<br />'
+                + '320桃園市中壢區中原里9鄰文化路71號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '39';
+            var x = '271736.659';
+            var y = '2759208.299';
+            var markerName = '桃園市私立陽光玫瑰托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10310007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2842345' + '<br />'
+                + '324桃園市平鎮區環南路二段265號2樓之1';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '40';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立愛佑康托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10310010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3122818' + '<br />'
+                + '338桃園市蘆竹區五福村18鄰中山路125巷22號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '41';
+            var x = '273022.349';
+            var y = '2761349.609';
+            var markerName = '桃園市公設民營中壢托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10312002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4252578' + '<br />'
+                + '320桃園市中壢區元化路159號2、3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '42';
+            var x = '279367.76';
+            var y = '2767866.109';
+            var markerName = '桃園市私立立暘樂福托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10402002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3413419' + '<br />'
+                + '330桃園市桃園區瑞慶里明德街13巷4號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '43';
+            var x = '275943.64';
+            var y = '2768501.45';
+            var markerName = '桃園市私立寶貝屋托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10403008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3132820' + '<br />'
+                + '338桃園市蘆竹區大竹里6鄰新福街125號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '44';
+            var x = '268630.2';
+            var y = '2755943.89';
+            var markerName = '桃園市私立立暘托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10404005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4311777' + '<br />'
+                + '326桃園市楊梅區光華里26鄰文化街189巷51號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '45';
+            var x = '272013.33';
+            var y = '2761264.589';
+            var markerName = '桃園市私立芯悅托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10408006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4013737' + '<br />'
+                + '320桃園市中壢區光明里義民路2段25巷1號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '46';
+            var x = '282403.84';
+            var y = '2762971.399';
+            var markerName = '桃園市私立喜美斯快樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10408008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2180215' + '<br />'
+                + '330桃園市桃園區榮華街63巷17.19號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '47';
+            var x = '269722.039';
+            var y = '2772809.16';
+            var markerName = '桃園市公設民營大園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10410002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3843866#13' + '<br />'
+                + '337桃園市大園區田心里9鄰中正西路19號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '48';
+            var x = '286941.81';
+            var y = '2771949.06';
+            var markerName = '桃園市私立安德笙托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10410007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3279229' + '<br />'
+                + '333桃園市龜山區文化里16鄰文化三路373號1樓及1樓夾層';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '49';
+            var x = '281725.23';
+            var y = '2767277.254';
+            var markerName = '桃園市私立富寶貝專業托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10412004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3583008' + '<br />'
+                + '330桃園市桃園區寶山里10鄰雙峯路163號1樓及163-1號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '50';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立米菲蒙特梭利托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10501003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4620722' + '<br />'
+                + '320桃園市中壢區復華里19鄰復華街186巷53-1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '51';
+            var x = '277061.549';
+            var y = '2758405.529';
+            var markerName = '桃園市私立虹橋托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10501007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3659161' + '<br />'
+                + '334桃園市八德區竹園里長興路666號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '52';
+            var x = '271944.06';
+            var y = '2761278.049';
+            var markerName = '桃園市私立勁寶兒心愛托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10504006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4931434' + '<br />'
+                + '320桃園市中壢區光明里17鄰民權路159號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '53';
+            var x = '266438.349';
+            var y = '2761479.819';
+            var markerName = '桃園市私立樂寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10507006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4205590' + '<br />'
+                + '320桃園市中壢區過嶺里12鄰民族路六段198號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '54';
+            var x = '270902.65';
+            var y = '2756328.46';
+            var markerName = '桃園市私立貝貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10508007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4030071' + '<br />'
+                + '324桃園市平鎮區金星里25鄰大連街45號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '55';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立睿比托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10508008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4926028' + '<br />'
+                + '324桃園市平鎮區廣達里4鄰廣平街58-1號2-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '56';
+            var x = '279746.679';
+            var y = '2761841.95';
+            var markerName = '桃園市私立喜美斯幸福托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10607003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2181078' + '<br />'
+                + '330桃園市桃園區中德里桃德路2號4號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '57';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立勁承托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10608001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4526767' + '<br />'
+                + '320桃園市中壢區復興里18鄰復華街212號3樓及自強六路53號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '58';
+            var x = '273387.21';
+            var y = '2761438.299';
+            var markerName = '桃園市私立長堤托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10608010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4511584' + '<br />'
+                + '320桃園市中壢區普義里4鄰普義路173號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '59';
+            var x = '280054.58';
+            var y = '2768137.25';
+            var markerName = '桃園市私立安貝斯托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10610004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3560991' + '<br />'
+                + '330桃園市桃園區莊敬里13鄰同德十一街33號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '60';
+            var x = '275122.03';
+            var y = '2763111.54';
+            var markerName = '桃園市私立幸福蒙特梭利托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10612012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4621058' + '<br />'
+                + '320桃園市中壢區復興里7鄰長樂五街32號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '61';
+            var x = '268564.27';
+            var y = '2755892.24';
+            var markerName = '桃園市私立茉莉托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10701005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4815565' + '<br />'
+                + '326桃園市楊梅區光華里20鄰五守街27號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '62';
+            var x = '279819.25';
+            var y = '2762346.259';
+            var markerName = '桃園市私立維尼熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10703004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3711788' + '<br />'
+                + '334桃園市八德區大宏里13鄰大明街2號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '63';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立貝拉托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10703005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4808866' + '<br />'
+                + '325桃園市龍潭區龍華路440號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '64';
+            var x = '260613.03';
+            var y = '2762746.04';
+            var markerName = '桃園市公設民營新屋托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10703007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4971720' + '<br />'
+                + '327桃園市新屋區中山路269號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '65';
+            var x = '279385.88';
+            var y = '2771458.649';
+            var markerName = '桃園市公設民營蘆竹托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10704001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2123266' + '<br />'
+                + '338桃園市蘆竹區錦中里南崁路348巷18號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '66';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立金寶寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10704006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2207929' + '<br />'
+                + '330桃園市桃園區中山里宏昌三街32號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '67';
+            var x = '258390.5';
+            var y = '2769647.379';
+            var markerName = '桃園市公設民營觀音托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10708002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4732791' + '<br />'
+                + '328桃園市觀音區文化路2號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '68';
+            var x = '273949.65';
+            var y = '2774812.77';
+            var markerName = '桃園國際機場股份有限公司附設桃園市私立愛兒寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10709003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3982626' + '<br />'
+                + '337桃園市大園區埔心里16鄰航站南路15號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '69';
+            var x = '279239.539';
+            var y = '2771266.21';
+            var markerName = '桃園市私立育芯園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10709004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2123688' + '<br />'
+                + '338桃園市蘆竹區錦興里10鄰光明路2段251號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '70';
+            var x = '271055.64';
+            var y = '2766014.83';
+            var markerName = '桃園市私立桃樂比托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10709011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2873737' + '<br />'
+                + '320桃園市中壢區洽溪里13鄰文智路155號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '71';
+            var x = '279692.409';
+            var y = '2768876.72';
+            var markerName = '桃園市私立小英倫國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10710017'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3568276' + '<br />'
+                + '330桃園市桃園區同安里9鄰同安街395、397號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '72';
+            var x = '289267.9';
+            var y = '2770338.689';
+            var markerName = '桃園市私立米其林托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10711004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3973060' + '<br />'
+                + '333桃園市龜山區文青里文青路223號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '73';
+            var x = '0';
+            var y = '0';
+            var markerName = '公設民營楊梅托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10711010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4881662' + '<br />'
+                + '326桃園市楊梅區楊梅里大模街10號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '74';
+            var x = '280776.77';
+            var y = '2761887.66';
+            var markerName = '桃園市私立依仕倫托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10712005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3635330' + '<br />'
+                + '334桃園市八德區大勇里忠勇五街2號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '75';
+            var x = '288515.51';
+            var y = '2771867.22';
+            var markerName = '桃園市私立寶心樂善園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10801004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2712132' + '<br />'
+                + '333桃園市龜山區樂善里23鄰文德二路106號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '76';
+            var x = '271354.64';
+            var y = '2761542.54';
+            var markerName = '桃園市私立家碩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10801007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4913045' + '<br />'
+                + '320桃園市中壢區光明里29鄰三光路86號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '77';
+            var x = '279380.729';
+            var y = '2771084.02';
+            var markerName = '桃園市私立健寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10801008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3528338' + '<br />'
+                + '338桃園市蘆竹區錦興里14鄰中正路301號2樓之1';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '78';
+            var x = '279260.4';
+            var y = '2768009.839';
+            var markerName = '桃園市私立寶慶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10801009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3019181' + '<br />'
+                + '330桃園市桃園區寶慶里寶慶路498號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '79';
+            var x = '280688.909';
+            var y = '2765246.2';
+            var markerName = '桃園市公設民營桃園西門社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3336825' + '<br />'
+                + '330桃園市桃園區西門里莒光街15號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '80';
+            var x = '271897.07';
+            var y = '2761222.93';
+            var markerName = '桃園市私立亞米哥托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10805004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4016563' + '<br />'
+                + '320桃園市中壢區光明里17鄰中央西路二段65號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '81';
+            var x = '279613.919';
+            var y = '2767212.52';
+            var markerName = '桃園市私立桃園館愛媽咪托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10807001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2151688' + '<br />'
+                + '330桃園市桃園區寶慶里寶慶路152號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '82';
+            var x = '280062.71';
+            var y = '2766272.89';
+            var markerName = '桃園市公設民營桃園慈文社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10807002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3586250' + '<br />'
+                + '330桃園市桃園區慈文里慈文路412號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '83';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立欣田托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10807005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3662369' + '<br />'
+                + '330桃園市桃園區福林里19鄰樹仁三街582號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '84';
+            var x = '276404.14';
+            var y = '2761558.6';
+            var markerName = '桃園市公設民營中壢中正社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10808006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4610902' + '<br />'
+                + '320桃園市中壢區中山里16鄰榮民路396號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '85';
+            var x = '270901.26';
+            var y = '2756338.73';
+            var markerName = '桃園市私立丹尼斯托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10810011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4395199' + '<br />'
+                + '324桃園市平鎮區金星里大連街49號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '86';
+            var x = '276675.46';
+            var y = '2754970.73';
+            var markerName = '桃園市公設民營大溪托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3809903' + '<br />'
+                + '335桃園市大溪區南興里13鄰永昌路80號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '87';
+            var x = '280142.09';
+            var y = '2759387.52';
+            var markerName = '桃園市公設民營八德瑞泰托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3689929' + '<br />'
+                + '334桃園市八德區瑞泰里2鄰介壽路2段583巷14號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '88';
+            var x = '271132.27';
+            var y = '2760225.79';
+            var markerName = '桃園市公設民營平鎮義興社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811017'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4953528' + '<br />'
+                + '324桃園市平鎮區義興里義興街80號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '89';
+            var x = '271709.87';
+            var y = '2755175.37';
+            var markerName = '桃園市公設民營平鎮莊敬社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811018'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 0965210997' + '<br />'
+                + '324桃園市平鎮區莊敬里26鄰自強街100號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '90';
+            var x = '289293.31';
+            var y = '2770364.759';
+            var markerName = '桃園市私立蘊愛托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811019'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3187138' + '<br />'
+                + '333桃園市龜山區文青里30鄰文學路263號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '91';
+            var x = '269528.21';
+            var y = '2773101.48';
+            var markerName = '桃園市公設民營大園田心社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10812010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3858810' + '<br />'
+                + '337桃園市大園區田心里1鄰大觀路118號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '92';
+            var x = '280002.909';
+            var y = '2765722.68';
+            var markerName = '桃園市公設民營桃園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10901003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 033398321' + '<br />'
+                + '330桃園市桃園區中成里17鄰力行路306號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '93';
+            var x = '275911.34';
+            var y = '2768176.93';
+            var markerName = '桃園市私立愛寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10901007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3132022' + '<br />'
+                + '338桃園市蘆竹區大竹里大新一街118巷17號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '94';
+            var x = '271825.729';
+            var y = '2760956.939';
+            var markerName = '桃園市公設民營中壢新明托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10901013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4920131' + '<br />'
+                + '320桃園市中壢區舊明里明德路60號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '95';
+            var x = '268545.21';
+            var y = '2756103.06';
+            var markerName = '桃園市私立立暘寶寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10902012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4317555' + '<br />'
+                + '326桃園市楊梅區四維里2鄰文化街202號2-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '96';
+            var x = '273331.82';
+            var y = '2761850.74';
+            var markerName = '桃園市私立小星星托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10904002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4536255' + '<br />'
+                + '320桃園市中壢區幸福里3鄰福壽一街75號1-2樓、福壽二街36號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '97';
+            var x = '270426.75';
+            var y = '2751777.39';
+            var markerName = '桃園市公設民營龍潭八德社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10905003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '325桃園市龍潭區八德里梅龍路2號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '98';
+            var x = '275192.229';
+            var y = '2756588.149';
+            var markerName = '桃園市公設民營平鎮東安社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10905004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '324桃園市平鎮區東安里4鄰平東路168號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '99';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營中壢普仁社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10906003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4161303' + '<br />'
+                + '320桃園市中壢區普仁里7鄰日新路20號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '100';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立凱爾葳托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10907006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3460036' + '<br />'
+                + '330桃園市桃園區大有里大有路506之1號、506號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '101';
+            var x = '268374.15';
+            var y = '2756450.71';
+            var markerName = '桃園市私立華府托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10907008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4812616' + '<br />'
+                + '326桃園市楊梅區四維里永美路371巷28號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '102';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立童心托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10907009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2871828' + '<br />'
+                + '337桃園市大園區橫峰里39鄰致祥三街38號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '103';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市公設民營蘆竹海湖社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10908006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3543866' + '<br />'
+                + '338桃園市蘆竹區海湖里海湖東路217號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '104';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營八德托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10908010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '334桃園市八德區興仁里興豐路287號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '105';
+            var x = '279239.539';
+            var y = '2771266.21';
+            var markerName = '桃園市私立育芯園二館托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10909003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2716540' + '<br />'
+                + '338桃園市蘆竹區錦興里光明路二段251號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '106';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營蘆竹仁愛社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10910001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2225733' + '<br />'
+                + '338桃園市蘆竹區瓦窯里1鄰仁愛路一段2號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '107';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立陽光森林托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10912004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3023185' + '<br />'
+                + '330桃園市桃園區南埔里10鄰蓮埔街145號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '108';
+            var x = '281265.969';
+            var y = '2761916.419';
+            var markerName = '桃園市私立欣妍寶寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10912010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3668871' + '<br />'
+                + '334桃園市八德區大強里16鄰東勇街400巷2弄2之1號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '109';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營龜山大崗社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11001007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '333桃園市龜山區大崗里20鄰大湖一路175號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '110';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立蜂?托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11001013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3732077' + '<br />'
+                + '334桃園市八德區福興里9鄰豐田七街31號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '111';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營蘆竹興仁托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11002001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3235687' + '<br />'
+                + '338桃園市蘆竹區中興里14鄰興仁路330號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '112';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立貝格爾青埔托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11003009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2875836' + '<br />'
+                + '337桃園市大園區橫峰里38鄰青峰路二段170號1、2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '113';
+            var x = '296489.266';
+            var y = '2764938.176';
+            var markerName = '桃園市私立頂尖托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11004006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4803895' + '<br />'
+                + '325桃園市龍潭區龍祥里16鄰干城路196巷6號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '114';
+            var x = '0';
+            var y = '0';
+            var markerName = '台煒有限公司附設私立台煒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11004007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3765968' + '<br />'
+                + '330桃園市桃園區中德里8鄰國際路一段136號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '115';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營中壢過嶺托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11004008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4201320' + '<br />'
+                + '320桃園市中壢區過嶺里19鄰松勇二街61號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '116';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營楊梅永寧社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11004012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4752668' + '<br />'
+                + '326桃園市楊梅區梅新里貴山街1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '117';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營桃園文山社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11005009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3609702' + '<br />'
+                + '330桃園市桃園區文中里3鄰文中路120號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '118';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市公設民營蘆竹富竹社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11006002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3122775' + '<br />'
+                + '338桃園市蘆竹區富竹里8鄰富竹街109號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '119';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市公設民營中壢東興社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11007003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4592755' + '<br />'
+                + '320桃園市中壢區東興里14鄰中北路二段76巷10號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '120';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營龜山新興社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11007006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '333桃園市龜山區新興里自強南路97號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '121';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立小英倫國際森林館托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11009006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3351139' + '<br />'
+                + '330桃園市桃園區成功里2鄰中山東路58、60號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '122';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營觀音草新富林托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11009009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '328桃園市觀音區富林里15鄰一心路180號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '123';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立采舍托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11009013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3475340' + '<br />'
+                + '330桃園市桃園區中正里23鄰正光路86巷23、25號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '124';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營平鎮托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11010001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '324桃園市平鎮區新英里8鄰新富五街62號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '125';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立蕎俐安托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11010003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2873385' + '<br />'
+                + '320桃園市中壢區青埔里18鄰高鐵站前東路二段112及116 號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '126';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立樂堡兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11011005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4785668' + '<br />'
+                + '326桃園市楊梅區楊梅里30鄰金德路51號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '127';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市公設民營大溪員樹林社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11012001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '335桃園市大溪區員林里5鄰員林路二段336巷20號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '128';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立沐森托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11012002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4686860' + '<br />'
+                + '324桃園市平鎮區北華里6鄰振平街88號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '129';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立聯合托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11012013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4333552' + '<br />'
+                + '320桃園市中壢區永福里11鄰中園路421號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '130';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營桃園東門社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11012014'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '330桃園市桃園區東門里9鄰東國街14號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '131';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立貝格爾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11101007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3609337' + '<br />'
+                + '330桃園市桃園區中正里22鄰正光路201號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '132';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立中旭園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11101017'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2133389' + '<br />'
+                + '333桃園市龜山區陸光里6鄰自強西路226、228號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '133';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營中壢內壢托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11103010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4353219' + '<br />'
+                + '320桃園市中壢區復興里文化二路219號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '134';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營桃園北門社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11103011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '330桃園市桃園區北門里11鄰民生路549巷1號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '135';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營八德大湳托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11104012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '334桃園市八德區廣隆里22鄰廣福路216號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '136';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立康斯迪托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11105006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2873283' + '<br />'
+                + '337桃園市大園區青峰里3鄰中山南路二段663號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '137';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立風禾日光托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11105007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2160867' + '<br />'
+                + '330桃園市桃園區中成里6鄰慈文路666-1號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '138';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立寶可夢托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11106004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2830123' + '<br />'
+                + '320桃園市中壢區龍昌里26鄰後寮一路359號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '139';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營中壢龍福托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11107002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4366008' + '<br />'
+                + '320桃園市中壢區中山東路四段26-1號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '140';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立朵拉托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11107009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4801919' + '<br />'
+                + '325桃園市龍潭區凌雲里21鄰聖亭路132、132-1號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '141';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立小英倫國際幸福館托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11107013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3565628' + '<br />'
+                + '330桃園市桃園區汴洲里34鄰幸福路316號1、2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '142';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立恩典托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11108002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3230679' + '<br />'
+                + '338桃園市蘆竹區中興里1鄰豪登一街11號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '143';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市公設民營中壢新街金華托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11108004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4527368' + '<br />'
+                + '320桃園市中壢區新街里七和一街31號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '144';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立幸福日光華亞托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11110034'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3281555' + '<br />'
+                + '333桃園市龜山區樂善里華亞三路39巷23號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '145';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立艾兒思特托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11112011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3970099' + '<br />'
+                + '333桃園市龜山區樂善里樂善二路213號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '146';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立立暘樂寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11112013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4332766' + '<br />'
+                + '320桃園市中壢區忠福里南園二路296巷21弄2、6、8號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '147';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立安貝斯禾悅托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201021'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3170991' + '<br />'
+                + '330桃園市桃園區瑞慶里15鄰中正路1357.1359號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '148';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立勁承中園館托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201027'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4511122' + '<br />'
+                + '320桃園市中壢區仁義里中園路121號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '149';
+            var x = '286667.9';
+            var y = '2771510.96';
+            var markerName = '桃園市私立童萌國托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3281618' + '<br />'
+                + '333桃園市龜山區大華里9鄰文化七路74號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '150';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營八德北青托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11203016'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '334桃園市八德區福興里23鄰建德路358號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '151';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立凱德寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11205011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3690190' + '<br />'
+                + '330桃園市桃園區龍鳳里9鄰龍安街119號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '152';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立奧爾寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11206004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4901008' + '<br />'
+                + '320桃園市中壢區過嶺里1鄰雙福路145-2號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '153';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立愛佑康右右托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11206007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '338桃園市蘆竹區錦興里12鄰光明路二段257號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '154';
+            var x = '278435.38';
+            var y = '2757536.71';
+            var markerName = '桃園市私立小腳印托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11206012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3681415' + '<br />'
+                + '334桃園市八德區興中里4鄰豐德路586號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '155';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立郝老師托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11206013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2873904' + '<br />'
+                + '337桃園市大園區橫峰里39鄰致祥三街46號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '156';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立叡恩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11208002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4916060' + '<br />'
+                + '324桃園市平鎮區新勢里5鄰中豐路14號1樓18號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '157';
+            var x = '';
+            var y = '';
+            var markerName = '桃園市私立貝比加青埔托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11208005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3818555' + '<br />'
+                + '337桃園市大園區橫峰里38鄰青峰路二段245號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '158';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立言嬡專業托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11208006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-347-5755' + '<br />'
+                + '330桃園市桃園區青溪里16鄰青溪一路128巷1號1樓及1樓夾層';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '159';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營復興巴陵社區公共托育家園暨育兒資源站';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11209010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3912886' + '<br />'
+                + '336桃園市復興區華陵里7鄰巴崚23號3樓之1';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '160';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市公設民營龍潭中山社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11210004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '325桃園市龍潭區中山里4鄰公園路56號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '161';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立逗樂蒙特梭利托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11210009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2727732' + '<br />'
+                + '337桃園市大園區青山里9鄰新生路四段265號 1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '162';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立百年正恩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11210011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 034801897' + '<br />'
+                + '325桃園市龍潭區百年里8鄰百年三街31號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '163';
+            var x = '0';
+            var y = '0';
+            var markerName = '公設民營桃園復興托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11211001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3350950' + '<br />'
+                + '330桃園市桃園區南門里16鄰復興路297號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '164';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立哆寶樂菲托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11211004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2877600' + '<br />'
+                + '320桃園市中壢區青溪里5鄰永發路47號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '165';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立心辰托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11301006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '330桃園市桃園區正光二街168號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '166';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立金培恩青埔托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11301011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 032805350' + '<br />'
+                + '320桃園市中壢區芝芭里1鄰領航南路一段186號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '167';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立快樂寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11301012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4341168' + '<br />'
+                + '320桃園市中壢區興和里15鄰環北路161號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '168';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立春天托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11301019'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 3212133' + '<br />'
+                + '338桃園市蘆竹區南興里5鄰南昌路263號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '169';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立貝格爾八德托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3682210' + '<br />'
+                + '334桃園市八德區瑞豐里26鄰豐德路248號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '170';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立靚寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3587456' + '<br />'
+                + '330桃園市桃園區春日里16鄰大業路二段62、64、66號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '171';
+            var x = '0';
+            var y = '0';
+            var markerName = '公設民營楊梅埔心托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '326桃園市楊梅區金龍里26鄰中興路238號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '172';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立童樂熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302015'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2220609' + '<br />'
+                + '338桃園市蘆竹區中山里7鄰中山路121號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '173';
+            var x = '0';
+            var y = '0';
+            var markerName = '公設民營桃園民富托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11303003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '330桃園市桃園區大有里18鄰民有十街216號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '174';
+            var x = '278922.729';
+            var y = '2757545.73';
+            var markerName = '桃園市私立幼貝兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11303008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 033686548' + '<br />'
+                + '334桃園市八德區瑞德里28鄰';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '175';
+            var x = '0';
+            var y = '0';
+            var markerName = '公設民營桃園崇法托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11303009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-2150588' + '<br />'
+                + '330桃園市桃園區崇法街58號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '176';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立頂尖康嘩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11303010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4799866' + '<br />'
+                + '325桃園市龍潭區中興里19鄰中興路396-22號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '177';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立采舍親托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11303012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3318030' + '<br />'
+                + '330桃園市桃園區中正里守法路7鄰19-5號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '178';
+            var x = '0';
+            var y = '0';
+            var markerName = '公設民營平鎮義民托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11304001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-4913889' + '<br />'
+                + '324桃園市平鎮區義民里14鄰復旦路二段115號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '179';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立和風煦煦托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11304004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 034206818' + '<br />'
+                + '320桃園市中壢區過嶺里21鄰松仁路215號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '180';
+            var x = '0';
+            var y = '0';
+            var markerName = '桃園市私立妮卡托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11304012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3589105' + '<br />'
+                + '330桃園市桃園區莊敬里11鄰同德11街7號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '181';
+            var x = '0';
+            var y = '0';
+            var markerName = '私立貝比城堡托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11305012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 03-3522767' + '<br />'
+                + '338桃園市蘆竹區錦中里17鄰南崁路265號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            if (markers.length > 0) {
+                addMarkerClusters(pMap, markers);
+            }
+            setZoomStyle(pOMap);
+            pOMap.classList.add('hide');
+        }
+
+        if (city.value !== '') {
+            findTowns();
+        }
+        if (cityId.value !== '') {
+            city.value = cityId.value;
+        }
+        if (townId.value !== '') {
+            town.value = townId.value;
+        }
+        // 縣市變動時處理
+        city.addEventListener('change', function () {
+            // 尋找鄉鎮資料
+            findTowns();
+            cityId.value = this.value
+            locateTypes.forEach(locateType => {
+                // 自動設定位方式
+                if (locateType.value === '1') {
+                    locateType.checked = true;
+                }
+            })
+        }, false);
+
+        // 鄉鎮市區變動時處理
+        town.addEventListener('change', function () {
+            townId.value = this.value
+        }, false);
+
+        initMarkers();
+        for (var i = 0; i < locateTypes.length; i++) {
+            if (locateTypes[i].checked === true) {
+                initSearchForm(locateTypes[i].value)
+            }
+            locateTypes[i].addEventListener('click', function () {
+                initSearchForm(this.value);
+            });
+        }
+
+        document.getElementById('main-form').addEventListener('submit', initMarkers, false);
+        document.getElementById('main-form').onsubmit = function (e) {
+            locateTypes.forEach(locateType => {
+                if (locateType.checked === true && locateType.value !== '1') { // 所在縣市區域
+                    if (latitude.value === '' || longitude.value === '') {
+                        alert('未取得定位。');
+                        e.preventDefault();
+                    }
+                }
+            })
+        }
+        document.getElementById('address-locate').addEventListener('click', getAddressLocate, false);
+    };
+</script>
+</html>

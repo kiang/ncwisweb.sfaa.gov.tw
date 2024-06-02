@@ -1,0 +1,2621 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="copyright" content="本網頁著作權屬衛生福利部社會及家庭署">
+<meta name="keywords" content="衛生福利部社會及家庭署,衛服部,社家署,托育人員,保母,登記管理資訊網,托育,媒合平臺">
+<meta name="description" content="托育媒合平臺。">
+<meta name="_csrf_parameter" content="_csrf"/>
+<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+<meta name="_csrf" content="51b12807-550c-446a-a886-1332d779d637"/>
+<link rel="shortcut icon" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<link rel="bookmark" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/css/libs/bootstrap/4.1.1/bootstrap.min-e59aa29ac4a3d18d092f6ba813ae1997.css" >
+<link rel="stylesheet" href="/css/libs/jquery-ui/1.12.1/jquery-ui-0f844d2de01e1e6a907010529d33fb98.css" />
+<link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min-269550530cc127b6aa5a35925a7de6ce.css">
+<link rel="stylesheet" href="/css/admin/bootstrap-clockpicker.min.css">
+<!-- custom -->
+<link rel="stylesheet" href="/css/libs/material-design-iconic-font/2.2.0/material-design-iconic-font.min-e9365fe85b7e4db79a87015e52c3db6c.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-datepicker/2.0/datepicker-1d825165f86029aee99dacae845d26b3.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload.min-ef3e2fd3fdc35a565f5ff264892f4cd4.css" >
+<link rel="stylesheet" href="/css/home/main-bc6ecd7915e55ffa44788a274ea173ce.css" >
+<link rel="stylesheet" href="/css/home/page-7eeb71affc72a6420ba5388f5ab167b6.css" >
+
+<!-- javascript -->
+<script src="/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min-5869c96cc8f19086aee625d670d741f9.js"></script>
+<script src="/webjars/bootstrap-notify/3.1.3/bootstrap-notify.min-35eb2c2185524eecb2b772b667552014.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/jquery.validate.min-9346ec27896981bc4c0b146cf327727a.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/additional-methods.min-3a53c5eac97b98ed3833970d43bf7fc9.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/src/localization/messages_zh_TW-3d6e5c045471c66bff6842b1da45a9bf.js"></script>
+<script src="/webjars/clockpicker/0.0.7/dist/bootstrap-clockpicker.min-28af1dfd23b1a43c8094fb6440d18170.js"></script>
+<script src="/js/libs/jquery-ui/1.12.1/jquery-ui.min.js" ></script>
+<script src="/js/protection/csrf-f0e3e1f500a85b6b6788567ab7932223.js"></script>
+<script src="/js/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload-ecf2e43ccdcac1db33db73ee46464340.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/bootstrap-datepicker.min-6e8f1d598eb2e0d67db27b31eff6372e.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/locales/bootstrap-datepicker.zh-TW-0a863b57d8e4c67ee40c124c9bae4691.js"></script>
+<script src="/js/libs/hammer/2.0.8/hammer-946daea10fec9462a94ee2cb059810ff.js"></script>
+<script src="/js/libs/hammer/jquery.hammer.min-7d68c32753bca956f663f3be0f04b8ba.js"></script>
+<script src="/js/home/page-5107698bc0a215fbafb29dc06600a428.js"></script>
+<script src="/js/home/main-bd692a73dd55452e2dad7caf8dce3f8b.js"></script>
+<script src="/js/home/base-d8efe836e4b23f3375d9e5bf0adc341a.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170492183-1"></script>
+<script>
+    com.tist.BASE_URL = "";
+    var modal = com.tist.util.ModalDialog;
+
+    function refreshCaptcha() {
+        document.getElementById('kaptcha')
+            .setAttribute('src', '/images/kaptcha.jpg?t=' + Math.random());
+    }
+
+    // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-170492183-1');
+</script>
+  <script src="https://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=esDUigaoFdkDwrqd+/TlAXz50rLVCmR4wpHF/KfmegkPX4WlTyHofA==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6ujpCGaccQeRrEfn9q5A3drHZnXt7MZItT9TuVS1/ts0i863up8WZRpPVKotb9qyDTZJL9otSSvNzkwcdhKB+cZSWPn0k5d/OP4Jg/pu+qHccFBzZHwNuuTQWL2mK2XhynVCA8mawwIwUgn4kg+oUAtZccQ3WzQOY8pycD59JmFFgHSH6mxWLCoa5/fSr13kUszahZG0+xSbvGV6ODPX08wS0YafoqhiAF7Zoo5/h5GRiTjUrh+JbsZA3UA3xe8YIdmEetg9P6w68PU4zwKHAin9D+fYf8bpjdiV7XPjleiyDARgP/s+/D7ZxJ/IDv599QK350QfS4F+LmOZwvENvyANAK78fJqn+5K5IQN/ZkDnDKWKFQtWS93JM6BWlIUQRrIP8yYGiWrg8GEh03QR32I5xrZF5mvWbu1hxAhfejzGiNcRZZNBaFPLzPKHm1M20q0K/9RS2iKak=" charset="utf-8"></script>
+  <title>托嬰中心查詢-托育媒合平臺-衛生福利部社會及家庭署</title>
+</head>
+<body>
+<a href="#main" id="js-asky_main" class="acesKy">跳至主要內容區塊</a>
+<!--導覽列-->
+<nav class="navbar navbar-light">
+  <a href="#U" id="Up" title="上方功能區塊" accesskey="U" name="U" class="acesKy">:::</a>
+  <div class="container">
+    <h1 class="navbar-brand"><a href="/home/index" class="logo"><img src="/css/images/home/logo-6b9dc660f7df42f4a63674076d1dfcc8.png"
+                                                                     class="img-fluid"
+                                                                     alt="托育媒合平臺-衛生福利部社會及家庭署"></a>
+    </h1>
+    <div class="nav-pack">
+      <div id="js-dpdnList_top" class="top-dpdnList">
+        <a href="/home/sitemap" class="fa-sitemap nav-item">網站導覽</a>
+        <a href="/member"
+           class="fa-user-circle nav-item">會員登入</a>
+      </div>
+      <button id="js-navfold" class="btn nav-fold fa-bars nav-item"><span class="d-none">選單</span></button>
+    </div>
+    <div id="js-dpdnList_btm" class="mainNav text-center">
+      <div class="listItem">
+        <a href="#js-hvrlist1" class="js-hvr_btn hvrbtn news">網站公告</a>
+        <div class="childlist" id="js-hvrlist1">
+          <a href="/home/news">最新消息</a>
+          <a href="/home/charge-refund">收退費規定</a>
+          <a href="/home/laws">托育相關法令</a>
+          <a href="https://crc.sfaa.gov.tw/ChildYoungLaw/Sanction"
+             target="_blank">裁罰公告</a>
+          <a href="/home/shutdown-org">停(歇)業機構</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home"
+           class="js-hvr_btn hvrbtn train">教育訓練</a>
+        <div class="childlist" id="js-hvrlist2">
+          <a href="/home/openclass">托育人員專業訓練課程開課資訊專區</a>
+          <a href="/home/jobtraining">在職教育訓練</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home/question" class="js-hvr_btn hvrbtn QA">Q&A</a>
+      </div>
+      <div class="listItem">
+        <a href="#js-hvrlist3" class="js-hvr_btn hvrbtn Srh">托育查詢</a>
+        <div class="childlist" id="js-hvrlist3">
+          <a href="/home/nanny">居家托育人員(保母)查詢</a>
+          <a href="/home/childcare-center">托嬰中心查詢</a>
+        </div>
+      </div>
+      <a href="/home/link" class="listItem hvrbtn link">相關連結</a>
+    </div>
+  </div>
+</nav>
+<!--主要內頁區塊-->
+<main class="container page" id="main">
+  <form id="main-form" class="w-95 center-block" action="/home/childcare-center" method="post">
+    <input type="hidden" name="_csrf" value="51b12807-550c-446a-a886-1332d779d637"/>
+    <!--內頁標題-->
+    <div class="page-title">
+      <a accesskey="C" title="中央區塊" href="#" class="acesKy">:::</a>
+      <h2 class="fa-building">托嬰中心查詢</h2>
+      <span class="pg-pos fa-map-marker"><a href="/home/index"
+                                            title="回首頁">首頁</a> &gt; 托嬰中心查詢</span><br
+              clear="all">
+    </div>
+    <!--主要內容區塊_搜尋表單-->
+    <div class="search form">
+    <input type="hidden" id="cityId" name="cityId" value="4bc1e2f27af6e832017af6eeff8c0178"     >
+
+    <input type="hidden" id="townId" name="townId" value=""     >
+
+    <input type="hidden" id="latitude" name="latitude" value=""     >
+
+    <input type="hidden" id="longitude" name="longitude" value=""     >
+
+      <div class="row sgl">
+          <label class="fa-search Lb_cell" for="locateType_1">*定位方式(必填)</label><span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_1" value="1"
+                   checked="checked" required/>
+            <label for="locateType_1"
+                   class="form-check-label">所在縣市區域</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_2" value="2"
+                    required/>
+            <label for="locateType_2"
+                   class="form-check-label">自動定位</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_3" value="3"
+                    required/>
+            <label for="locateType_3"
+                   class="form-check-label">輸入地址</label>
+            
+        </div>
+          </span>
+      </div>
+      <div id="local-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="city">縣市及鄉鎮市區</label>
+        <span class="Cn_cell form-inline">
+          <select id="city" class="form-control" aria-label="所在縣市" required>
+              <option value="">
+請選擇縣市              </option>
+                  <option value="4bc1e2f27af6e832017af6eeff7a0172">新北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff750170">臺北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff7d0173">桃園市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff860176">臺中市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff4a0162">臺南市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff8c0178">高雄市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff580166">宜蘭縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff890177">新竹縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff72016f">苗栗縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff5d0168">彰化縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff830175">南投縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6f016e">雲林縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff63016a">嘉義縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff3e015d">屏東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff67016b">臺東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff600169">花蓮縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff770171">澎湖縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff460160">基隆市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff480161">新竹市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff43015f">嘉義市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6c016d">連江縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff38015c">金門縣</option>
+          </select>
+          <select id="town" class="form-control" aria-label="所在鄉鎮">
+              <option value="">
+請選擇鄉鎮              </option>
+                      <option value="4bc1e2f27af6e832017af6ef00cd01eb">鹽埕區</option>
+                      <option value="4bc1e2f27af6e832017af6ef025a025c">鼓山區</option>
+                      <option value="4bc1e2f27af6e832017af6ef03070299">左營區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00ad01df">楠梓區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04610313">三民區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04850321">新興區</option>
+                      <option value="4bc1e2f27af6e832017af6ef035102ab">前金區</option>
+                      <option value="4bc1e2f27af6e832017af6ef054c035e">苓雅區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04900325">前鎮區</option>
+                      <option value="4bc1e2f27af6e832017af6ef01b00231">旗津區</option>
+                      <option value="4bc1e2f27af6e832017af6ef032e02a4">小港區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00aa01dd">鳳山區</option>
+                      <option value="4bc1e2f27af6e832017af6ef033d02a7">林園區</option>
+                      <option value="4bc1e2f27af6e832017af6ef01a7022e">大寮區</option>
+                      <option value="4bc1e2f27af6e832017af6ef033902a6">大樹區</option>
+                      <option value="4bc1e2f27af6e832017af6ef05600366">大社區</option>
+                      <option value="4bc1e2f27af6e832017af6ef03ec02e5">仁武區</option>
+                      <option value="4bc1e2f27af6e832017af6ef054f035f">鳥松區</option>
+                      <option value="4bc1e2f27af6e832017af6ef0008019e">岡山區</option>
+                      <option value="4bc1e2f27af6e832017af6ef02730262">橋頭區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00c101e7">燕巢區</option>
+                      <option value="4bc1e2f27af6e832017af6ef02850266">田寮區</option>
+                      <option value="4bc1e2f27af6e832017af6ef02770263">阿蓮區</option>
+                      <option value="4bc1e2f27af6e832017af6ef032802a3">路竹區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04880322">湖內區</option>
+                      <option value="4bc1e2f27af6e832017af6ef03f202e7">茄萣區</option>
+                      <option value="4bc1e2f27af6e832017af6ef03ef02e6">永安區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00b401e2">彌陀區</option>
+                      <option value="4bc1e2f27af6e832017af6eefffe019a">梓官區</option>
+                      <option value="4bc1e2f27af6e832017af6eeffce018a">旗山區</option>
+                      <option value="4bc1e2f27af6e832017af6ef000d01a0">美濃區</option>
+                      <option value="4bc1e2f27af6e832017af6ef048a0323">六龜區</option>
+                      <option value="4bc1e2f27af6e832017af6ef04920326">甲仙區</option>
+                      <option value="4bc1e2f27af6e832017af6ef01a5022d">杉林區</option>
+                      <option value="4bc1e2f27af6e832017af6ef05520360">內門區</option>
+                      <option value="4bc1e2f27af6e832017af6ef049b0329">茂林區</option>
+                      <option value="4bc1e2f27af6e832017af6ef00c701e9">桃源區</option>
+                      <option value="4bc1e2f27af6e832017af6ef034c02aa">那瑪夏區</option>
+          </select>
+        </span>
+      </div>
+      <div id="address-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="address">定位設定</label>
+        <span class="Cn_cell form-inline">
+    <input type="text" id="address" name="address" value="" class='form-control' placeholder='範例：臺北市南港區忠孝東路六段' style='width:300px;'    >
+
+            <button id="address-locate" type="button" class="btn btn-danger">地址定位</button>
+          </span>
+      </div>
+      <div id="locate-distance" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="distance">定位資訊</label>
+        <div class="Cn_cell form-inline">
+          緯度：<span id="latitude-info"></span><br/>
+          經度：<span id="longitude-info"></span><br/>
+          地區：<span id="area-name"></span>
+              <input type="number" id="distance" name="distance" value="1.0" style='width:70px; display:inline-block;' min="0" max="10" class="form-control "    >
+
+ 公里(預設值：1公里)
+        </div>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="organ2type_4">托嬰中心類別</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_4" value=""
+                    />
+            <label for="organ2type_4"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_5" value="1"
+                    />
+            <label for="organ2type_5"
+                   class="form-check-label">私立托嬰中心</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_6" value="2"
+                    />
+            <label for="organ2type_6"
+                   class="form-check-label">托育家園</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_7" value="3"
+                    />
+            <label for="organ2type_7"
+                   class="form-check-label">公托中心</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="publicFlag_8">準公共化資格</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_8" value=""
+                    />
+            <label for="publicFlag_8"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_9" value="Y"
+                    />
+            <label for="publicFlag_9"
+                   class="form-check-label">已簽約</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_10" value="N"
+                    />
+            <label for="publicFlag_10"
+                   class="form-check-label">未簽約</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="conditions[centerNurseryTimeIdS]_11">托育時段</label>
+        <span class="Cn_cell text">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_11" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6455e0002"  />
+                <label for="conditions[centerNurseryTimeIdS]_11"
+                   class="form-check-label">半日托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_12" class="form-check-input"
+                       value="40285e816c21e8ff016c22b671a40003"  />
+                <label for="conditions[centerNurseryTimeIdS]_12"
+                   class="form-check-label">日間托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_13" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6921b0004"  />
+                <label for="conditions[centerNurseryTimeIdS]_13"
+                   class="form-check-label">臨時托育</label>
+            </div>
+            
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="gradeFlag_14">評鑑等級(以上)</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_14" value="1"
+                    />
+            <label for="gradeFlag_14"
+                   class="form-check-label">優等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_15" value="2"
+                    />
+            <label for="gradeFlag_15"
+                   class="form-check-label">甲等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_16" value="3"
+                    />
+            <label for="gradeFlag_16"
+                   class="form-check-label">乙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_17" value="4"
+                    />
+            <label for="gradeFlag_17"
+                   class="form-check-label">丙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_18" value="5"
+                    />
+            <label for="gradeFlag_18"
+                   class="form-check-label">丁等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_19" value="9"
+                    />
+            <label for="gradeFlag_19"
+                   class="form-check-label">尚未評鑑</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="block btn-row text-center">
+        <button type="submit" class="btn btn-danger w-15">查詢</button>
+        <button type="reset" class="btn btn-danger w-15 clear">清除</button>
+        <noscript><br>若您的瀏覽器不支援JavaScript功能，則無法重置選項，請手動選擇，您要的選項</noscript>
+      </div>
+    </div>
+      <!--主要內容區塊_搜尋結果-->
+      <div class="result-list tab">
+        <a href="#List1" class="tabBtn click">托嬰中心名冊</a>
+        <table class="table table-striped table-hover tab-cntnt" summary="查詢結果清單區" id="List1">
+          <thead>
+          <tr>
+            <th class="text-center w-25">托嬰中心名稱</th>
+            <th class="text-center w-25">所在地</th>
+            <th class="text-center w-10">聯絡電話</th>
+            <th class="text-center w-10">核定收托數</th>
+            <th class="text-center w-10">準公共化資格</th>
+            <th class="text-center w-10">評鑑年度</th>
+            <th class="text-center w-10">評鑑等級</th>
+          </tr>
+          </thead>
+          <tbody class="tbody">
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112526"
+                       class="fa-external-link" title="高雄市私立愛.希望托嬰中心" target="_blank">
+                        高雄市私立愛.希望托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">813高雄市左營區新上里36鄰至聖路238號1-3樓</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">50</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112528"
+                       class="fa-external-link" title="高雄市私立但以理托嬰中心" target="_blank">
+                        高雄市私立但以理托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">813高雄市左營區高雄市左營區菜公里044鄰重上街46號3樓</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">40</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112604"
+                       class="fa-external-link" title="高雄市私立傑西愷洱河堤托嬰中心" target="_blank">
+                        高雄市私立傑西愷洱河堤托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">807高雄市三民區高雄市三民區聯興路46號1-2樓</td>
+                  <td data-label="聯絡電話｜">07-3909680</td>
+                  <td data-label="核定收托數｜">32</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10201006"
+                       class="fa-external-link" title="高雄市私立聖傑托嬰中心" target="_blank">
+                        高雄市私立聖傑托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">813高雄市左營區高雄市左營區安吉街419號1-3樓</td>
+                  <td data-label="聯絡電話｜">07-5509481</td>
+                  <td data-label="核定收托數｜">22</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10203012"
+                       class="fa-external-link" title="高雄市私立禾園托嬰中心" target="_blank">
+                        高雄市私立禾園托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">807高雄市三民區高雄市三民區興隆街67號1樓、夾層、2樓</td>
+                  <td data-label="聯絡電話｜">07-3909558</td>
+                  <td data-label="核定收托數｜">32</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10203013"
+                       class="fa-external-link" title="高雄市政府社會局委託財團法人靖娟兒童安全文教基金會辦理高雄市三民公共托嬰中心" target="_blank">
+                        高雄市政府社會局委託財團法人靖娟兒童安全文教基金會辦理高雄市三民公共托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">807高雄市三民區高雄市三民區陽明路300號2樓</td>
+                  <td data-label="聯絡電話｜">07-3801856</td>
+                  <td data-label="核定收托數｜">52</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10205009"
+                       class="fa-external-link" title="高雄市私立柏恩格托嬰中心" target="_blank">
+                        高雄市私立柏恩格托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">813高雄市左營區福山里高雄市左營區重信路138號1-2樓、重信路146巷6號1樓</td>
+                  <td data-label="聯絡電話｜">07-3591113</td>
+                  <td data-label="核定收托數｜">100</td>
+                  <td data-label="準公共化資格｜">否</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10205010"
+                       class="fa-external-link" title="高雄市政府社會局委託社團法人高雄市婦幼福利關懷協會辦理高雄市鳳山光復公共托嬰中心" target="_blank">
+                        高雄市政府社會局委託社團法人高雄市婦幼福利關懷協會辦理高雄市鳳山光復公共托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">830高雄市鳳山區高雄市鳳山區光復路二段120號1樓</td>
+                  <td data-label="聯絡電話｜">07-7408616</td>
+                  <td data-label="核定收托數｜">60</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10208005"
+                       class="fa-external-link" title="高雄市政府社會局委託社團法人臺灣教育專業學會辦理高雄市左營實踐公共托嬰中心" target="_blank">
+                        高雄市政府社會局委託社團法人臺灣教育專業學會辦理高雄市左營實踐公共托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">813高雄市左營區高雄市左營區左營大路479號1樓</td>
+                  <td data-label="聯絡電話｜">07-5886717</td>
+                  <td data-label="核定收托數｜">36</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10208011"
+                       class="fa-external-link" title="高雄市政府社會局委託財團法人天主教社會慈善福利基金會辦理高雄市前鎮公共托嬰中心" target="_blank">
+                        高雄市政府社會局委託財團法人天主教社會慈善福利基金會辦理高雄市前鎮公共托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">806高雄市前鎮區高雄市前鎮區廣東三街73號2樓</td>
+                  <td data-label="聯絡電話｜">07-7161625</td>
+                  <td data-label="核定收托數｜">52</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10301014"
+                       class="fa-external-link" title="高雄市私立巧博士托嬰中心" target="_blank">
+                        高雄市私立巧博士托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">830高雄市鳳山區高雄市鳳山區新強路267號1-3樓</td>
+                  <td data-label="聯絡電話｜">07-7675821</td>
+                  <td data-label="核定收托數｜">21</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10302003"
+                       class="fa-external-link" title="高雄市政府社會局委託財團法人伊甸社會福利基金會辦理高雄市仁武公共托嬰中心" target="_blank">
+                        高雄市政府社會局委託財團法人伊甸社會福利基金會辦理高雄市仁武公共托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">814高雄市仁武區高雄市仁武區中正路94號3樓</td>
+                  <td data-label="聯絡電話｜">07-3721884</td>
+                  <td data-label="核定收托數｜">36</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10303007"
+                       class="fa-external-link" title="高雄市政府社會局委託輔英科技大學辦理高雄市大寮公共托嬰中心" target="_blank">
+                        高雄市政府社會局委託輔英科技大學辦理高雄市大寮公共托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">831高雄市大寮區高雄市大寮區鳳林三路315之22號2樓</td>
+                  <td data-label="聯絡電話｜"></td>
+                  <td data-label="核定收托數｜">72</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10304001"
+                       class="fa-external-link" title="高雄市政府社會局委託財團法人聖功社會福利慈善基金會辦理高雄市小港公共托嬰中心" target="_blank">
+                        高雄市政府社會局委託財團法人聖功社會福利慈善基金會辦理高雄市小港公共托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">812高雄市小港區高雄市小港區康莊路80號2樓</td>
+                  <td data-label="聯絡電話｜">07-8055828</td>
+                  <td data-label="核定收托數｜">52</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10306010"
+                       class="fa-external-link" title="高雄市私立桔康托嬰中心" target="_blank">
+                        高雄市私立桔康托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">813高雄市左營區重和路119號</td>
+                  <td data-label="聯絡電話｜">07-3431385</td>
+                  <td data-label="核定收托數｜">17</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+          </tbody>
+        </table>
+        <!--地理資訊區塊-->
+        <a href="#TGMap" class="tabBtn right">地理資訊</a>
+        <div id="TGMap" style="height: 516px;" class="table tab-cntnt"></div>
+        <!--頁數按鈕-->
+    <input type="hidden" name="page" value="1" />
+    <label id="totalPage" style="display:none;">9</label>
+    <!-- 頁碼 Start -->
+    <div id="pagination" aria-label="Page navigation" class="text-center pg-end">
+        <label for="" class="visible-md visible-lg">
+            共 <span
+                class="text-danger"> 125 </span> 筆資料．第 <span
+                class="text-danger">2/9</span> 頁．每頁顯示 15 筆
+            <noscript><br>若您的瀏覽器不支援JavaScript功能，則請手動選擇要切換的頁數，再按送出按鈕</noscript>
+            <noscript><input type="submit" value="送出"></noscript>
+        </label>
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a href="#" class="page-link firstPage" aria-label="Begin">
+                            <span aria-hidden="true" class="fa-angle-double-left"></span>
+                            <span class="sr-only">最前頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link previousPage" aria-label="Previous">
+                            <span aria-hidden="true" class="fa-angle-left"></span>
+                            <span class="sr-only">前一頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="1">1
+                        </a>
+                    </li>
+                    <li class="page-item active select">
+                        <a href="#" class="page-link" title="2">2
+                                <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="3">3
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="4">4
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="5">5
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="6">6
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="7">7
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="8">8
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="9">9
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link nextPage" href="#" aria-label="Next">
+                            <span aria-hidden="true" class="fa-angle-right"></span>
+                            <span class="sr-only">後一頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link endPage" href="#" aria-label="End">
+                            <span aria-hidden="true" class="fa-angle-double-right"></span>
+                            <span class="sr-only">最後頁</span>
+                        </a>
+                    </li>
+            </ul>
+
+    </div>
+    <!-- 頁碼 End -->
+      </div>
+  </form>
+</main>
+<!--footer-->
+<footer>
+    <div class="container">
+        <a href="#B" id="bottom" title="下方功能區塊" accesskey="B" name="B" class="acesKy">:::</a>
+        <span class="cell left">
+                <a class="btn btn-danger" href="/home/handicap">無障礙說明</a>
+                <a class="btn btn-danger" href="/home/privacy">隱私權保護及安全政策</a>
+                <a class="btn btn-danger" href="/home/copyright">著作權聲明</a>
+                <p>本署地址：11558臺北市南港區忠孝東路六段488號12樓，聯絡電話：02-26531776<br>建議使用瀏覽器 Edge、Firefox 74、Chrome 77 以上版本；最佳瀏覽畫面設定 1440*900<br>版權所有©衛生福利部社會及家庭署</p>
+            </span><span class="cell right">
+               <a href="#"><img src="/css/images/home/gov-f7056ba07c62c76381a4e1eb8753e879.gif" alt="另開新視窗-GOV"></a><br><br>
+                <p>參訪累計：2111358人次<br></p>
+            </span>
+    </div>
+</footer></body>
+<script src="/js/home/browser-70fa5c1df74bd8f7fb0b7c9ec6d2da3f.js"></script>
+<script src="/js/home/tgos-2dea7ec50e8b2b639c3ad951defb36aa.js"></script>
+<script>
+    var pOMap = document.getElementById('TGMap');
+    var mapOptions = {
+        disableDefaultUI: true, //關閉所有地圖操作介面
+        navigationControl: true,  //navigationControl(是否開啟縮放控制列)
+        dbClickZoomIn: false
+    };
+    var pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826, mapOptions);
+    var locateTypes = document.getElementsByName('locateType');
+    var city = document.getElementById('city');
+    var cityId = document.getElementById("cityId");
+    var town = document.getElementById('town');
+    var townId = document.getElementById("townId");
+    var latitude = document.getElementById('latitude'); //緯度
+    var latitudeInfo = document.getElementById('latitude-info');
+    var longitude = document.getElementById('longitude'); //經度
+    var longitudeInfo = document.getElementById('longitude-info');
+    var markerImg = new TGOS.TGImage('/css/images/home/map-marker-alt-solid-d115da5c1415f939ed34315f1abb8a33.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var locateImg = new TGOS.TGImage('/css/images/home/street-view-solid-1379f0e6e4637325401e01ee76b9984e.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var markers = []; //標記點
+
+    window.onload = function () {
+        function initSearchForm(locateType) {
+            var localDistrict = document.getElementById('local-district');
+            var addressDistrict = document.getElementById('address-district');
+            var locateDistance = document.getElementById('locate-distance');
+            switch (locateType) {
+                case '1': // 所在縣市區域
+                    localDistrict.classList.remove('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.add('d-none');
+                    break;
+                case '2': // 自動定位
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.remove('d-none');
+                    getAutoLocate();
+                    break;
+                case '3': // 輸入地址
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.remove('d-none');
+                    locateDistance.classList.remove('d-none');
+                    latitudeInfo.textContent = latitude.value;
+                    longitudeInfo.textContent = longitude.value;
+                    getAddressLocate();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // 初始化標記點
+        function initMarkers() {
+            var baseUrl = '';
+            var i = '0';
+            var x = '182999.2';
+            var y = '2503197.759';
+            var markerName = '高雄市私立劍聲托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112243'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7435195' + '<br />'
+                + '830高雄市鳳山區高雄市鳳山區中山西路233號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '1';
+            var x = '';
+            var y = '';
+            var markerName = '長庚醫療財團法人高雄長庚紀念醫院附設高雄市私立長庚托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112245'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7317123' + '<br />'
+                + '833高雄市鳥松區鳥松里高雄市鳥松區大埤路123之4號1樓、123之6號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '2';
+            var x = '178338.51';
+            var y = '2518052.819';
+            var markerName = '高雄市私立諾貝爾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112247'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6130025' + '<br />'
+                + '825高雄市橋頭區高雄市橋頭區美德街141號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '3';
+            var x = '182564.42';
+            var y = '2499679.58';
+            var markerName = '高雄市私立小新苗托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112252'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7923080' + '<br />'
+                + '830高雄市鳳山區高雄市鳳山區鳳甲路329號1至3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '4';
+            var x = '181256.236';
+            var y = '2531569.243';
+            var markerName = '高雄市私立寶貝屋托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112253'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6312395' + '<br />'
+                + '822高雄市阿蓮區高雄市阿蓮區民族路173巷22號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '5';
+            var x = '182161.336';
+            var y = '2504636.912';
+            var markerName = '高雄市私立頂尖小子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112502'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3954611' + '<br />'
+                + '807高雄市三民區高雄市三民區民豐路70號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '6';
+            var x = '178748.416';
+            var y = '2507620.023';
+            var markerName = '高雄市私立新莊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112504'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5569351' + '<br />'
+                + '813高雄市左營區高雄市左營區群英街85號1、2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '7';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立貝比鹿托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112511'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3500299' + '<br />'
+                + '813高雄市左營區高雄市左營區立大路137號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '8';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立佑幼房托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112513'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-8022165' + '<br />'
+                + '812高雄市小港區高雄市小港區山明路389號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '9';
+            var x = '181407.331';
+            var y = '2502616.643';
+            var markerName = '高雄市私立小群托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112514'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '802高雄市苓雅區高雄市苓雅區三多一路151巷40號A棟1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '10';
+            var x = '177432.964';
+            var y = '2506479.569';
+            var markerName = '高雄市私立小蘋果托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112515'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5543608' + '<br />'
+                + '804高雄市鼓山區高雄市鼓山區裕誠路2026號1~3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '11';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立芽芽與豆豆托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112516'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3487228' + '<br />'
+                + '813高雄市左營區高雄市左營區重上街225號1至3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '12';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立理想園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112517'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3418353' + '<br />'
+                + '813高雄市左營區高雄市左營區曾子路1號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '13';
+            var x = '178331.935';
+            var y = '2508501.591';
+            var markerName = '高雄市私立貝安托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112520'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3591681' + '<br />'
+                + '813高雄市左營區高雄市左營區立大路80號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '14';
+            var x = '180662.182';
+            var y = '2500694.813';
+            var markerName = '高雄市私立佳宜托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112525'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7279770' + '<br />'
+                + '806高雄市前鎮區高雄市前鎮區瑞隆路619號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '15';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立愛.希望托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112526'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '813高雄市左營區新上里36鄰至聖路238號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '16';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立但以理托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112528'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '813高雄市左營區高雄市左營區菜公里044鄰重上街46號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '17';
+            var x = '179512.783';
+            var y = '2506459.961';
+            var markerName = '高雄市私立傑西愷洱河堤托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112604'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3909680' + '<br />'
+                + '807高雄市三民區高雄市三民區聯興路46號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '18';
+            var x = '178662.106';
+            var y = '2507346.015';
+            var markerName = '高雄市私立聖傑托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10201006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5509481' + '<br />'
+                + '813高雄市左營區高雄市左營區安吉街419號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '19';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立禾園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10203012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3909558' + '<br />'
+                + '807高雄市三民區高雄市三民區興隆街67號1樓、夾層、2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '20';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人靖娟兒童安全文教基金會辦理高雄市三民公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10203013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3801856' + '<br />'
+                + '807高雄市三民區高雄市三民區陽明路300號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '21';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立柏恩格托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10205009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3591113' + '<br />'
+                + '813高雄市左營區福山里高雄市左營區重信路138號1-2樓、重信路146巷6號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '22';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼福利關懷協會辦理高雄市鳳山光復公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10205010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7408616' + '<br />'
+                + '830高雄市鳳山區高雄市鳳山區光復路二段120號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '23';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人臺灣教育專業學會辦理高雄市左營實踐公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10208005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5886717' + '<br />'
+                + '813高雄市左營區高雄市左營區左營大路479號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '24';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託財團法人天主教社會慈善福利基金會辦理高雄市前鎮公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10208011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7161625' + '<br />'
+                + '806高雄市前鎮區高雄市前鎮區廣東三街73號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '25';
+            var x = '182056.549';
+            var y = '2501613.14';
+            var markerName = '高雄市私立巧博士托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10301014'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7675821' + '<br />'
+                + '830高雄市鳳山區高雄市鳳山區新強路267號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '26';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人伊甸社會福利基金會辦理高雄市仁武公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10302003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3721884' + '<br />'
+                + '814高雄市仁武區高雄市仁武區中正路94號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '27';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託輔英科技大學辦理高雄市大寮公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10303007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '831高雄市大寮區高雄市大寮區鳳林三路315之22號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '28';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人聖功社會福利慈善基金會辦理高雄市小港公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10304001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-8055828' + '<br />'
+                + '812高雄市小港區高雄市小港區康莊路80號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '29';
+            var x = '178800.245';
+            var y = '2508417.254';
+            var markerName = '高雄市私立桔康托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10306010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3431385' + '<br />'
+                + '813高雄市左營區重和路119號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '30';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託高雄市輔育人員職業工會辦理高雄市新興公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10306012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-2150751' + '<br />'
+                + '800高雄市新興區民生一路321號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '31';
+            var x = '177701.829';
+            var y = '2520815.33';
+            var markerName = '高雄市政府社會局委託樹德科技大學辦理高雄市岡山公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10307012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6298550' + '<br />'
+                + '820高雄市岡山區河堤路2段122號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '32';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託高雄市婦幼福利關懷協會辦理高雄市鼓山公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10308009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5217893' + '<br />'
+                + '804高雄市鼓山區九如四路763號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '33';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局兒童福利服務中心委託大仁科技大學辦理高雄市三民兒福公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10311007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3958366' + '<br />'
+                + '807高雄市三民區安發里18鄰九如一路775號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '34';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立吉婗思托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10312006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5507912' + '<br />'
+                + '813高雄市左營區至聖路230、232號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '35';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託輔英科技大學辦理高雄市林園公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10401010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6421938' + '<br />'
+                + '832高雄市林園區林園北路191號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '36';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託樹德科技大學辦理高雄市前金公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10403002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-2153998' + '<br />'
+                + '801高雄市前金區中正四路261號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '37';
+            var x = '187821.859';
+            var y = '2501498.06';
+            var markerName = '高雄市私立卡爾頓托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10404001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7824258' + '<br />'
+                + '831高雄市大寮區萬丹路178號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '38';
+            var x = '183587.53';
+            var y = '2499805.29';
+            var markerName = '高雄市政府社會局委託高雄市婦幼福利關懷協會辦理高雄市鳳山中崙公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10405003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7538180' + '<br />'
+                + '830高雄市鳳山區中崙五路5號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '39';
+            var x = '183048.579';
+            var y = '2514592.71';
+            var markerName = '高雄市政府社會局委託嘉藥學校財團法人嘉南藥理大學辦理高雄市路竹公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10406002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6071101' + '<br />'
+                + '821高雄市路竹區竹東里中正路51號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '40';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立恩雨托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10407008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7932001' + '<br />'
+                + '812高雄市小港區桂華街430號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '41';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立優代托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10407012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6297855' + '<br />'
+                + '820高雄市岡山區忠孝里岡山路77號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '42';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立禾豐托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10409002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5500693' + '<br />'
+                + '804高雄市鼓山區明倫路42號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '43';
+            var x = '178571.719';
+            var y = '2508619.978';
+            var markerName = '高雄市私立貝比鹿沐穗托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10411006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3593975' + '<br />'
+                + '813高雄市左營區重上街164巷7號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '44';
+            var x = '177433.38';
+            var y = '2506694.679';
+            var markerName = '高雄市私立珍馨托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10502001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5597099' + '<br />'
+                + '804高雄市鼓山區美術東五路66號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '45';
+            var x = '183062.31';
+            var y = '2515125.129';
+            var markerName = '高雄市政府社會局委託財團法人伊甸社會福利基金會辦理高雄市旗山公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10502002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6622281' + '<br />'
+                + '842高雄市旗山區中正路199號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '46';
+            var x = '177659.782';
+            var y = '2506541.242';
+            var markerName = '高雄市私立童臻園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10507002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5869689' + '<br />'
+                + '804高雄市鼓山區神農路207號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '47';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立喜得兔托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10507003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5531386' + '<br />'
+                + '804高雄市鼓山區中華一路339號1-2樓及夾層';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '48';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立小蘋果農十六托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10507004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5537122' + '<br />'
+                + '804高雄市鼓山區裕誠路2056號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '49';
+            var x = '177480.078';
+            var y = '2512939.182';
+            var markerName = '高雄市政府社會局委託嘉藥學校財團法人嘉南藥理大學辦理高雄市楠梓公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10508001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3640791' + '<br />'
+                + '811高雄市楠梓區後昌路960巷19號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '50';
+            var x = '178110.795';
+            var y = '2501712.91';
+            var markerName = '高雄市私立喜悅托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10511003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-2696838' + '<br />'
+                + '802高雄市苓雅區自強三路80巷31號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '51';
+            var x = '182869.654';
+            var y = '2503962.993';
+            var markerName = '高雄市私立愛貝兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10512004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7670639' + '<br />'
+                + '830高雄市鳳山區文教路156號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '52';
+            var x = '176742.747';
+            var y = '2505554.171';
+            var markerName = '高雄市私立華頓中都托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10604009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3230435' + '<br />'
+                + '807高雄市三民區德西里德裕街28號2-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '53';
+            var x = '186121.269';
+            var y = '2503424.589';
+            var markerName = '高雄市私立忠信寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10606004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7020505' + '<br />'
+                + '830高雄市鳳山區埤頂里埤頂街252號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '54';
+            var x = '187533.7';
+            var y = '2504158.27';
+            var markerName = '高雄市私立雅斯特托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10606005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7018820' + '<br />'
+                + '831高雄市大寮區鳳屏一路293號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '55';
+            var x = '181469.35';
+            var y = '2496600.18';
+            var markerName = '高雄市私立華升托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10606010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-8224295' + '<br />'
+                + '812高雄市小港區港後路54號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '56';
+            var x = '178876.486';
+            var y = '2509036.216';
+            var markerName = '高雄市私立康斐托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10607011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3460282' + '<br />'
+                + '813高雄市左營區文川路42號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '57';
+            var x = '182002.23';
+            var y = '2499423.189';
+            var markerName = '高雄市私立優質童心園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10611007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7962687' + '<br />'
+                + '830高雄市鳳山區南一街80號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '58';
+            var x = '179719.386';
+            var y = '2510236.827';
+            var markerName = '高雄市私立優兒寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10611012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3456489' + '<br />'
+                + '813高雄市左營區福山里文府路458號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '59';
+            var x = '178010.89';
+            var y = '2522535.839';
+            var markerName = '高雄市私立民幼托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10701014'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6232236' + '<br />'
+                + '820高雄市岡山區竹圍里富貴南街39巷25號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '60';
+            var x = '177673.277';
+            var y = '2506540.767';
+            var markerName = '高雄市私立愛寶兒托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10702005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5868285' + '<br />'
+                + '804高雄市鼓山區龍子里神農路205號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '61';
+            var x = '181566.5';
+            var y = '2502557.39';
+            var markerName = '高雄市私立愛丁堡托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10709005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7110857' + '<br />'
+                + '802高雄市苓雅區武嶺街30號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '62';
+            var x = '190212.04';
+            var y = '2506567.939';
+            var markerName = '高雄市政府社會局委託財團法人高雄市慈聯社會福利基金會辦理高雄市大樹社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10801003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6529975' + '<br />'
+                + '840高雄市大樹區久堂路128號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '63';
+            var x = '179277.258';
+            var y = '2502420.063';
+            var markerName = '高雄市政府社會局委託高雄市私立三信高級家事商業職業學校辦理高雄市苓雅社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3317538' + '<br />'
+                + '802高雄市苓雅區晴朗里四維三路2號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '64';
+            var x = '174923.95';
+            var y = '2517819.1';
+            var markerName = '高雄市政府社會局委託財團法人高雄市慈聯社會福利基金會辦理高雄市梓官社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6108572' + '<br />'
+                + '826高雄市梓官區梓和里平等路190號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '65';
+            var x = '179148.772';
+            var y = '2500859.83';
+            var markerName = '高雄市私立葛瑞絲托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10808005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 331-0588' + '<br />'
+                + '806高雄市前鎮區民權二路84號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '66';
+            var x = '177816.481';
+            var y = '2522556.64';
+            var markerName = '高雄市私立乃櫻托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10808010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6232122' + '<br />'
+                + '820高雄市岡山區忠誠街211號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '67';
+            var x = '182220.98';
+            var y = '2506091';
+            var markerName = '高雄市政府社會局委託財團法人聖功社會福利慈善基金會辦理高雄市鳥松社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10808013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 073705166' + '<br />'
+                + '833高雄市鳥松區大華路200號C棟1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '68';
+            var x = '188286.41';
+            var y = '2487608.667';
+            var markerName = '高雄市私立新培育托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10902018'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7866108' + '<br />'
+                + '831高雄市大寮區力行路146號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '69';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人聖功社會福利慈善基金會辦理高雄市鹽埕社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10904008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5335789' + '<br />'
+                + '803高雄市鹽埕區大仁路6號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '70';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼福利關懷協會辦理高雄市大社公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10907005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3534387' + '<br />'
+                + '815高雄市大社區文明路100號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '71';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立愛米利亞托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10909001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6320773' + '<br />'
+                + '822高雄市阿蓮區和平路193號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '72';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託崑山科技大學辦理高雄市左營翠峰公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10909011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5880132' + '<br />'
+                + '813高雄市左營區海勝里翠峰路46號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '73';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立森淶特托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10910005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3655077' + '<br />'
+                + '811高雄市楠梓區加昌路653號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '74';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市社區教育協會辦理高雄市鳳山鎮北社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10912017'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7351011' + '<br />'
+                + '830高雄市鳳山區忠誠里鳳北路170號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '75';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立以樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11002003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7034242' + '<br />'
+                + '830高雄市鳳山區鳳捷路120號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '76';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立小熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11002009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6955711' + '<br />'
+                + '821高雄市路竹區後鄉路37號1樓之3、5';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '77';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託嘉藥學校財團法人嘉南藥理大學辦理旗津社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11003005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 5711191' + '<br />'
+                + '805高雄市旗津區復興里旗津三路900巷33號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '78';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立禾穗托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11004014'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3641262' + '<br />'
+                + '811高雄市楠梓區加昌里020鄰加宏路22巷6號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '79';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託社團法人臺南市繻愛希望教育關懷協會辦理高雄市彌陀社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11005006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6107025' + '<br />'
+                + '827高雄市彌陀區彌仁里中華路1巷5弄2號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '80';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立幸福日光托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11006004'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-364-8268' + '<br />'
+                + '811高雄市楠梓區大學東路210號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '81';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立寶貝熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11006006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6255139' + '<br />'
+                + '820高雄市岡山區後協里通校路100號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '82';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立愛兒寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11008008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3107687' + '<br />'
+                + '807高雄市三民區民族一路702號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '83';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼與家庭教育協會辦理高雄市美濃社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11009008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6830255' + '<br />'
+                + '843高雄市美濃區吉和里忠孝路二段59號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '84';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立婗荳托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11101014'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3511555' + '<br />'
+                + '811高雄市楠梓區旗楠路837巷8號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '85';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立禾安托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11101019'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7277783' + '<br />'
+                + '802高雄市苓雅區正大路117號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '86';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託崑山科技大學辦理高雄市阿蓮社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11103012'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6311600' + '<br />'
+                + '822高雄市阿蓮區中路里玄中路100號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '87';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人臺灣兒童及少年福利促進學會辦理高雄市橋頭甲圍公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11104010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6119325' + '<br />'
+                + '825高雄市橋頭區甲昌路250號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '88';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立德蘭蒙特梭利托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11107005'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7019182' + '<br />'
+                + '830高雄市鳳山區中正里017鄰瑞興路470號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '89';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人高雄市華仁社會福利慈善事業基金會辦理高雄市右昌公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11108003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3600656' + '<br />'
+                + '811高雄市楠梓區德民路717號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '90';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立睦恩托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11108006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7774119' + '<br />'
+                + '830高雄市鳳山區文山里016鄰文龍東路６３０號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '91';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立無尾熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11108008'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6264669' + '<br />'
+                + '820高雄市岡山區正言街50號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '92';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立葛瑞絲托嬰中心-瑞興館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11108010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7164588' + '<br />'
+                + '806高雄市前鎮區瑞興街78號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '93';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託財團法人高雄市華仁社會福利慈善事業基金會辦理高雄市湖內社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11110035'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6992911' + '<br />'
+                + '829高雄市湖內區海埔里忠孝街256號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '94';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法高雄市幼托公共發展協會辦理小港平和公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11110036'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-8217385' + '<br />'
+                + '812高雄市小港區平和路1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '95';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人台灣心芽全人教育關懷協會辦理高雄市永安社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11111001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6915510' + '<br />'
+                + '828高雄市永安區維新里維新路光明九巷34號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '96';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託財團法人高雄市華仁社會福利慈善事業基金會辦理高雄市茄萣社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11111020'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6901520' + '<br />'
+                + '852高雄市茄萣區白雲里濱海路四段29號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '97';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託財團法人高雄市郭吳麗珠社會福利慈善事業基金會辦理高雄市小港高松公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11111024'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-8071315' + '<br />'
+                + '812高雄市小港區高松路27號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '98';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託高雄市私立三信高級家事商業職業學校辦理高雄市苓雅民權公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11112022'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3352321' + '<br />'
+                + '802高雄市苓雅區民權一路85號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '99';
+            var x = '187563.05';
+            var y = '2489853.13';
+            var markerName = '高雄市政府社會局委託財團法人伊甸社會福利基金會辦理高雄市林園東昇公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201041'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6413251' + '<br />'
+                + '832高雄市林園區廣應里忠孝西路20號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '100';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人伊甸社會福利基金會辦理高雄市旗山鼓山公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201047'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6613011' + '<br />'
+                + '842高雄市旗山區永和里延平一路111號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '101';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼培訓關懷協會辦理高雄市楠梓後勁公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201048'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3643683' + '<br />'
+                + '811高雄市楠梓區瑞屏里加昌路216號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '102';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼培訓關懷協會辦理高雄市鼓山鼓岩公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11201049'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-5318060' + '<br />'
+                + '804高雄市鼓山區河邊里河邊街155號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '103';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼與家庭教育協會辦理高雄市三民莊敬公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 0932238335' + '<br />'
+                + '807高雄市三民區大昌一路200號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '104';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼與家庭教育協會辦理高雄市左營新民公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 0932237375' + '<br />'
+                + '813高雄市左營區自由三路478號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '105';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人臺灣兒童及少年福利促進學會辦理高雄市大寮進學公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7839213' + '<br />'
+                + '831高雄市大寮區進學路150-3號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '106';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人高雄市華仁社會福利慈善事業基金會辦理高雄市燕巢公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6140369' + '<br />'
+                + '824高雄市燕巢區中興路267號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '107';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託財團法人郭吳麗珠社會福利慈善事業基金會辦理高雄市苓雅福康公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202007'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7260805' + '<br />'
+                + '802高雄市苓雅區漢陽街17號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '108';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人台灣心芽全人教育關懷協會辦理高雄市小港明義公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202037'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7912263' + '<br />'
+                + '812高雄市小港區明義街2號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '109';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託社團法人臺南市心技能全齡學習推廣學會辦理高雄市前金民生公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202038'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 0958456082' + '<br />'
+                + '801高雄市前金區大同二路61號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '110';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託社團法人臺南市心技能全齡學習推廣學會辦理高雄市前鎮新生公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202040'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-8127450' + '<br />'
+                + '806高雄市前鎮區新生路200號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '111';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市私立芸朵托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11204017'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-8018018' + '<br />'
+                + '812高雄市小港區宏亮里安和街21號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '112';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府員工子女托嬰中心(委託財團法人高雄市慈聯社會福利基金會辦理)';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11205075'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7406132' + '<br />'
+                + '830高雄市鳳山區光復路二段132號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '113';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託財團法人聖功社會福利慈善基金會辦理高雄市苓雅青樹公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11206001'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-2221072' + '<br />'
+                + '802高雄市苓雅區凱旋一路160號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '114';
+            var x = '';
+            var y = '';
+            var markerName = '高雄市政府社會局委託財團法人高雄市私立萃文書院社會福利慈善事業基金會辦理高雄市鳳山自強公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11206009'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7027386' + '<br />'
+                + '830高雄市鳳山區海光里勝國街65號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '115';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立鳳山精英寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11209013'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7929096' + '<br />'
+                + '830高雄市鳳山區南華一路123巷1、3號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '116';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託高雄市幸福家庭教育成長協會辦理高雄市前鎮愛群公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11210010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3389231' + '<br />'
+                + '806高雄市前鎮區忠孝里二聖二路194號(愛群國小廣西樓2樓)';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '117';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立佳貝樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11211002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-3010238' + '<br />'
+                + '811高雄市楠梓區高雄市楠梓區高雄大學路397號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '118';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立小港精英寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11212003'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '812高雄市小港區鋼平街156號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '119';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人高雄市華仁社會福利慈善事業基金會辦理高雄市燕巢中安社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6160050' + '<br />'
+                + '824高雄市燕巢區中安路1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '120';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立小羊福音托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302014'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-9623711' + '<br />'
+                + '830高雄市鳳山區新富路258號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '121';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市私立貝隺佳托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11302016'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: ' + '<br />'
+                + '811高雄市楠梓區裕昌里裕昌街298號1-2樓及3樓部分空間(32.7平方公尺)';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '122';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人臺南市燕豐教育基金會辦理橋頭隆豐社區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11303011'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6111550' + '<br />'
+                + '825高雄市橋頭區隆豐路1號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '123';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託社團法人高雄市婦幼福利關懷協會辦理高雄市鳳山經武公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11304010'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-7198978' + '<br />'
+                + '830高雄市鳳山區新興里經武路30號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '124';
+            var x = '0';
+            var y = '0';
+            var markerName = '高雄市政府社會局委託財團法人臺南市燕豐教育基金會辦理高雄市路竹國昌公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11305002'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 07-6966495' + '<br />'
+                + '821高雄市路竹區竹南里24鄰國昌路76號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            if (markers.length > 0) {
+                addMarkerClusters(pMap, markers);
+            }
+            setZoomStyle(pOMap);
+            pOMap.classList.add('hide');
+        }
+
+        if (city.value !== '') {
+            findTowns();
+        }
+        if (cityId.value !== '') {
+            city.value = cityId.value;
+        }
+        if (townId.value !== '') {
+            town.value = townId.value;
+        }
+        // 縣市變動時處理
+        city.addEventListener('change', function () {
+            // 尋找鄉鎮資料
+            findTowns();
+            cityId.value = this.value
+            locateTypes.forEach(locateType => {
+                // 自動設定位方式
+                if (locateType.value === '1') {
+                    locateType.checked = true;
+                }
+            })
+        }, false);
+
+        // 鄉鎮市區變動時處理
+        town.addEventListener('change', function () {
+            townId.value = this.value
+        }, false);
+
+        initMarkers();
+        for (var i = 0; i < locateTypes.length; i++) {
+            if (locateTypes[i].checked === true) {
+                initSearchForm(locateTypes[i].value)
+            }
+            locateTypes[i].addEventListener('click', function () {
+                initSearchForm(this.value);
+            });
+        }
+
+        document.getElementById('main-form').addEventListener('submit', initMarkers, false);
+        document.getElementById('main-form').onsubmit = function (e) {
+            locateTypes.forEach(locateType => {
+                if (locateType.checked === true && locateType.value !== '1') { // 所在縣市區域
+                    if (latitude.value === '' || longitude.value === '') {
+                        alert('未取得定位。');
+                        e.preventDefault();
+                    }
+                }
+            })
+        }
+        document.getElementById('address-locate').addEventListener('click', getAddressLocate, false);
+    };
+</script>
+</html>
