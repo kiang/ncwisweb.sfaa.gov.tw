@@ -40,6 +40,15 @@ $proj4 = new Proj4php();
 $projTWD97 = new Proj('EPSG:3826', $proj4);
 $projWGS84 = new Proj('EPSG:4326', $proj4);
 
+$fc = [
+  'type' => 'FeatureCollection',
+  'features' => [],
+];
+
+$addressPath = $basePath . '/raw/address';
+if (!file_exists($addressPath)) {
+  mkdir($addressPath, 0777, true);
+}
 foreach ($cities as $cityKey => $city) {
   $lnglat = [];
   $pagePath = $basePath . '/raw/pages/' . $city;
@@ -200,10 +209,105 @@ foreach ($cities as $cityKey => $city) {
       if (isset($lnglat[$detailId])) {
         $data['longitude'] = $lnglat[$detailId][0];
         $data['latitude'] = $lnglat[$detailId][1];
+      } else {
+        $address = $data['所在地'];
+        $addressPos = strpos($address, '號');
+        if (false !== $addressPos) {
+          $address = substr($address, 0, $addressPos) . '號';
+        }
+        $addressFile = $addressPath . '/' . $address . '.json';
+        if (!file_exists($addressFile)) {
+          $command = <<<EOD
+curl 'https://api.nlsc.gov.tw/MapSearch/ContentSearch?word=___KEYWORD___&mode=AutoComplete&count=1&feedback=XML' \
+-H 'Accept: application/xml, text/xml, */*; q=0.01' \
+-H 'Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+-H 'Connection: keep-alive' \
+-H 'Origin: https://maps.nlsc.gov.tw' \
+-H 'Referer: https://maps.nlsc.gov.tw/' \
+-H 'Sec-Fetch-Dest: empty' \
+-H 'Sec-Fetch-Mode: cors' \
+-H 'Sec-Fetch-Site: same-site' \
+-H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' \
+-H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
+-H 'sec-ch-ua-mobile: ?0' \
+-H 'sec-ch-ua-platform: "Linux"'
+EOD;
+          $result = shell_exec(strtr($command, [
+            '___KEYWORD___' => urlencode($address),
+          ]));
+          $cleanKeyword = trim(strip_tags($result));
+          if (!empty($cleanKeyword)) {
+            $command = <<<EOD
+              curl 'https://api.nlsc.gov.tw/MapSearch/QuerySearch' \
+                -H 'Accept: application/xml, text/xml, */*; q=0.01' \
+                -H 'Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+                -H 'Connection: keep-alive' \
+                -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+                -H 'Origin: https://maps.nlsc.gov.tw' \
+                -H 'Referer: https://maps.nlsc.gov.tw/' \
+                -H 'Sec-Fetch-Dest: empty' \
+                -H 'Sec-Fetch-Mode: cors' \
+                -H 'Sec-Fetch-Site: same-site' \
+                -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' \
+                -H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
+                -H 'sec-ch-ua-mobile: ?0' \
+                -H 'sec-ch-ua-platform: "Linux"' \
+                --data-raw 'word=___KEYWORD___&feedback=XML&center=120.218280%2C23.007292'
+              EOD;
+            $result = shell_exec(strtr($command, [
+              '___KEYWORD___' => urlencode(urlencode($cleanKeyword)),
+            ]));
+            $json = json_decode(json_encode(simplexml_load_string($result)), true);
+            if (!empty($json['ITEM']['LOCATION'])) {
+              $parts = explode(',', $json['ITEM']['LOCATION']);
+              if (count($parts) === 2) {
+                file_put_contents($addressFile, json_encode([
+                  'AddressList' => [
+                    [
+                      'X' => $parts[0],
+                      'Y' => $parts[1],
+                    ],
+                  ],
+                ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+              }
+            }
+          }
+        }
+        if (file_exists($addressFile)) {
+          $addressData = json_decode(file_get_contents($addressFile), true);
+          if (isset($addressData['AddressList'][0])) {
+            $data['longitude'] = floatval($addressData['AddressList'][0]['X']);
+            $data['latitude'] = floatval($addressData['AddressList'][0]['Y']);
+          }
+        }
       }
+      $data['核定收托'] = intval($data['核定收托']);
+      $data['實際收托'] = intval($data['實際收托']);
       file_put_contents($dataPath . '/' . $detailId . '.json', json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+
+      if (!empty($data['longitude'])) {
+        $fc['features'][] = [
+          'type' => 'Feature',
+          'properties' => [
+            'name' => $data['機構名稱'],
+            'address' => $data['所在地'],
+            'phone' => $data['聯絡電話'],
+            'capacity' => $data['核定收托'],
+            'status' => $data['實際收托'],
+          ],
+          'geometry' => [
+            'type' => 'Point',
+            'coordinates' => [
+              $data['longitude'],
+              $data['latitude'],
+            ],
+          ],
+        ];
+      }
 
       $pos = strpos($pageContent, '"/home/childcare-center/detail/', $posEnd);
     }
   }
 }
+
+file_put_contents($basePath . '/docs/babycare.json', json_encode($fc, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
