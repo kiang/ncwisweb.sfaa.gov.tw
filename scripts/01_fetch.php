@@ -293,6 +293,7 @@ EOD;
           'properties' => [
             'id' => $data['id'],
             'name' => $data['機構名稱'],
+            'city' => $city,
             'address' => $data['所在地'],
             'phone' => $data['聯絡電話'],
             'capacity' => $data['核定收托'],
