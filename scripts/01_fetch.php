@@ -11,7 +11,7 @@ use proj4php\Point;
 $browser = new HttpBrowser(HttpClient::create());
 
 $cities = [
-  '4bc1e2f27af6e832017af6eeff7a0172' => '新北市',
+  //'4bc1e2f27af6e832017af6eeff7a0172' => '新北市',
   '4bc1e2f27af6e832017af6eeff750170' => '臺北市',
   '4bc1e2f27af6e832017af6eeff7d0173' => '桃園市',
   '4bc1e2f27af6e832017af6eeff860176' => '臺中市',
@@ -33,6 +33,35 @@ $cities = [
   '4bc1e2f27af6e832017af6eeff43015f' => '嘉義市',
   '4bc1e2f27af6e832017af6eeff6c016d' => '連江縣',
   '4bc1e2f27af6e832017af6eeff38015c' => '金門縣',
+  '4bc1e2f27af6e832017af6ef0256025b_4bc1e2f27af6e832017af6eeff7a0172' => '新北市板橋區',
+  '4bc1e2f27af6e832017af6ef032502a2_4bc1e2f27af6e832017af6eeff7a0172' => '新北市三重區',
+  '4bc1e2f27af6e832017af6ef03e702e3_4bc1e2f27af6e832017af6eeff7a0172' => '新北市中和區',
+  '4bc1e2f27af6e832017af6ef000b019f_4bc1e2f27af6e832017af6eeff7a0172' => '新北市永和區',
+  '4bc1e2f27af6e832017af6ef03c702d6_4bc1e2f27af6e832017af6eeff7a0172' => '新北市新莊區',
+  '4bc1e2f27af6e832017af6ef026c0260_4bc1e2f27af6e832017af6eeff7a0172' => '新北市新店區',
+  '4bc1e2f27af6e832017af6ef04950327_4bc1e2f27af6e832017af6eeff7a0172' => '新北市樹林區',
+  '4bc1e2f27af6e832017af6ef03e502e2_4bc1e2f27af6e832017af6eeff7a0172' => '新北市鶯歌區',
+  '4bc1e2f27af6e832017af6ef017e0222_4bc1e2f27af6e832017af6eeff7a0172' => '新北市三峽區',
+  '4bc1e2f27af6e832017af6ef027b0264_4bc1e2f27af6e832017af6eeff7a0172' => '新北市淡水區',
+  '4bc1e2f27af6e832017af6ef01ad0230_4bc1e2f27af6e832017af6eeff7a0172' => '新北市汐止區',
+  '4bc1e2f27af6e832017af6ef00d801ef_4bc1e2f27af6e832017af6eeff7a0172' => '新北市瑞芳區',
+  '4bc1e2f27af6e832017af6ef00e301f3_4bc1e2f27af6e832017af6eeff7a0172' => '新北市土城區',
+  '4bc1e2f27af6e832017af6ef0579036f_4bc1e2f27af6e832017af6eeff7a0172' => '新北市蘆洲區',
+  '4bc1e2f27af6e832017af6ef02a10271_4bc1e2f27af6e832017af6eeff7a0172' => '新北市五股區',
+  '4bc1e2f27af6e832017af6ef01bf0236_4bc1e2f27af6e832017af6eeff7a0172' => '新北市泰山區',
+  '4bc1e2f27af6e832017af6ef04a2032b_4bc1e2f27af6e832017af6eeff7a0172' => '新北市林口區',
+  '4bc1e2f27af6e832017af6ef001401a3_4bc1e2f27af6e832017af6eeff7a0172' => '新北市深坑區',
+  '4bc1e2f27af6e832017af6ef034702a9_4bc1e2f27af6e832017af6eeff7a0172' => '新北市石碇區',
+  '4bc1e2f27af6e832017af6ef04b20331_4bc1e2f27af6e832017af6eeff7a0172' => '新北市坪林區',
+  '4bc1e2f27af6e832017af6ef04b70332_4bc1e2f27af6e832017af6eeff7a0172' => '新北市三芝區',
+  '4bc1e2f27af6e832017af6ef04ba0333_4bc1e2f27af6e832017af6eeff7a0172' => '新北市石門區',
+  '4bc1e2f27af6e832017af6ef029e0270_4bc1e2f27af6e832017af6eeff7a0172' => '新北市八里區',
+  '4bc1e2f27af6e832017af6ef00cf01ec_4bc1e2f27af6e832017af6eeff7a0172' => '新北市平溪區',
+  '4bc1e2f27af6e832017af6ef03ff02ec_4bc1e2f27af6e832017af6eeff7a0172' => '新北市雙溪區',
+  '4bc1e2f27af6e832017af6ef00de01f2_4bc1e2f27af6e832017af6eeff7a0172' => '新北市貢寮區',
+  '4bc1e2f27af6e832017af6ef056e036b_4bc1e2f27af6e832017af6eeff7a0172' => '新北市金山區',
+  '4bc1e2f27af6e832017af6ef02a30272_4bc1e2f27af6e832017af6eeff7a0172' => '新北市萬里區',
+  '4bc1e2f27af6e832017af6ef0577036e_4bc1e2f27af6e832017af6eeff7a0172' => '新北市烏來區',
 ];
 
 $crawler = $browser->request('GET', 'https://ncwisweb.sfaa.gov.tw/home/childcare-center');
@@ -74,8 +103,18 @@ foreach ($cities as $cityKey => $city) {
     if (file_exists($pageFile)) {
       $pageContent = file_get_contents($pageFile);
     } else {
-      $form = $crawler->selectButton('查詢')->form();
-      $crawler = $browser->submit($form, ['cityId' => $cityKey, 'locateType' => 1, 'page' => $page]);
+      try {
+        $form = $crawler->selectButton('查詢')->form();
+      } catch (Exception $e) {
+        // do nothing
+      }
+      $cityKeyParts = explode('_', $cityKey);
+      if (count($cityKeyParts) == 1) {
+        $crawler = $browser->submit($form, ['cityId' => $cityKey, 'locateType' => 1, 'page' => $page]);
+      } else {
+        $crawler = $browser->submit($form, ['cityId' => $cityKeyParts[1], 'townId' => $cityKeyParts[0], 'locateType' => 1, 'page' => $page]);
+      }
+
       $pageContent = $browser->getResponse()->getContent();
       file_put_contents($pagePath . '/' . $page . '.html', $pageContent);
     }
@@ -288,7 +327,7 @@ EOD;
       file_put_contents($dataPath . '/' . $detailId . '.json', json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 
       if (!empty($data['longitude'])) {
-        $fc['features'][] = [
+        $fc['features'][$data['id']] = [
           'type' => 'Feature',
           'properties' => [
             'id' => $data['id'],
@@ -313,5 +352,7 @@ EOD;
     }
   }
 }
+ksort($fc['features']);
+$fc['features'] = array_values($fc['features']);
 
 file_put_contents($basePath . '/docs/babycare.json', json_encode($fc, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
