@@ -100,24 +100,22 @@ foreach ($cities as $cityKey => $city) {
   $pageTotalDone = false;
   for ($page = 0; $page < $pageTotal; $page++) {
     $pageFile = $pagePath . '/' . $page . '.html';
-    if (file_exists($pageFile)) {
-      $pageContent = file_get_contents($pageFile);
-    } else {
-      try {
-        $form = $crawler->selectButton('查詢')->form();
-      } catch (Exception $e) {
-        // do nothing
-      }
-      $cityKeyParts = explode('_', $cityKey);
-      if (count($cityKeyParts) == 1) {
-        $crawler = $browser->submit($form, ['cityId' => $cityKey, 'locateType' => 1, 'page' => $page]);
-      } else {
-        $crawler = $browser->submit($form, ['cityId' => $cityKeyParts[1], 'townId' => $cityKeyParts[0], 'locateType' => 1, 'page' => $page]);
-      }
-
-      $pageContent = $browser->getResponse()->getContent();
-      file_put_contents($pagePath . '/' . $page . '.html', $pageContent);
+    
+    try {
+      $form = $crawler->selectButton('查詢')->form();
+    } catch (Exception $e) {
+      // do nothing
     }
+    $cityKeyParts = explode('_', $cityKey);
+    if (count($cityKeyParts) == 1) {
+      $crawler = $browser->submit($form, ['cityId' => $cityKey, 'locateType' => 1, 'page' => $page]);
+    } else {
+      $crawler = $browser->submit($form, ['cityId' => $cityKeyParts[1], 'townId' => $cityKeyParts[0], 'locateType' => 1, 'page' => $page]);
+    }
+
+    $pageContent = $browser->getResponse()->getContent();
+    file_put_contents($pagePath . '/' . $page . '.html', $pageContent);
+
     if (false === $pageTotalDone) {
       $pos = strpos($pageContent, '<div id="pagination"');
       $pos = strpos($pageContent, '<span', $pos);
@@ -152,15 +150,11 @@ foreach ($cities as $cityKey => $city) {
       $parts = explode('/', substr($pageContent, $pos + 1, $posEnd - $pos - 1));
       $detailId = $parts[4];
       $detailFile = $detailPath . '/' . $detailId . '.html';
-      if (file_exists($detailFile)) {
-        $detailContent = file_get_contents($detailFile);
-      } else {
-        echo "getting {$detailId}\n";
-        $detailUrl = 'https://ncwisweb.sfaa.gov.tw' . implode('/', $parts);
-        $crawler = $browser->request('GET', $detailUrl);
-        $detailContent = $browser->getResponse()->getContent();
-        file_put_contents($detailFile, $detailContent);
-      }
+      echo "getting {$detailId}\n";
+      $detailUrl = 'https://ncwisweb.sfaa.gov.tw' . implode('/', $parts);
+      $crawler = $browser->request('GET', $detailUrl);
+      $detailContent = $browser->getResponse()->getContent();
+      file_put_contents($detailFile, $detailContent);
 
       $detailPos = strpos($detailContent, '<div class="dataBlock w-0 main">');
       $detailPosEnd = strpos($detailContent, '</main>', $detailPos);
