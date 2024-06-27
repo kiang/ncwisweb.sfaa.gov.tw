@@ -9,7 +9,7 @@
 <meta name="description" content="托育媒合平臺。">
 <meta name="_csrf_parameter" content="_csrf"/>
 <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
-<meta name="_csrf" content="eda33fe2-7ae1-4ed2-93b2-72433393a01a"/>
+<meta name="_csrf" content="8cfc6884-0d91-4540-b6b5-8d4080cc6c8c"/>
 <link rel="shortcut icon" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
 <link rel="bookmark" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
 <!-- Bootstrap -->
@@ -118,7 +118,7 @@
 <!--主要內頁區塊-->
 <main class="container page" id="main">
   <form id="main-form" class="w-95 center-block" action="/home/childcare-center" method="post">
-    <input type="hidden" name="_csrf" value="eda33fe2-7ae1-4ed2-93b2-72433393a01a"/>
+    <input type="hidden" name="_csrf" value="8cfc6884-0d91-4540-b6b5-8d4080cc6c8c"/>
     <!--內頁標題-->
     <div class="page-title">
       <a accesskey="C" title="中央區塊" href="#" class="acesKy">:::</a>
@@ -436,6 +436,20 @@
           <tbody class="tbody">
                 <tr>
                   <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10601004"
+                       class="fa-external-link" title="新北市私立欣欣寶貝屋新莊托嬰中心" target="_blank">
+                        新北市私立欣欣寶貝屋新莊托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">242新北市新莊區新北市新莊區中港路163、165號2樓</td>
+                  <td data-label="聯絡電話｜">02-22772880</td>
+                  <td data-label="核定收托數｜">25</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
                     <a href="/home/childcare-center/detail/CW10602006"
                        class="fa-external-link" title="新北市政府委託社團法人中華民國學前教育發展學會辦理新莊中港公共托育中心（托嬰中心)" target="_blank">
                         新北市政府委託社團法人中華民國學前教育發展學會辦理新莊中港公共托育中心（托嬰中心)
@@ -630,20 +644,6 @@
                   <td data-label="評鑑年度｜">111</td>
                   <td data-label="評鑑等級｜">乙等</td>
                 </tr>
-                <tr>
-                  <td data-label="托嬰中心名稱｜">
-                    <a href="/home/childcare-center/detail/CW11010007"
-                       class="fa-external-link" title="衛生福利部臺北醫院委託新北市幼托發展協會辦理新北市私立悅心坊托嬰中心" target="_blank">
-                        衛生福利部臺北醫院委託新北市幼托發展協會辦理新北市私立悅心坊托嬰中心
-                    </a>
-                  </td>
-                  <td data-label="所在地｜">242新北市新莊區長青街6號1樓</td>
-                  <td data-label="聯絡電話｜">02-29962015</td>
-                  <td data-label="核定收托數｜">52</td>
-                  <td data-label="準公共化資格｜">是</td>
-                  <td data-label="評鑑年度｜">111</td>
-                  <td data-label="評鑑等級｜">甲等</td>
-                </tr>
           </tbody>
         </table>
         <!--地理資訊區塊-->
@@ -656,7 +656,7 @@
     <div id="pagination" aria-label="Page navigation" class="text-center pg-end">
         <label for="" class="visible-md visible-lg">
             共 <span
-                class="text-danger"> 41 </span> 筆資料．第 <span
+                class="text-danger"> 42 </span> 筆資料．第 <span
                 class="text-danger">2/3</span> 頁．每頁顯示 15 筆
             <noscript><br>若您的瀏覽器不支援JavaScript功能，則請手動選擇要切換的頁數，再按送出按鈕</noscript>
             <noscript><input type="submit" value="送出"></noscript>
@@ -717,7 +717,7 @@
                 <p>本署地址：11558臺北市南港區忠孝東路六段488號12樓，聯絡電話：02-26531776<br>建議使用瀏覽器 Edge、Firefox 74、Chrome 77 以上版本；最佳瀏覽畫面設定 1440*900<br>版權所有©衛生福利部社會及家庭署</p>
             </span><span class="cell right">
                <a href="#"><img src="/css/images/home/gov-f7056ba07c62c76381a4e1eb8753e879.gif" alt="另開新視窗-GOV"></a><br><br>
-                <p>參訪累計：2222970人次<br></p>
+                <p>參訪累計：2228213人次<br></p>
             </span>
     </div>
 </footer></body>
@@ -974,6 +974,20 @@
                 setMarkers(i, x, y, markerName, windowsContent);
             }
             var i = '14';
+            var x = '0';
+            var y = '0';
+            var markerName = '新北市私立親親寶貝新泰園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10509006'
+                + '" target="_blank">' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 02-85311529' + '<br />'
+                + '242新北市新莊區信華八街2號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '15';
             var x = '295618.533';
             var y = '2771582.282';
             var markerName = '新北市私立欣欣寶貝屋新莊托嬰中心';
@@ -987,7 +1001,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '15';
+            var i = '16';
             var x = '295120.76';
             var y = '2770844.126';
             var markerName = '新北市政府委託社團法人中華民國學前教育發展學會辦理新莊中港公共托育中心（托嬰中心)';
@@ -1001,7 +1015,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '16';
+            var i = '17';
             var x = '295010.433';
             var y = '2771259.66';
             var markerName = '新北市私立新莊樂比托嬰中心';
@@ -1015,7 +1029,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '17';
+            var i = '18';
             var x = '299538.189';
             var y = '2771520.666';
             var markerName = '新北市政府委託新北市幼兒托育職業工會辦理新莊昌隆公共托育中心（托嬰中心)';
@@ -1029,7 +1043,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '18';
+            var i = '19';
             var x = '0';
             var y = '0';
             var markerName = '新北市私立幼恩國際托嬰中心';
@@ -1043,7 +1057,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '19';
+            var i = '20';
             var x = '292167.571';
             var y = '2768199.438';
             var markerName = '新北市政府委託財團法人中華民國唐氏症基金會辦理新莊裕民國小公共托育中心（托嬰中心)';
@@ -1057,7 +1071,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '20';
+            var i = '21';
             var x = '293541.538';
             var y = '2765862.97';
             var markerName = '新北市政府委託財團法人中華民國唐氏症基金會辦理新豐公共托育中心（托嬰中心)';
@@ -1071,7 +1085,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '21';
+            var i = '22';
             var x = '0';
             var y = '0';
             var markerName = '新北市私立愛托比托嬰中心';
@@ -1085,7 +1099,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '22';
+            var i = '23';
             var x = '296068.058';
             var y = '2770901.842';
             var markerName = '新北市政府委託社團法人中華兆陽文教發展協會辦理新莊思賢公共托育中心（托嬰中心)';
@@ -1099,7 +1113,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '23';
+            var i = '24';
             var x = '294738.969';
             var y = '2769276.825';
             var markerName = '新北市政府委託社團法人中華兆陽文教發展協會辦理新莊豐年公共托育中心（托嬰中心)';
@@ -1113,7 +1127,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '24';
+            var i = '25';
             var x = '296663.871';
             var y = '2772525.915';
             var markerName = '新北市私立童馨托嬰中心';
@@ -1127,7 +1141,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '25';
+            var i = '26';
             var x = '295022.185';
             var y = '2771894.7';
             var markerName = '新北市私立吉米貝爾托嬰中心';
@@ -1141,7 +1155,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '26';
+            var i = '27';
             var x = '0';
             var y = '0';
             var markerName = '新北市政府委託社團法人台灣幼兒早期教育協會辦理新莊頭前公共托育中心(托嬰中心)';
@@ -1155,7 +1169,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '27';
+            var i = '28';
             var x = '0';
             var y = '0';
             var markerName = '新北市私立貝珈蒙特梭利托嬰中心';
@@ -1169,7 +1183,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '28';
+            var i = '29';
             var x = '';
             var y = '';
             var markerName = '新北市私立愛德華寶貝貝托嬰中心';
@@ -1183,7 +1197,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '29';
+            var i = '30';
             var x = '0';
             var y = '0';
             var markerName = '衛生福利部臺北醫院委託新北市幼托發展協會辦理新北市私立悅心坊托嬰中心';
@@ -1197,7 +1211,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '30';
+            var i = '31';
             var x = '';
             var y = '';
             var markerName = '新北市政府委託社團法人新北市春陽關懷協會辦理新莊中正公共托育心中(托嬰中心)';
@@ -1211,7 +1225,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '31';
+            var i = '32';
             var x = '0';
             var y = '0';
             var markerName = '新北市私立欣名園托嬰中心';
@@ -1225,7 +1239,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '32';
+            var i = '33';
             var x = '0';
             var y = '0';
             var markerName = '儒鴻企業股份有限公司委託社團法人中華兆陽文教發展協會辦理新北市私立儒鴻托嬰中心';
@@ -1239,7 +1253,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '33';
+            var i = '34';
             var x = '0';
             var y = '0';
             var markerName = '新北市政府委託國際全齡照護暨托育協會辦理新莊建國公共托育中心(托嬰中心)';
@@ -1253,7 +1267,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '34';
+            var i = '35';
             var x = '';
             var y = '';
             var markerName = '新北市政府委託社團法人中華童心幸福關懷協會辦理新莊興化公共托育中心(托嬰中心)';
@@ -1267,7 +1281,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '35';
+            var i = '36';
             var x = '0';
             var y = '0';
             var markerName = '新北市政府委託財團法人中華民國唐氏症基金會辦理新莊龍安公共托育中心(托嬰中心)';
@@ -1281,7 +1295,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '36';
+            var i = '37';
             var x = '0';
             var y = '0';
             var markerName = '新北市私立幸福站托嬰中心';
@@ -1295,7 +1309,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '37';
+            var i = '38';
             var x = '0';
             var y = '0';
             var markerName = '新北市政府委託國際全齡照護暨托育協會辦理新莊四維公共托育中心(托嬰中心)';
@@ -1309,7 +1323,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '38';
+            var i = '39';
             var x = '';
             var y = '';
             var markerName = '新北市私立欣樹園托嬰中心';
@@ -1323,7 +1337,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '39';
+            var i = '40';
             var x = '';
             var y = '';
             var markerName = '新北市私立貓頭鷹森林國際托嬰中心';
@@ -1337,7 +1351,7 @@
             if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
                 setMarkers(i, x, y, markerName, windowsContent);
             }
-            var i = '40';
+            var i = '41';
             var x = '0';
             var y = '0';
             var markerName = '新北市私立小狐獴托嬰中心';
