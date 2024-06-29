@@ -1014,7 +1014,7 @@
                 "id": "CW10112115",
                 "name": "桃園市私立金向日葵托嬰中心",
                 "city": "桃園市",
-                "address": "330桃園市桃園區中山里宏昌十二街175號",
+                "address": "330桃園市桃園區中山里10鄰宏昌十二街175號",
                 "phone": "03-2200782",
                 "capacity": 20,
                 "status": 20
@@ -5951,25 +5951,6 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "CW10205003",
-                "name": "臺中市私立未來托嬰中心",
-                "city": "臺中市",
-                "address": "406臺中市北屯區山西路2段271號1-2樓",
-                "phone": "04-22954488",
-                "capacity": 53,
-                "status": 16
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    120.676413,
-                    24.177141
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "id": "CW10205004",
                 "name": "桃園市私立快樂托嬰中心",
                 "city": "桃園市",
@@ -6141,25 +6122,6 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "CW10207003",
-                "name": "臺中市私立臺中榮民總醫院附設中榮托嬰中心",
-                "city": "臺中市",
-                "address": "407臺中市西屯區西屯路三段301之116、301之117號1、2樓",
-                "phone": "04-24611603",
-                "capacity": 67,
-                "status": 60
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    120.6224,
-                    24.187218
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "id": "CW10207005",
                 "name": "臺北市私立幼輝托嬰中心",
                 "city": "臺北市",
@@ -6268,25 +6230,6 @@
                 "coordinates": [
                     121.02124799350935,
                     24.78265241590219
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": "CW10207013",
-                "name": "臺中市私立雲上太陽托嬰中心",
-                "city": "臺中市",
-                "address": "407臺中市西屯區上安里上仁街124巷3號",
-                "phone": "04-24513177",
-                "capacity": 18,
-                "status": 15
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    120.642238,
-                    24.171417
                 ]
             }
         },
@@ -6807,12 +6750,12 @@
             "type": "Feature",
             "properties": {
                 "id": "CW10211001",
-                "name": "臺中市私立桃樂絲托嬰中心",
+                "name": null,
                 "city": "臺中市",
-                "address": "434臺中市龍井區學園路4號1-3樓",
-                "phone": "04-26520488",
-                "capacity": 26,
-                "status": 25
+                "address": null,
+                "phone": null,
+                "capacity": 0,
+                "status": 0
             },
             "geometry": {
                 "type": "Point",
@@ -7971,7 +7914,7 @@
                 "address": "302新竹縣竹北市斗崙里科大一路68號1樓（含夾層）",
                 "phone": "03-6575766",
                 "capacity": 35,
-                "status": 35
+                "status": 34
             },
             "geometry": {
                 "type": "Point",
@@ -24596,7 +24539,7 @@
                 "address": "330桃園市桃園區中正里22鄰正光路201號1樓",
                 "phone": "03-3609337",
                 "capacity": 67,
-                "status": 40
+                "status": 41
             },
             "geometry": {
                 "type": "Point",
