@@ -158,7 +158,7 @@ foreach ($cities as $cityKey => $city) {
         $pos = strpos($pageContent, '"/home/childcare-center/detail/', $posEnd);
         continue;
       }
-      file_put_contents($detailFile, $detailContent);
+      //file_put_contents($detailFile, $detailContent);
 
       $detailPos = strpos($detailContent, '<div class="dataBlock w-0 main">');
       $detailPosEnd = strpos($detailContent, '</main>', $detailPos);
