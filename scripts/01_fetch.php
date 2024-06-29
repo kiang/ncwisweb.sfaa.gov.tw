@@ -100,7 +100,7 @@ foreach ($cities as $cityKey => $city) {
   $pageTotalDone = false;
   for ($page = 0; $page < $pageTotal; $page++) {
     $pageFile = $pagePath . '/' . $page . '.html';
-    
+
     try {
       $form = $crawler->selectButton('查詢')->form();
     } catch (Exception $e) {
@@ -154,6 +154,10 @@ foreach ($cities as $cityKey => $city) {
       $detailUrl = 'https://ncwisweb.sfaa.gov.tw' . implode('/', $parts);
       $crawler = $browser->request('GET', $detailUrl);
       $detailContent = $browser->getResponse()->getContent();
+      if (false !== strpos($detailContent, '<title>網頁無法顯示</title>')) {
+        $pos = strpos($pageContent, '"/home/childcare-center/detail/', $posEnd);
+        continue;
+      }
       file_put_contents($detailFile, $detailContent);
 
       $detailPos = strpos($detailContent, '<div class="dataBlock w-0 main">');
