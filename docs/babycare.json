@@ -2499,7 +2499,7 @@
                 "address": "973花蓮縣吉安鄉永興村永興六街83號",
                 "phone": "03-8536563",
                 "capacity": 60,
-                "status": 49
+                "status": 47
             },
             "geometry": {
                 "type": "Point",
@@ -5311,7 +5311,7 @@
                 "address": "106臺北市大安區龍雲里臺北市大安區瑞安街31巷5之2號1樓",
                 "phone": "(02)2755-1866",
                 "capacity": 20,
-                "status": 20
+                "status": 19
             },
             "geometry": {
                 "type": "Point",
@@ -5951,6 +5951,25 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "CW10205003",
+                "name": "臺中市私立未來托嬰中心",
+                "city": "臺中市",
+                "address": "406臺中市北屯區山西路2段271號1-2樓",
+                "phone": "04-22954488",
+                "capacity": 53,
+                "status": 16
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.676413,
+                    24.177141
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "CW10205004",
                 "name": "桃園市私立快樂托嬰中心",
                 "city": "桃園市",
@@ -6122,6 +6141,25 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "CW10207003",
+                "name": "臺中市私立臺中榮民總醫院附設中榮托嬰中心",
+                "city": "臺中市",
+                "address": "407臺中市西屯區西屯路三段301之116、301之117號1、2樓",
+                "phone": "04-24611603",
+                "capacity": 67,
+                "status": 60
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.6224,
+                    24.187218
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "CW10207005",
                 "name": "臺北市私立幼輝托嬰中心",
                 "city": "臺北市",
@@ -6230,6 +6268,25 @@
                 "coordinates": [
                     121.02124799350935,
                     24.78265241590219
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "CW10207013",
+                "name": "臺中市私立雲上太陽托嬰中心",
+                "city": "臺中市",
+                "address": "407臺中市西屯區上安里上仁街124巷3號",
+                "phone": "04-24513177",
+                "capacity": 18,
+                "status": 15
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.642238,
+                    24.171417
                 ]
             }
         },
@@ -6750,12 +6807,12 @@
             "type": "Feature",
             "properties": {
                 "id": "CW10211001",
-                "name": null,
+                "name": "臺中市私立桃樂絲托嬰中心",
                 "city": "臺中市",
-                "address": null,
-                "phone": null,
-                "capacity": 0,
-                "status": 0
+                "address": "434臺中市龍井區學園路4號1-3樓",
+                "phone": "04-26520488",
+                "capacity": 26,
+                "status": 25
             },
             "geometry": {
                 "type": "Point",
@@ -11125,7 +11182,7 @@
                 "address": "407臺中市西屯區玉成路10號1樓",
                 "phone": "04-23586800",
                 "capacity": 65,
-                "status": 43
+                "status": 42
             },
             "geometry": {
                 "type": "Point",
@@ -11163,7 +11220,7 @@
                 "address": "324桃園市平鎮區廣達里4鄰廣平街58-1號2-3樓",
                 "phone": "03-4926028",
                 "capacity": 30,
-                "status": 21
+                "status": 22
             },
             "geometry": {
                 "type": "Point",
@@ -18307,7 +18364,7 @@
                 "address": "234新北市永和區民樂街58號1樓",
                 "phone": "02-29267351",
                 "capacity": 17,
-                "status": 17
+                "status": 16
             },
             "geometry": {
                 "type": "Point",
@@ -31379,7 +31436,7 @@
                 "address": "710臺南市永康區勝華街98巷20號1樓、22號1樓",
                 "phone": "06-3121765",
                 "capacity": 40,
-                "status": 26
+                "status": 25
             },
             "geometry": {
                 "type": "Point",
