@@ -114,7 +114,7 @@ foreach ($cities as $cityKey => $city) {
     }
 
     $pageContent = $browser->getResponse()->getContent();
-    file_put_contents($pagePath . '/' . $page . '.html', $pageContent);
+    //file_put_contents($pagePath . '/' . $page . '.html', $pageContent);
 
     if (false === $pageTotalDone) {
       $pos = strpos($pageContent, '<div id="pagination"');
