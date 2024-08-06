@@ -69,15 +69,11 @@ $proj4 = new Proj4php();
 $projTWD97 = new Proj('EPSG:3826', $proj4);
 $projWGS84 = new Proj('EPSG:4326', $proj4);
 
-$fc = [
-  'type' => 'FeatureCollection',
-  'features' => [],
-];
-
 $addressPath = $basePath . '/raw/address';
 if (!file_exists($addressPath)) {
   mkdir($addressPath, 0777, true);
 }
+$activeList = [];
 foreach ($cities as $cityKey => $city) {
   $lnglat = [];
   $pagePath = $basePath . '/raw/pages/' . $city;
@@ -323,34 +319,12 @@ EOD;
       $data['核定收托'] = intval($data['核定收托']);
       $data['實際收托'] = intval($data['實際收托']);
       file_put_contents($dataPath . '/' . $detailId . '.json', json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
-
-      if (!empty($data['longitude'])) {
-        $fc['features'][$data['id']] = [
-          'type' => 'Feature',
-          'properties' => [
-            'id' => $data['id'],
-            'name' => $data['機構名稱'],
-            'city' => $city,
-            'address' => $data['所在地'],
-            'phone' => $data['聯絡電話'],
-            'capacity' => $data['核定收托'],
-            'status' => $data['實際收托'],
-          ],
-          'geometry' => [
-            'type' => 'Point',
-            'coordinates' => [
-              $data['longitude'],
-              $data['latitude'],
-            ],
-          ],
-        ];
-      }
+      $activeList[$data['id']] = true;
 
       $pos = strpos($pageContent, '"/home/childcare-center/detail/', $posEnd);
     }
   }
 }
-ksort($fc['features']);
-$fc['features'] = array_values($fc['features']);
 
-file_put_contents($basePath . '/docs/babycare.json', json_encode($fc, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+ksort($activeList);
+file_put_contents($basePath . '/raw/active_list.json', json_encode($activeList, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
