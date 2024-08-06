@@ -12,6 +12,8 @@ $fc = [
 ];
 
 foreach (glob($basePath . '/docs/data/*/*.json') as $jsonFile) {
+    $p = pathinfo($jsonFile);
+    $p = pathinfo($p['dirname']);
     $data = json_decode(file_get_contents($jsonFile), true);
     if (!empty($data['longitude'])) {
         $fc['features'][$data['id']] = [
@@ -19,6 +21,7 @@ foreach (glob($basePath . '/docs/data/*/*.json') as $jsonFile) {
             'properties' => [
                 'id' => $data['id'],
                 'name' => $data['機構名稱'],
+                'city' => $p['filename'],
                 'address' => $data['所在地'],
                 'phone' => $data['聯絡電話'],
                 'capacity' => $data['核定收托'],
