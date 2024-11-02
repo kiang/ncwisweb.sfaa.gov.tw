@@ -8710,7 +8710,7 @@
                 "address": "237新北市三峽區光明路71號2樓",
                 "phone": "02-86713626",
                 "capacity": 75,
-                "status": 73,
+                "status": 75,
                 "is_active": true
             },
             "geometry": {
@@ -11990,7 +11990,7 @@
                 "address": "406臺中市北屯區松柏三街68號",
                 "phone": "04-25316877",
                 "capacity": 115,
-                "status": 110,
+                "status": 112,
                 "is_active": true
             },
             "geometry": {
@@ -12670,7 +12670,7 @@
                 "address": "236新北市土城區學士里3鄰學士路12巷8號及10號",
                 "phone": "02-22743555",
                 "capacity": 78,
-                "status": 57,
+                "status": 58,
                 "is_active": true
             },
             "geometry": {
@@ -15370,7 +15370,7 @@
                 "address": "702臺南市南區金華路一段460巷1號1-2樓",
                 "phone": "06-2646789",
                 "capacity": 50,
-                "status": 43,
+                "status": 40,
                 "is_active": true
             },
             "geometry": {
@@ -16790,7 +16790,7 @@
                 "address": "704臺南市北區南園街127巷50之1號",
                 "phone": "06-2002719",
                 "capacity": 58,
-                "status": 39,
+                "status": 38,
                 "is_active": true
             },
             "geometry": {
@@ -18550,7 +18550,7 @@
                 "address": "111臺北市士林區天山里臺北市士林區中山北路七段14巷9號1樓",
                 "phone": "(02)2875-6696",
                 "capacity": 34,
-                "status": 24,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -18945,7 +18945,7 @@
             "type": "Feature",
             "properties": {
                 "id": "CW10809005",
-                "name": "花蓮縣鳳林社區公共托育家園",
+                "name": "花蓮縣鳳林鎮社區公共托育家園",
                 "city": "花蓮縣",
                 "address": "975花蓮縣鳳林鎮鳳信里中華路2號",
                 "phone": "03-8762178",
@@ -18956,8 +18956,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.31706239985034,
-                    23.332588113656886
+                    121.449421,
+                    23.741523
                 ]
             }
         },
@@ -19830,7 +19830,7 @@
                 "address": "704臺南市北區北成路481巷50號1-2樓",
                 "phone": "3589802",
                 "capacity": 28,
-                "status": 24,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -23850,7 +23850,7 @@
                 "address": "325桃園市龍潭區龍祥里16鄰干城路196巷6號",
                 "phone": "03-4803895",
                 "capacity": 32,
-                "status": 31,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -25345,7 +25345,7 @@
             "type": "Feature",
             "properties": {
                 "id": "CW11011004",
-                "name": "玉里鎮社區公共托育家園",
+                "name": "花蓮縣玉里鎮社區公共托育家園",
                 "city": "花蓮縣",
                 "address": "981花蓮縣玉里鎮永昌里14鄰莊敬路8號2樓",
                 "phone": "03-8884209",
@@ -27030,7 +27030,7 @@
                 "address": "337桃園市大園區青峰里3鄰中山南路二段663號1樓",
                 "phone": "03-2873283",
                 "capacity": 87,
-                "status": 38,
+                "status": 40,
                 "is_active": true
             },
             "geometry": {
@@ -30190,7 +30190,7 @@
                 "address": "242新北市新莊區頭前里8鄰思源路332巷7號1樓",
                 "phone": "0229905505",
                 "capacity": 37,
-                "status": 35,
+                "status": 36,
                 "is_active": true
             },
             "geometry": {
@@ -31510,7 +31510,7 @@
                 "address": "330桃園市桃園區青溪里16鄰青溪一路128巷1號1樓及1樓夾層",
                 "phone": "03-347-5755",
                 "capacity": 17,
-                "status": 13,
+                "status": 12,
                 "is_active": true
             },
             "geometry": {
@@ -34550,7 +34550,7 @@
                 "address": "515彰化縣大村鄉大村村忠孝街18號",
                 "phone": "04-8522777",
                 "capacity": 49,
-                "status": 27,
+                "status": 31,
                 "is_active": true
             },
             "geometry": {
@@ -34990,7 +34990,7 @@
                 "address": "338桃園市蘆竹區中興里12鄰大興路371號1-2樓",
                 "phone": "03-3239169",
                 "capacity": 30,
-                "status": 8,
+                "status": 9,
                 "is_active": true
             },
             "geometry": {
@@ -35250,7 +35250,7 @@
                 "address": "950臺東縣臺東市漢陽南路155巷20號",
                 "phone": "349905",
                 "capacity": 25,
-                "status": 6,
+                "status": 7,
                 "is_active": true
             },
             "geometry": {
