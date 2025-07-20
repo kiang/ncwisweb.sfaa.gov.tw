@@ -8,7 +8,10 @@ use proj4php\Proj4php;
 use proj4php\Proj;
 use proj4php\Point;
 
-$browser = new HttpBrowser(HttpClient::create());
+$browser = new HttpBrowser(HttpClient::create([
+    'verify_peer' => false,
+    'verify_host' => false,
+]));
 
 $cities = [
   //'4bc1e2f27af6e832017af6eeff7a0172' => '新北市',
