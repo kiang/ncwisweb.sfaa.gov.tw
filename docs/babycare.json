@@ -4064,6 +4064,26 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "CW10112409",
+                "name": "臺南市私立愛Baby托嬰中心",
+                "city": "臺南市",
+                "address": "700臺南市中西區兌悅里臺南市中西區南寧街22號1樓",
+                "phone": "06-2148835",
+                "capacity": 18,
+                "status": 5,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.196347,
+                    22.999754
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "CW10112411",
                 "name": "臺南市私立東東托嬰中心",
                 "city": "臺南市",
@@ -25930,7 +25950,7 @@
                 "address": "330桃園市桃園區中正里22鄰正光路201號1樓",
                 "phone": "03-3609337",
                 "capacity": 67,
-                "status": 46,
+                "status": 49,
                 "is_active": true
             },
             "geometry": {
@@ -26210,7 +26230,7 @@
                 "address": "401臺中市東區一心街327巷13號",
                 "phone": "04-22130385",
                 "capacity": 43,
-                "status": 35,
+                "status": 36,
                 "is_active": true
             },
             "geometry": {
