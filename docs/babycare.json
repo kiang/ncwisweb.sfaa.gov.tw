@@ -1470,7 +1470,7 @@
                 "address": "302新竹縣竹北市隘口里文興路二段150號2樓",
                 "phone": "03-5508080",
                 "capacity": 51,
-                "status": 9,
+                "status": 8,
                 "is_active": true
             },
             "geometry": {
@@ -6144,6 +6144,26 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "CW10203010",
+                "name": "臺北市政府社會局委託台北市教保人員協會經營管理臺北市北投托嬰中心",
+                "city": "臺北市",
+                "address": "112臺北市北投區中央里北投區光明路22號2樓",
+                "phone": "02-28973848",
+                "capacity": 40,
+                "status": 40,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.499338,
+                    25.132218
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "CW10203012",
                 "name": "高雄市私立禾園托嬰中心",
                 "city": "高雄市",
@@ -8850,7 +8870,7 @@
                 "address": "302新竹縣竹北市東平里嘉豐南路二段72號",
                 "phone": "03-6681472",
                 "capacity": 21,
-                "status": 9,
+                "status": 8,
                 "is_active": true
             },
             "geometry": {
@@ -11750,7 +11770,7 @@
                 "address": "500彰化縣彰化市西勢里忠誠路48號1-3樓",
                 "phone": "04-7226857",
                 "capacity": 80,
-                "status": 75,
+                "status": 73,
                 "is_active": true
             },
             "geometry": {
@@ -13210,7 +13230,7 @@
                 "address": "514彰化縣溪湖鎮大突里大公路347號",
                 "phone": "04-8815166",
                 "capacity": 27,
-                "status": 27,
+                "status": 26,
                 "is_active": true
             },
             "geometry": {
@@ -13290,7 +13310,7 @@
                 "address": "302新竹縣竹北市十興里勝利三街70號",
                 "phone": "03-5506870",
                 "capacity": 44,
-                "status": 11,
+                "status": 10,
                 "is_active": true
             },
             "geometry": {
@@ -14490,7 +14510,7 @@
                 "address": "305新竹縣新埔鎮四座里內思路63巷9號",
                 "phone": "03-5888396",
                 "capacity": 20,
-                "status": 20,
+                "status": 18,
                 "is_active": true
             },
             "geometry": {
@@ -17790,7 +17810,7 @@
                 "address": "300新竹市東區龍山里慈雲路62號1-2樓",
                 "phone": "(03)6662631",
                 "capacity": 35,
-                "status": 25,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -20010,7 +20030,7 @@
                 "address": "950臺東縣臺東市中心里漢中街186巷9號1樓",
                 "phone": "089-345023",
                 "capacity": 50,
-                "status": 38,
+                "status": 39,
                 "is_active": true
             },
             "geometry": {
@@ -21570,7 +21590,7 @@
                 "address": "500彰化縣彰化市新興里辭修北路198巷66號",
                 "phone": "04-7331658",
                 "capacity": 29,
-                "status": 29,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -27050,7 +27070,7 @@
                 "address": "302新竹縣竹北市中興里光明六路東二段266號1樓(含夾層)及2樓",
                 "phone": "03-6681655",
                 "capacity": 36,
-                "status": 30,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -30450,7 +30470,7 @@
                 "address": "302新竹縣竹北市東平里嘉豐十一路二段59、67號2樓",
                 "phone": "03-6585159",
                 "capacity": 80,
-                "status": 34,
+                "status": 33,
                 "is_active": true
             },
             "geometry": {
@@ -30510,7 +30530,7 @@
                 "address": "526彰化縣二林鎮豐田里大成路一段115號2樓",
                 "phone": "04-8965950",
                 "capacity": 32,
-                "status": 32,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -30590,7 +30610,7 @@
                 "address": "310新竹縣竹東鎮二重里中興路三段390號1-2樓",
                 "phone": "03-5828800",
                 "capacity": 75,
-                "status": 31,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -31327,7 +31347,7 @@
                 "id": "CW11207012",
                 "name": "臺中市私立華樂比巧樺托嬰中心",
                 "city": "臺中市",
-                "address": "427臺中市潭子區祥和路181號2-3樓",
+                "address": "427臺中市潭子區栗林里祥和路181號2-3樓",
                 "phone": "04-25369379",
                 "capacity": 20,
                 "status": 20,
@@ -31370,7 +31390,7 @@
                 "address": "510彰化縣員林市三條里條和六街70號",
                 "phone": "048362100",
                 "capacity": 80,
-                "status": 75,
+                "status": 72,
                 "is_active": true
             },
             "geometry": {
@@ -32630,7 +32650,7 @@
                 "address": "330桃園市桃園區文中里正光二街168號1樓",
                 "phone": "03-3709025",
                 "capacity": 52,
-                "status": 50,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -35150,7 +35170,7 @@
                 "address": "510彰化縣員林市三義里至平街11號2樓",
                 "phone": "04-8382398",
                 "capacity": 80,
-                "status": 67,
+                "status": 66,
                 "is_active": true
             },
             "geometry": {
@@ -35390,7 +35410,7 @@
                 "address": "312新竹縣橫山鄉大肚村永昌街123巷1弄15-1號1~3樓",
                 "phone": "0955838398",
                 "capacity": 25,
-                "status": 24,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -38210,7 +38230,7 @@
                 "address": "508彰化縣和美鎮柑井里美寮路二段480號1-3樓",
                 "phone": "04-7558128",
                 "capacity": 56,
-                "status": 44,
+                "status": 42,
                 "is_active": true
             },
             "geometry": {
