@@ -290,7 +290,7 @@
                 "address": "221新北市汐止區復興里新興路3號3樓",
                 "phone": "02-26499968",
                 "capacity": 75,
-                "status": 73,
+                "status": 75,
                 "is_active": true
             },
             "geometry": {
@@ -310,7 +310,7 @@
                 "address": "241新北市三重區成功里成功路46號1樓",
                 "phone": "89761527",
                 "capacity": 60,
-                "status": 46,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -430,7 +430,7 @@
                 "address": "220新北市板橋區福星里四川路一段151號",
                 "phone": "29563008",
                 "capacity": 25,
-                "status": 23,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -450,7 +450,7 @@
                 "address": "235新北市中和區積穗里中山路3段39號2樓之1",
                 "phone": "02-22219500",
                 "capacity": 97,
-                "status": 90,
+                "status": 94,
                 "is_active": true
             },
             "geometry": {
@@ -510,7 +510,7 @@
                 "address": "243新北市泰山區全興里仁義路15號1樓",
                 "phone": "02-85316493",
                 "capacity": 25,
-                "status": 24,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -530,7 +530,7 @@
                 "address": "242新北市新莊區昌隆里新北市新莊區中華路二段180, 182號1,2樓",
                 "phone": "02-29913906",
                 "capacity": 72,
-                "status": 46,
+                "status": 47,
                 "is_active": true
             },
             "geometry": {
@@ -890,7 +890,7 @@
                 "address": "320桃園市中壢區中興里榮安13街274之2號1樓及274-3號1樓",
                 "phone": "03-4351184",
                 "capacity": 43,
-                "status": 41,
+                "status": 43,
                 "is_active": true
             },
             "geometry": {
@@ -1430,7 +1430,7 @@
                 "address": "302新竹縣竹北市斗崙里福興路665號1-2樓",
                 "phone": "03-5589497",
                 "capacity": 32,
-                "status": 25,
+                "status": 26,
                 "is_active": true
             },
             "geometry": {
@@ -1470,7 +1470,7 @@
                 "address": "302新竹縣竹北市隘口里文興路二段150號2樓",
                 "phone": "03-5508080",
                 "capacity": 51,
-                "status": 10,
+                "status": 11,
                 "is_active": true
             },
             "geometry": {
@@ -1570,7 +1570,7 @@
                 "address": "420臺中市豐原區豐田里永康路331號1、2樓",
                 "phone": "04-25158095",
                 "capacity": 15,
-                "status": 12,
+                "status": 13,
                 "is_active": true
             },
             "geometry": {
@@ -1750,7 +1750,7 @@
                 "address": "500彰化縣彰化市成功里仁愛路67巷11號",
                 "phone": "04-7203646",
                 "capacity": 23,
-                "status": 21,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -1976,8 +1976,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.50002,
-                    24.039728
+                    120.50001961587903,
+                    24.039728094797265
                 ]
             }
         },
@@ -2370,7 +2370,7 @@
                 "address": "722臺南市佳里區文新里同心街128號1-2樓(含夾層)",
                 "phone": "06-7227375",
                 "capacity": 92,
-                "status": 78,
+                "status": 74,
                 "is_active": true
             },
             "geometry": {
@@ -2630,7 +2630,7 @@
                 "address": "920屏東縣潮州鎮永春里永德路67號",
                 "phone": "08-7894010",
                 "capacity": 40,
-                "status": 40,
+                "status": 39,
                 "is_active": true
             },
             "geometry": {
@@ -2790,7 +2790,7 @@
                 "address": "300新竹市北區西雅里民富街256號1樓",
                 "phone": "(03)5221672",
                 "capacity": 21,
-                "status": 10,
+                "status": 9,
                 "is_active": true
             },
             "geometry": {
@@ -2890,7 +2890,7 @@
                 "address": "300新竹市東區建華里東南街188巷13號1樓",
                 "phone": "(03)5624358",
                 "capacity": 20,
-                "status": 19,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -2990,7 +2990,7 @@
                 "address": "300新竹市東區埔頂里埔頂路245號1樓",
                 "phone": "(03)5678636",
                 "capacity": 18,
-                "status": 7,
+                "status": 8,
                 "is_active": true
             },
             "geometry": {
@@ -3070,7 +3070,7 @@
                 "address": "300新竹市東區東山里食品路134巷55號",
                 "phone": "(03)5622611",
                 "capacity": 50,
-                "status": 48,
+                "status": 47,
                 "is_active": true
             },
             "geometry": {
@@ -3110,7 +3110,7 @@
                 "address": "300新竹市東區復興里經國路一段379巷15號1-2樓",
                 "phone": "(03)5456713",
                 "capacity": 50,
-                "status": 35,
+                "status": 37,
                 "is_active": true
             },
             "geometry": {
@@ -3330,7 +3330,7 @@
                 "address": "408臺中市南屯區文心里文心路一段220號1、2F",
                 "phone": "04-24728558",
                 "capacity": 73,
-                "status": 48,
+                "status": 43,
                 "is_active": true
             },
             "geometry": {
@@ -3390,7 +3390,7 @@
                 "address": "407臺中市西屯區福林里福科路535巷2號",
                 "phone": "04-24614679",
                 "capacity": 40,
-                "status": 39,
+                "status": 40,
                 "is_active": true
             },
             "geometry": {
@@ -3630,7 +3630,7 @@
                 "address": "407臺中市西屯區福林里福科路658巷9弄7號1樓(含夾層)",
                 "phone": "04-24615129",
                 "capacity": 20,
-                "status": 7,
+                "status": 8,
                 "is_active": true
             },
             "geometry": {
@@ -3710,7 +3710,7 @@
                 "address": "407臺中市西屯區何成里大祥街120、122號1.2樓",
                 "phone": "04-23296853",
                 "capacity": 42,
-                "status": 38,
+                "status": 39,
                 "is_active": true
             },
             "geometry": {
@@ -3850,7 +3850,7 @@
                 "address": "403臺中市西區公正里17鄰大昌街191號",
                 "phone": "04-24714888",
                 "capacity": 35,
-                "status": 27,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -3910,7 +3910,7 @@
                 "address": "600嘉義市西區劉厝里大吉街108號1-3樓",
                 "phone": "05-2841486",
                 "capacity": 23,
-                "status": 21,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -4010,7 +4010,7 @@
                 "address": "708臺南市安平區怡平里台南市怡平路390號",
                 "phone": "06-2990559",
                 "capacity": 35,
-                "status": 27,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -4387,10 +4387,10 @@
                 "id": "CW10112474",
                 "name": "臺北市私立快樂托嬰中心",
                 "city": "臺北市",
-                "address": "114臺北市內湖區民權東路6段282號2樓",
+                "address": "114臺北市內湖區葫洲里民權東路6段282號2樓",
                 "phone": "(02)2632-1036",
                 "capacity": 30,
-                "status": 30,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -4427,7 +4427,7 @@
                 "id": "CW10112482",
                 "name": "臺北市私立小小百合蒙特梭利托嬰中心",
                 "city": "臺北市",
-                "address": "114臺北市內湖區星雲街36號1樓及夾層",
+                "address": "114臺北市內湖區紫星里星雲街36號1樓及夾層",
                 "phone": "(02)2793-8049",
                 "capacity": 20,
                 "status": 20,
@@ -4447,7 +4447,7 @@
                 "id": "CW10112483",
                 "name": "臺北市私立葛瑞兔托嬰中心（原名稱：貝比）",
                 "city": "臺北市",
-                "address": "114臺北市內湖區金湖路19號1樓",
+                "address": "114臺北市內湖區清白里金湖路19號1樓",
                 "phone": "(02)2792-9558",
                 "capacity": 20,
                 "status": 10,
@@ -4456,8 +4456,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.604776,
-                    25.073296
+                    121.5955614988803,
+                    25.08331508694816
                 ]
             }
         },
@@ -4927,7 +4927,7 @@
                 "id": "CW10112540",
                 "name": "臺北市私立拉斐爾托嬰中心",
                 "city": "臺北市",
-                "address": "114臺北市內湖區民權東路6段296巷87號1樓",
+                "address": "114臺北市內湖區葫洲里民權東路6段296巷87號1樓",
                 "phone": "(02)2630-7001",
                 "capacity": 21,
                 "status": 17,
@@ -5170,7 +5170,7 @@
                 "address": "408臺中市南屯區大同里大墩七街147號1.2.3樓",
                 "phone": "04-24729750",
                 "capacity": 17,
-                "status": 7,
+                "status": 8,
                 "is_active": true
             },
             "geometry": {
@@ -5410,7 +5410,7 @@
                 "address": "242新北市新莊區昌平里昌平街200號1樓",
                 "phone": "02-85213521",
                 "capacity": 65,
-                "status": 62,
+                "status": 63,
                 "is_active": true
             },
             "geometry": {
@@ -5436,8 +5436,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.559005,
-                    25.057976
+                    121.55900476757508,
+                    25.05797587259965
                 ]
             }
         },
@@ -5447,7 +5447,7 @@
                 "id": "CW10112595",
                 "name": "新北市私立炫媽咪托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區中興路1段197巷6號1樓、行政街45號1,2樓",
+                "address": "231新北市新店區中興里中興路1段197巷6號1樓、行政街45號1,2樓",
                 "phone": "02-29116755",
                 "capacity": 42,
                 "status": 38,
@@ -5667,17 +5667,17 @@
                 "id": "CW10112608",
                 "name": "臺北市私立粒寶托嬰中心（原名稱：櫻之圓蒙特梭利）",
                 "city": "臺北市",
-                "address": "114臺北市內湖區環山路1段24巷8號1、2樓",
+                "address": "114臺北市內湖區西康里環山路1段24巷8號1、2樓",
                 "phone": "(02)8797-5200",
                 "capacity": 26,
-                "status": 22,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.565209,
-                    25.084462
+                    121.5652089964127,
+                    25.084462273161616
                 ]
             }
         },
@@ -5850,7 +5850,7 @@
                 "address": "244新北市林口區仁愛里新北市林口區文化一路137號3樓",
                 "phone": "02-26097211",
                 "capacity": 75,
-                "status": 72,
+                "status": 71,
                 "is_active": true
             },
             "geometry": {
@@ -5990,7 +5990,7 @@
                 "address": "234新北市永和區永興里國光路116巷2號(2、3樓)",
                 "phone": "02-89230013",
                 "capacity": 75,
-                "status": 74,
+                "status": 75,
                 "is_active": true
             },
             "geometry": {
@@ -6250,7 +6250,7 @@
                 "address": "235新北市中和區平河里中正路839巷1、3號(1、2樓)",
                 "phone": "02-22232493",
                 "capacity": 35,
-                "status": 33,
+                "status": 34,
                 "is_active": true
             },
             "geometry": {
@@ -6310,7 +6310,7 @@
                 "address": "406臺中市北屯區水湳里山西路2段271號1-2樓",
                 "phone": "04-22954488",
                 "capacity": 53,
-                "status": 48,
+                "status": 50,
                 "is_active": true
             },
             "geometry": {
@@ -6430,7 +6430,7 @@
                 "address": "514彰化縣溪湖鎮大竹里西環路88號2、3樓",
                 "phone": "04-8851088",
                 "capacity": 67,
-                "status": 45,
+                "status": 46,
                 "is_active": true
             },
             "geometry": {
@@ -6730,7 +6730,7 @@
                 "address": "708臺南市安平區平通里臺南市安平區育平八街128號1-2樓",
                 "phone": "06-2933166",
                 "capacity": 26,
-                "status": 25,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -6750,7 +6750,7 @@
                 "address": "302新竹縣竹北市中興里嘉豐五路一段1號2樓",
                 "phone": "03-6578593",
                 "capacity": 137,
-                "status": 54,
+                "status": 55,
                 "is_active": true
             },
             "geometry": {
@@ -6970,7 +6970,7 @@
                 "address": "112臺北市北投區豐年里中央北路2段191號1樓",
                 "phone": "(02)2898-6662",
                 "capacity": 30,
-                "status": 28,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -7070,7 +7070,7 @@
                 "address": "302新竹縣竹北市中興里嘉豐十一路一段17號",
                 "phone": "03-6580678",
                 "capacity": 92,
-                "status": 48,
+                "status": 49,
                 "is_active": true
             },
             "geometry": {
@@ -7110,7 +7110,7 @@
                 "address": "231新北市新店區新北市新店區中興路一段266-1號1樓",
                 "phone": "29185674",
                 "capacity": 25,
-                "status": 23,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -7270,7 +7270,7 @@
                 "address": "338桃園市蘆竹區南興里南福街186巷37號1樓及1樓夾層",
                 "phone": "03-3223049",
                 "capacity": 35,
-                "status": 32,
+                "status": 33,
                 "is_active": true
             },
             "geometry": {
@@ -7296,8 +7296,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.568075,
-                    25.05623
+                    121.56739369534387,
+                    25.05589000197291
                 ]
             }
         },
@@ -7390,7 +7390,7 @@
                 "address": "238新北市樹林區金寮里保安街二段151號第1層及第2層部分",
                 "phone": "26845000",
                 "capacity": 45,
-                "status": 45,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -7947,7 +7947,7 @@
                 "id": "CW10303010",
                 "name": "臺北市私立怡寶資優托嬰中心",
                 "city": "臺北市",
-                "address": "111臺北市士林區文林路740巷9弄2號1樓",
+                "address": "111臺北市士林區德華里文林路740巷9弄2號1樓",
                 "phone": "(02)2835-9188",
                 "capacity": 22,
                 "status": 22,
@@ -8007,10 +8007,10 @@
                 "id": "CW10305001",
                 "name": "臺北市私立韋斯登托嬰中心",
                 "city": "臺北市",
-                "address": "104臺北市中山區合江街105巷16號1樓",
+                "address": "104臺北市中山區江山里合江街105巷16號1樓",
                 "phone": "07010018042",
                 "capacity": 19,
-                "status": 18,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -8347,7 +8347,7 @@
                 "id": "CW10307004",
                 "name": "臺北市私立松江蒙特梭利托嬰中心",
                 "city": "臺北市",
-                "address": "104臺北市中山區松江路124巷27號",
+                "address": "104臺北市中山區中吉里松江路124巷27號",
                 "phone": "(02)2568-1237",
                 "capacity": 30,
                 "status": 30,
@@ -8447,7 +8447,7 @@
                 "id": "CW10307011",
                 "name": "新北市私立嚕啦啦托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區北新路一段10號3號",
+                "address": "231新北市新店區中興里北新路一段10號3號",
                 "phone": "02-89112308",
                 "capacity": 29,
                 "status": 28,
@@ -8490,7 +8490,7 @@
                 "address": "235新北市中和區民有里民享街37號2樓（部分）",
                 "phone": "02-22251139",
                 "capacity": 60,
-                "status": 59,
+                "status": 60,
                 "is_active": true
             },
             "geometry": {
@@ -8516,8 +8516,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.557199,
-                    25.058787
+                    121.55719905352566,
+                    25.058787426691282
                 ]
             }
         },
@@ -8547,7 +8547,7 @@
                 "id": "CW10308004",
                 "name": "臺北市私立春田托嬰中心",
                 "city": "臺北市",
-                "address": "111臺北市士林區磺溪街88巷6號1樓",
+                "address": "111臺北市士林區蘭興里磺溪街88巷6號1樓",
                 "phone": "(02)2836-6515",
                 "capacity": 22,
                 "status": 14,
@@ -8670,7 +8670,7 @@
                 "address": "744臺南市新市區三舍里大順三路125號2樓C210室、C211室、C212室",
                 "phone": "06-5051288",
                 "capacity": 40,
-                "status": 30,
+                "status": 31,
                 "is_active": true
             },
             "geometry": {
@@ -8750,14 +8750,14 @@
                 "address": "114臺北市內湖區寶湖里民權東路6段190號1樓",
                 "phone": "(02)2792-3235",
                 "capacity": 58,
-                "status": 58,
+                "status": 57,
                 "is_active": true
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.594229,
-                    25.068608
+                    121.59422939879013,
+                    25.068607613963394
                 ]
             }
         },
@@ -8850,7 +8850,7 @@
                 "address": "320桃園市中壢區至善里後寮一路169號",
                 "phone": "03-4661816",
                 "capacity": 76,
-                "status": 28,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -8870,7 +8870,7 @@
                 "address": "302新竹縣竹北市東平里嘉豐南路二段72號",
                 "phone": "03-6681472",
                 "capacity": 21,
-                "status": 10,
+                "status": 11,
                 "is_active": true
             },
             "geometry": {
@@ -9090,7 +9090,7 @@
                 "address": "251新北市淡水區新義里大義街18號1,2樓",
                 "phone": "02-26259966",
                 "capacity": 75,
-                "status": 74,
+                "status": 73,
                 "is_active": true
             },
             "geometry": {
@@ -9350,7 +9350,7 @@
                 "address": "813高雄市左營區新上里至聖路230、232號",
                 "phone": "07-5507912",
                 "capacity": 110,
-                "status": 99,
+                "status": 103,
                 "is_active": true
             },
             "geometry": {
@@ -9590,7 +9590,7 @@
                 "address": "106臺北市大安區龍雲里大安路2段100號",
                 "phone": "(02)2703-9888",
                 "capacity": 40,
-                "status": 28,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -10090,7 +10090,7 @@
                 "address": "105臺北市松山區東勢里南京東路4段95號2樓",
                 "phone": "(02)2547-2977",
                 "capacity": 40,
-                "status": 18,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -10247,7 +10247,7 @@
                 "id": "CW10407009",
                 "name": "新北市私立貝格爾托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區新北市新店區安康路2段238號2樓",
+                "address": "231新北市新店區德安里新北市新店區安康路2段238號2樓",
                 "phone": "86666066",
                 "capacity": 30,
                 "status": 30,
@@ -10467,7 +10467,7 @@
                 "id": "CW10408010",
                 "name": "一零四資訊科技股份有限公司附設新北市私立希望搖籃托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區寶中路119號2樓",
+                "address": "231新北市新店區寶福里寶中路119號2樓",
                 "phone": "77057099",
                 "capacity": 59,
                 "status": 58,
@@ -10850,7 +10850,7 @@
                 "address": "234新北市永和區協和里永平路51號3樓及51號3樓之1",
                 "phone": "02-32335797",
                 "capacity": 52,
-                "status": 41,
+                "status": 42,
                 "is_active": true
             },
             "geometry": {
@@ -10910,7 +10910,7 @@
                 "address": "813高雄市左營區重上街164巷7號1-2樓",
                 "phone": "07-3593975",
                 "capacity": 105,
-                "status": 97,
+                "status": 102,
                 "is_active": true
             },
             "geometry": {
@@ -11107,7 +11107,7 @@
                 "id": "CW10501006",
                 "name": "新北市私立愛媽咪托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區華中街17巷3號1樓",
+                "address": "231新北市新店區中正里華中街17巷3號1樓",
                 "phone": "29121123",
                 "capacity": 20,
                 "status": 15,
@@ -11270,7 +11270,7 @@
                 "address": "231新北市新店區柴埕里安民街79號1、2樓及夾層",
                 "phone": "02-86669801",
                 "capacity": 55,
-                "status": 55,
+                "status": 54,
                 "is_active": true
             },
             "geometry": {
@@ -11290,7 +11290,7 @@
                 "address": "247新北市蘆洲區仁義里集賢路245號3樓",
                 "phone": "02-82836000",
                 "capacity": 45,
-                "status": 45,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -11510,7 +11510,7 @@
                 "address": "300新竹市東區東園里光復路二段928號1-2樓",
                 "phone": "(03)5621164",
                 "capacity": 30,
-                "status": 26,
+                "status": 27,
                 "is_active": true
             },
             "geometry": {
@@ -11607,7 +11607,7 @@
                 "id": "CW10507001",
                 "name": "臺北市私立春田天母托嬰中心",
                 "city": "臺北市",
-                "address": "111臺北市士林區忠誠路2段32巷9號1樓",
+                "address": "111臺北市士林區三玉里忠誠路2段32巷9號1樓",
                 "phone": "(02)2834-8523",
                 "capacity": 34,
                 "status": 24,
@@ -11770,7 +11770,7 @@
                 "address": "500彰化縣彰化市西勢里忠誠路48號1-3樓",
                 "phone": "04-7226857",
                 "capacity": 80,
-                "status": 71,
+                "status": 72,
                 "is_active": true
             },
             "geometry": {
@@ -11850,7 +11850,7 @@
                 "address": "324桃園市平鎮區廣達里廣平街58-1號2-3樓",
                 "phone": "03-4926028",
                 "capacity": 30,
-                "status": 13,
+                "status": 15,
                 "is_active": true
             },
             "geometry": {
@@ -12210,7 +12210,7 @@
                 "address": "427臺中市潭子區福仁里圓通南路85號1、2樓",
                 "phone": "04-25363490",
                 "capacity": 71,
-                "status": 62,
+                "status": 67,
                 "is_active": true
             },
             "geometry": {
@@ -12296,8 +12296,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.606654,
-                    25.071681
+                    121.60665424625299,
+                    25.07168051728366
                 ]
             }
         },
@@ -12487,7 +12487,7 @@
                 "id": "CW10601003",
                 "name": "新北市私立童話家果子托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區建國路217號2樓",
+                "address": "231新北市新店區大豐里建國路217號2樓",
                 "phone": "22187788",
                 "capacity": 30,
                 "status": 29,
@@ -12630,7 +12630,7 @@
                 "address": "111臺北市士林區葫蘆里葫蘆街140號1樓",
                 "phone": "(02)2813-6942",
                 "capacity": 20,
-                "status": 18,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -13010,7 +13010,7 @@
                 "address": "237新北市三峽區龍學里015鄰學成路396號2樓",
                 "phone": "02-2674-1588",
                 "capacity": 45,
-                "status": 45,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -13070,7 +13070,7 @@
                 "address": "111臺北市士林區芝山里德行東路285號3樓",
                 "phone": "(02)2838-5506",
                 "capacity": 12,
-                "status": 11,
+                "status": 12,
                 "is_active": true
             },
             "geometry": {
@@ -13410,7 +13410,7 @@
                 "address": "330桃園市桃園區中德里桃德路2號4號1-2樓",
                 "phone": "03-2181078",
                 "capacity": 48,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -13427,7 +13427,7 @@
                 "id": "CW10607004",
                 "name": "臺北市私立好來天母托嬰中心",
                 "city": "臺北市",
-                "address": "111臺北市士林區士東路244號",
+                "address": "111臺北市士林區天玉里士東路244號",
                 "phone": "(02)2871-8691",
                 "capacity": 27,
                 "status": 27,
@@ -14070,7 +14070,7 @@
                 "address": "330桃園市桃園區莊敬里同德十一街33號1-2樓",
                 "phone": "03-3560991",
                 "capacity": 31,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -14210,7 +14210,7 @@
                 "address": "521彰化縣北斗鎮東光里東斗路10-11號",
                 "phone": "04-8870686",
                 "capacity": 76,
-                "status": 69,
+                "status": 71,
                 "is_active": true
             },
             "geometry": {
@@ -14550,7 +14550,7 @@
                 "address": "320桃園市中壢區復興里長樂五街32號1樓",
                 "phone": "03-4621058",
                 "capacity": 28,
-                "status": 20,
+                "status": 21,
                 "is_active": true
             },
             "geometry": {
@@ -15010,7 +15010,7 @@
                 "address": "804高雄市鼓山區龍子里神農路205號1-2樓",
                 "phone": "07-5868285",
                 "capacity": 44,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -15127,7 +15127,7 @@
                 "id": "CW10702011",
                 "name": "新北市私立貝格爾新店托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區中央路105巷2號",
+                "address": "231新北市新店區福民里中央路105巷2號",
                 "phone": "22191299",
                 "capacity": 35,
                 "status": 35,
@@ -15230,7 +15230,7 @@
                 "address": "500彰化縣彰化市崙平里南館街72號",
                 "phone": "04-7620270",
                 "capacity": 50,
-                "status": 24,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -15450,7 +15450,7 @@
                 "address": "114臺北市內湖區葫洲里民權東路6段296巷66之2號",
                 "phone": "(02)2631-0095",
                 "capacity": 33,
-                "status": 33,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -15470,7 +15470,7 @@
                 "address": "338桃園市蘆竹區錦中里南崁路348巷18號3樓",
                 "phone": "03-2123266",
                 "capacity": 55,
-                "status": 54,
+                "status": 55,
                 "is_active": true
             },
             "geometry": {
@@ -15530,7 +15530,7 @@
                 "address": "114臺北市內湖區寶湖里民權東路6段180巷6號2樓",
                 "phone": "(02)8792-5533",
                 "capacity": 160,
-                "status": 74,
+                "status": 75,
                 "is_active": true
             },
             "geometry": {
@@ -15630,7 +15630,7 @@
                 "address": "428臺中市大雅區大雅里中清路三段1182號1、2、3樓",
                 "phone": "04-25603776",
                 "capacity": 39,
-                "status": 39,
+                "status": 38,
                 "is_active": true
             },
             "geometry": {
@@ -16170,7 +16170,7 @@
                 "address": "251新北市淡水區崁頂里濱海路2段212號1樓及1樓夾層",
                 "phone": "02-26281602",
                 "capacity": 60,
-                "status": 57,
+                "status": 56,
                 "is_active": true
             },
             "geometry": {
@@ -16310,7 +16310,7 @@
                 "address": "337桃園市大園區埔心里航站南路15號1樓",
                 "phone": "03-3982626",
                 "capacity": 30,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -16707,7 +16707,7 @@
                 "id": "CW10710014",
                 "name": "新北市私立艾兔托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區北新路二段121巷6弄2號2樓",
+                "address": "231新北市新店區忠誠里北新路二段121巷6弄2號2樓",
                 "phone": "89119521",
                 "capacity": 18,
                 "status": 0,
@@ -16830,7 +16830,7 @@
                 "address": "402臺中市南區崇倫里建國南路一段226號1樓",
                 "phone": "04-22620799",
                 "capacity": 30,
-                "status": 25,
+                "status": 26,
                 "is_active": true
             },
             "geometry": {
@@ -17010,7 +17010,7 @@
                 "address": "708臺南市安平區華平里育平九街43號1-3樓",
                 "phone": "06-2999325",
                 "capacity": 60,
-                "status": 52,
+                "status": 53,
                 "is_active": true
             },
             "geometry": {
@@ -17630,7 +17630,7 @@
                 "address": "242新北市新莊區建安里建安街101巷1弄11號1樓",
                 "phone": "02-22048989",
                 "capacity": 23,
-                "status": 18,
+                "status": 17,
                 "is_active": true
             },
             "geometry": {
@@ -17650,7 +17650,7 @@
                 "address": "408臺中市南屯區豐樂里文心南三路11號1-3樓",
                 "phone": "04-24735855",
                 "capacity": 45,
-                "status": 39,
+                "status": 40,
                 "is_active": true
             },
             "geometry": {
@@ -17690,7 +17690,7 @@
                 "address": "104臺北市中山區江山里民生東路3段5號及7號",
                 "phone": "(02)2506-5757",
                 "capacity": 40,
-                "status": 36,
+                "status": 38,
                 "is_active": true
             },
             "geometry": {
@@ -17770,7 +17770,7 @@
                 "address": "744臺南市新市區港墘里中山路138之2號1-2樓",
                 "phone": "06-2757777",
                 "capacity": 22,
-                "status": 19,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -17910,7 +17910,7 @@
                 "address": "406臺中市北屯區平田里文心路四段941號1-2樓",
                 "phone": "04-22463968",
                 "capacity": 29,
-                "status": 28,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -18110,7 +18110,7 @@
                 "address": "112臺北市北投區長安里光明路167號2樓之2",
                 "phone": "(02)2894-2666",
                 "capacity": 63,
-                "status": 50,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -18570,7 +18570,7 @@
                 "address": "234新北市永和區永樂里永和路1段110巷8號3樓",
                 "phone": "02-29266644",
                 "capacity": 53,
-                "status": 33,
+                "status": 34,
                 "is_active": true
             },
             "geometry": {
@@ -18590,7 +18590,7 @@
                 "address": "108臺北市萬華區日祥里青年路188-1號",
                 "phone": "02-23011536",
                 "capacity": 48,
-                "status": 47,
+                "status": 48,
                 "is_active": true
             },
             "geometry": {
@@ -18930,7 +18930,7 @@
                 "address": "242新北市新莊區福基里福前街502號及502號2樓",
                 "phone": "0285212962",
                 "capacity": 80,
-                "status": 73,
+                "status": 74,
                 "is_active": true
             },
             "geometry": {
@@ -19570,7 +19570,7 @@
                 "address": "333桃園市龜山區文青里文學路263號1-2樓",
                 "phone": "03-3187138",
                 "capacity": 58,
-                "status": 56,
+                "status": 58,
                 "is_active": true
             },
             "geometry": {
@@ -19587,7 +19587,7 @@
                 "id": "CW10812001",
                 "name": "新北市私立魔法寶貝夢想托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區北新路1段351號2樓",
+                "address": "231新北市新店區新德里北新路1段351號2樓",
                 "phone": "29112582",
                 "capacity": 37,
                 "status": 17,
@@ -19670,7 +19670,7 @@
                 "address": "114臺北市內湖區紫星里星雲街99號1樓及夾層",
                 "phone": "(02)2790-4747",
                 "capacity": 27,
-                "status": 25,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -19790,7 +19790,7 @@
                 "address": "300新竹市東區龍山里埔頂一路280號、282號、286號及288號",
                 "phone": "(03)5788111",
                 "capacity": 54,
-                "status": 48,
+                "status": 49,
                 "is_active": true
             },
             "geometry": {
@@ -19830,7 +19830,7 @@
                 "address": "704臺南市北區文元里北成路481巷50號1-2樓",
                 "phone": "3589802",
                 "capacity": 28,
-                "status": 23,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -20250,7 +20250,7 @@
                 "address": "110臺北市信義區安康里松德路180巷11號",
                 "phone": "(02)8786-9036",
                 "capacity": 28,
-                "status": 27,
+                "status": 26,
                 "is_active": true
             },
             "geometry": {
@@ -20370,7 +20370,7 @@
                 "address": "326桃園市楊梅區四維里文化街202號2-3樓",
                 "phone": "03-4317555",
                 "capacity": 55,
-                "status": 43,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -20410,7 +20410,7 @@
                 "address": "637雲林縣崙背鄉崙前村三民街41號",
                 "phone": "(05)6964397",
                 "capacity": 17,
-                "status": 16,
+                "status": 17,
                 "is_active": true
             },
             "geometry": {
@@ -20470,7 +20470,7 @@
                 "address": "831高雄市大寮區會社里力行路146號",
                 "phone": "07-7866108",
                 "capacity": 75,
-                "status": 39,
+                "status": 42,
                 "is_active": true
             },
             "geometry": {
@@ -20550,7 +20550,7 @@
                 "address": "702臺南市南區興農里萬年五街40巷20號1-2樓",
                 "phone": "2623686",
                 "capacity": 49,
-                "status": 34,
+                "status": 36,
                 "is_active": true
             },
             "geometry": {
@@ -21330,7 +21330,7 @@
                 "address": "741臺南市善化區蓮潭里善新大道135號1樓",
                 "phone": "06-5850742",
                 "capacity": 70,
-                "status": 70,
+                "status": 68,
                 "is_active": true
             },
             "geometry": {
@@ -21470,7 +21470,7 @@
                 "address": "326桃園市楊梅區四維里永美路371巷28號1樓",
                 "phone": "03-4812616",
                 "capacity": 49,
-                "status": 41,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -21530,7 +21530,7 @@
                 "address": "970花蓮縣花蓮市民立里中興路41號",
                 "phone": "03-8242930",
                 "capacity": 24,
-                "status": 23,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -21610,7 +21610,7 @@
                 "address": "500彰化縣彰化市信義里長壽街161、163號",
                 "phone": "04-7282968",
                 "capacity": 100,
-                "status": 100,
+                "status": 98,
                 "is_active": true
             },
             "geometry": {
@@ -21710,7 +21710,7 @@
                 "address": "334桃園市八德區興仁里興豐路287號1樓",
                 "phone": "03-3731105",
                 "capacity": 50,
-                "status": 42,
+                "status": 40,
                 "is_active": true
             },
             "geometry": {
@@ -22170,7 +22170,7 @@
                 "address": "351苗栗縣頭份市東庄里昌隆一街17號1樓",
                 "phone": "037-690017",
                 "capacity": 32,
-                "status": 31,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -22450,7 +22450,7 @@
                 "address": "103臺北市大同區南芳里延平北路2段278號3樓、3樓之3",
                 "phone": "(02)2553-1988",
                 "capacity": 40,
-                "status": 39,
+                "status": 37,
                 "is_active": true
             },
             "geometry": {
@@ -22510,7 +22510,7 @@
                 "address": "244新北市林口區西林里新北市林口區林口路15號2樓",
                 "phone": "02-26027210",
                 "capacity": 75,
-                "status": 66,
+                "status": 67,
                 "is_active": true
             },
             "geometry": {
@@ -22576,8 +22576,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.512863,
-                    25.071257
+                    121.51337214215255,
+                    25.07124353559901
                 ]
             }
         },
@@ -22628,7 +22628,7 @@
                 "name": "臺北市私立健寶兒敦北托嬰中心",
                 "city": "臺北市",
                 "address": "105臺北市松山區民有里臺北市松山區民權東路3段106巷3弄55之1號",
-                "phone": "",
+                "phone": "25466699",
                 "capacity": 30,
                 "status": 26,
                 "is_active": true
@@ -22636,8 +22636,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.547427,
-                    25.061522
+                    121.54742680912703,
+                    25.061522289311505
                 ]
             }
         },
@@ -22670,7 +22670,7 @@
                 "address": "330桃園市桃園區南埔里蓮埔街145號1-3樓",
                 "phone": "03-3023185",
                 "capacity": 55,
-                "status": 33,
+                "status": 34,
                 "is_active": true
             },
             "geometry": {
@@ -22750,7 +22750,7 @@
                 "address": "221新北市汐止區厚德里樟樹一路141巷2號(1層)",
                 "phone": "02-86421110",
                 "capacity": 45,
-                "status": 44,
+                "status": 45,
                 "is_active": true
             },
             "geometry": {
@@ -22870,7 +22870,7 @@
                 "address": "220新北市板橋區深丘里新北市板橋區中山路１段168號2樓",
                 "phone": "02-89646488",
                 "capacity": 77,
-                "status": 71,
+                "status": 72,
                 "is_active": true
             },
             "geometry": {
@@ -22967,7 +22967,7 @@
                 "id": "CW10912020",
                 "name": "臺北市私立愛寶貝明水園托嬰中心",
                 "city": "臺北市",
-                "address": "104臺北市中山區明水路457號1樓",
+                "address": "104臺北市中山區永安里明水路457號1樓",
                 "phone": "(02)2532-4766",
                 "capacity": 26,
                 "status": 22,
@@ -22976,8 +22976,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.550709,
-                    25.077529
+                    121.55070905793167,
+                    25.07752856690144
                 ]
             }
         },
@@ -23390,7 +23390,7 @@
                 "address": "830高雄市鳳山區鳳東里鳳捷路120號",
                 "phone": "07-7034242",
                 "capacity": 80,
-                "status": 50,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -23410,7 +23410,7 @@
                 "address": "220新北市板橋區福丘里中山路1段143號(2層)",
                 "phone": "0919299786",
                 "capacity": 40,
-                "status": 38,
+                "status": 40,
                 "is_active": true
             },
             "geometry": {
@@ -23470,7 +23470,7 @@
                 "address": "247新北市蘆洲區正義里三民路571號12樓",
                 "phone": "02-28488658",
                 "capacity": 31,
-                "status": 31,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -23530,7 +23530,7 @@
                 "address": "251新北市淡水區大庄里淡海路77號1、2、3層",
                 "phone": "28050877",
                 "capacity": 46,
-                "status": 45,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -24027,7 +24027,7 @@
                 "id": "CW11004016",
                 "name": "新北市私立艾麗絲蒙特梭利托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區中央五街28號1、2樓",
+                "address": "231新北市新店區中央里中央五街28號1、2樓",
                 "phone": "22184809",
                 "capacity": 42,
                 "status": 37,
@@ -24607,7 +24607,7 @@
                 "id": "CW11008005",
                 "name": "臺北市私立蘭瑛托嬰中心",
                 "city": "臺北市",
-                "address": "111臺北市士林區德行東路74巷22號1樓",
+                "address": "111臺北市士林區忠誠里德行東路74巷22號1樓",
                 "phone": "(02)2833-3030",
                 "capacity": 30,
                 "status": 30,
@@ -24616,8 +24616,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.527278,
-                    25.105944
+                    121.52727789740214,
+                    25.105943804275807
                 ]
             }
         },
@@ -24670,7 +24670,7 @@
                 "address": "247新北市蘆洲區保新里三民路240、242號1樓",
                 "phone": "82850967",
                 "capacity": 35,
-                "status": 26,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -24716,8 +24716,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.589122,
-                    25.081466
+                    121.58912169785103,
+                    25.081465870903813
                 ]
             }
         },
@@ -24830,7 +24830,7 @@
                 "address": "330桃園市桃園區成功里中山東路58、60號1-2樓",
                 "phone": "03-3351139",
                 "capacity": 76,
-                "status": 56,
+                "status": 59,
                 "is_active": true
             },
             "geometry": {
@@ -25050,7 +25050,7 @@
                 "address": "709臺南市安南區溪心里安中路三段153巷36號1樓",
                 "phone": "06-2470642",
                 "capacity": 60,
-                "status": 29,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -25330,7 +25330,7 @@
                 "address": "300新竹市東區埔頂里慈雲路75號1-2樓",
                 "phone": "(03)5790575",
                 "capacity": 40,
-                "status": 21,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -25370,7 +25370,7 @@
                 "address": "326桃園市楊梅區楊梅里金德路51號3樓",
                 "phone": "03-4785668",
                 "capacity": 37,
-                "status": 36,
+                "status": 37,
                 "is_active": true
             },
             "geometry": {
@@ -25390,7 +25390,7 @@
                 "address": "407臺中市西屯區何源里成都路277號",
                 "phone": "04-23169593",
                 "capacity": 57,
-                "status": 50,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -25890,7 +25890,7 @@
                 "address": "701臺南市東區林森路一段311號3樓",
                 "phone": "06-2095007",
                 "capacity": 12,
-                "status": 12,
+                "status": 11,
                 "is_active": true
             },
             "geometry": {
@@ -25950,7 +25950,7 @@
                 "address": "330桃園市桃園區中正里正光路201號1樓",
                 "phone": "03-3609337",
                 "capacity": 67,
-                "status": 53,
+                "status": 52,
                 "is_active": true
             },
             "geometry": {
@@ -26156,8 +26156,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.511299,
-                    25.059997
+                    121.51129925464818,
+                    25.05999688309213
                 ]
             }
         },
@@ -26188,7 +26188,7 @@
                 "name": "臺北市私立牧星托嬰中心",
                 "city": "臺北市",
                 "address": "105臺北市松山區民福里復興北路427巷23號1樓",
-                "phone": "",
+                "phone": "25140228",
                 "capacity": 25,
                 "status": 25,
                 "is_active": true
@@ -26196,8 +26196,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.546142,
-                    25.063447
+                    121.54614205678112,
+                    25.06344719427491
                 ]
             }
         },
@@ -26290,7 +26290,7 @@
                 "address": "251新北市淡水區新興里中山北路223號1、2樓",
                 "phone": "26261878",
                 "capacity": 32,
-                "status": 26,
+                "status": 27,
                 "is_active": true
             },
             "geometry": {
@@ -26370,7 +26370,7 @@
                 "address": "704臺南市北區中樓里東豐路166號1樓",
                 "phone": "06-2095110",
                 "capacity": 60,
-                "status": 59,
+                "status": 60,
                 "is_active": true
             },
             "geometry": {
@@ -26470,7 +26470,7 @@
                 "address": "221新北市汐止區橫科里橫科路119號1樓",
                 "phone": "02-2660003",
                 "capacity": 60,
-                "status": 44,
+                "status": 45,
                 "is_active": true
             },
             "geometry": {
@@ -26724,26 +26724,6 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "CW11104002",
-                "name": "臺北市私立大湖日光托嬰中心",
-                "city": "臺北市",
-                "address": "114臺北市內湖區內湖區大湖街166巷10號(1.2樓)",
-                "phone": "02-07921908",
-                "capacity": 40,
-                "status": 18,
-                "is_active": true
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    121.601026,
-                    25.083994
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "id": "CW11104003",
                 "name": "臺北市私立萌薆托嬰中心",
                 "city": "臺北市",
@@ -26756,8 +26736,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.529586,
-                    25.111105
+                    121.52958564355319,
+                    25.111104600166797
                 ]
             }
         },
@@ -26967,17 +26947,17 @@
                 "id": "CW11105003",
                 "name": "臺北市私立凱菲林托嬰中心",
                 "city": "臺北市",
-                "address": "114臺北市內湖區康寧路3段54之7號2樓",
+                "address": "114臺北市內湖區葫洲里康寧路3段54之7號2樓",
                 "phone": "(02)2634-6116",
                 "capacity": 23,
-                "status": 23,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.614798,
-                    25.076295
+                    121.60958272526125,
+                    25.07137949051164
                 ]
             }
         },
@@ -27090,7 +27070,7 @@
                 "address": "406臺中市北屯區后庄里中清路二段802號1-2樓",
                 "phone": "04-24267798",
                 "capacity": 52,
-                "status": 25,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -27207,7 +27187,7 @@
                 "id": "CW11105015",
                 "name": "新北市私立愛于樂托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區建國路102巷3號2樓",
+                "address": "231新北市新店區國豐里建國路102巷3號2樓",
                 "phone": "29109393",
                 "capacity": 22,
                 "status": 21,
@@ -27450,7 +27430,7 @@
                 "address": "701臺南市東區關聖里裕英街101之1號1-2樓",
                 "phone": "06-3316367",
                 "capacity": 33,
-                "status": 29,
+                "status": 27,
                 "is_active": true
             },
             "geometry": {
@@ -27850,7 +27830,7 @@
                 "address": "820高雄市岡山區仁壽里正言街50號1-2樓",
                 "phone": "07-6264669",
                 "capacity": 65,
-                "status": 57,
+                "status": 54,
                 "is_active": true
             },
             "geometry": {
@@ -27950,7 +27930,7 @@
                 "address": "403臺中市西區公正里精誠路304巷5號(1-3樓及地下室)",
                 "phone": "04-23297065",
                 "capacity": 108,
-                "status": 23,
+                "status": 21,
                 "is_active": true
             },
             "geometry": {
@@ -28187,7 +28167,7 @@
                 "id": "CW11110033",
                 "name": "臺北市私立怡寶美好時光托嬰中心",
                 "city": "臺北市",
-                "address": "111臺北市士林區文林路740巷11號1樓",
+                "address": "111臺北市士林區德華里文林路740巷11號1樓",
                 "phone": "02-28360711",
                 "capacity": 19,
                 "status": 18,
@@ -28196,8 +28176,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.520884,
-                    25.103343
+                    121.5208843057001,
+                    25.10334345295162
                 ]
             }
         },
@@ -28470,7 +28450,7 @@
                 "address": "946屏東縣恆春鎮城南里文化號33號2樓",
                 "phone": "08-8880175",
                 "capacity": 30,
-                "status": 26,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -28790,7 +28770,7 @@
                 "address": "333桃園市龜山區樂善里樂善二路213號1-2樓",
                 "phone": "03-3970099",
                 "capacity": 25,
-                "status": 21,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -29136,8 +29116,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.553716,
-                    25.057746
+                    121.55371642227543,
+                    25.057746411126693
                 ]
             }
         },
@@ -29147,10 +29127,10 @@
                 "id": "CW11201010",
                 "name": "新北市私立艾麗絲蒙特梭利永新館托嬰中心",
                 "city": "新北市新店區",
-                "address": "231新北市新店區永新街22號2樓",
+                "address": "231新北市新店區新安里永新街22號2樓",
                 "phone": "89110518",
                 "capacity": 58,
-                "status": 52,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -29210,7 +29190,7 @@
                 "address": "330桃園市桃園區瑞慶里中正路1357.1359號2樓",
                 "phone": "03-3170991",
                 "capacity": 70,
-                "status": 57,
+                "status": 58,
                 "is_active": true
             },
             "geometry": {
@@ -29487,7 +29467,7 @@
                 "id": "CW11202004",
                 "name": "臺北市私立詠欣托嬰中心",
                 "city": "臺北市",
-                "address": "104臺北市中山區建國北路二段186巷7號",
+                "address": "104臺北市中山區松江里建國北路二段186巷7號",
                 "phone": "0225178218",
                 "capacity": 39,
                 "status": 10,
@@ -29496,8 +29476,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.535807,
-                    25.05962
+                    121.53580748691789,
+                    25.059620487157044
                 ]
             }
         },
@@ -29727,7 +29707,7 @@
                 "id": "CW11202028",
                 "name": "新北市私立美心托嬰中心",
                 "city": "新北市板橋區",
-                "address": "220新北市板橋區中山路二段113號3樓、3樓之1",
+                "address": "220新北市板橋區江翠里中山路二段113號3樓、3樓之1",
                 "phone": "02-29583877",
                 "capacity": 53,
                 "status": 23,
@@ -30067,7 +30047,7 @@
                 "id": "CW11203014",
                 "name": "臺北市私立安安堡托嬰中心",
                 "city": "臺北市",
-                "address": "103臺北市大同區延平北路2段124號2樓",
+                "address": "103臺北市大同區大有里延平北路2段124號2樓",
                 "phone": "0225505569",
                 "capacity": 27,
                 "status": 25,
@@ -30076,8 +30056,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.511461,
-                    25.057303
+                    121.51146589884443,
+                    25.057232624589716
                 ]
             }
         },
@@ -30190,7 +30170,7 @@
                 "address": "242新北市新莊區頭前里8鄰思源路332巷7號1樓",
                 "phone": "0229905505",
                 "capacity": 37,
-                "status": 34,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -30770,7 +30750,7 @@
                 "address": "330桃園市桃園區龍鳳里龍安街119號2樓",
                 "phone": "03-3690190",
                 "capacity": 65,
-                "status": 44,
+                "status": 45,
                 "is_active": true
             },
             "geometry": {
@@ -30810,7 +30790,7 @@
                 "address": "406臺中市北屯區松強里山西路三段461號",
                 "phone": "0423696227",
                 "capacity": 55,
-                "status": 28,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -31007,7 +30987,7 @@
                 "id": "CW11206008",
                 "name": "新北市私立幸福三峽托嬰中心",
                 "city": "新北市三峽區",
-                "address": "237新北市三峽區礁溪里10鄰介壽路1段181號1樓",
+                "address": "237新北市三峽區礁溪里介壽路1段181號1樓",
                 "phone": "26717236",
                 "capacity": 38,
                 "status": 3,
@@ -31016,8 +30996,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.37735,
-                    24.931292
+                    121.3773495461107,
+                    24.9312917127995
                 ]
             }
         },
@@ -31150,7 +31130,7 @@
                 "address": "220新北市板橋區鄉雲里華興街18號",
                 "phone": "29596299",
                 "capacity": 19,
-                "status": 18,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -31270,7 +31250,7 @@
                 "address": "115臺北市南港區萬福里玉成街140巷9號1樓",
                 "phone": "(02)2785-2849",
                 "capacity": 24,
-                "status": 24,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -31490,7 +31470,7 @@
                 "address": "337桃園市大園區橫峰里青峰路二段245號1-2樓",
                 "phone": "03-3818555",
                 "capacity": 60,
-                "status": 48,
+                "status": 49,
                 "is_active": true
             },
             "geometry": {
@@ -31527,7 +31507,7 @@
                 "id": "CW11208007",
                 "name": "臺北市私立幸福小蒔光托嬰中心",
                 "city": "臺北市",
-                "address": "104臺北市中山區明水路606巷16號1樓",
+                "address": "104臺北市中山區成功里明水路606巷16號1樓",
                 "phone": "(02)8501-5690",
                 "capacity": 28,
                 "status": 5,
@@ -31536,8 +31516,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.552224,
-                    25.081866
+                    121.55222401201239,
+                    25.0818661628613
                 ]
             }
         },
@@ -31550,7 +31530,7 @@
                 "address": "242新北市新莊區中隆里中央路295號2樓、297號2樓",
                 "phone": "(02)8522-2256",
                 "capacity": 52,
-                "status": 27,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -31616,8 +31596,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.570684,
-                    25.082371
+                    121.57068356195994,
+                    25.082370804651227
                 ]
             }
         },
@@ -31750,7 +31730,7 @@
                 "address": "114臺北市內湖區樂康里康樂街116號2樓、116之1號2樓、116之2號2樓",
                 "phone": "(02)2633-6829",
                 "capacity": 46,
-                "status": 17,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -31830,7 +31810,7 @@
                 "address": "510彰化縣員林市新生里至善街181號",
                 "phone": "04-8311867",
                 "capacity": 120,
-                "status": 73,
+                "status": 71,
                 "is_active": true
             },
             "geometry": {
@@ -31870,7 +31850,7 @@
                 "address": "420臺中市豐原區翁子里豐勢路二段388號2樓",
                 "phone": "04-25150508",
                 "capacity": 55,
-                "status": 45,
+                "status": 46,
                 "is_active": true
             },
             "geometry": {
@@ -32290,7 +32270,7 @@
                 "address": "320桃園市中壢區青溪里永發路47號1樓",
                 "phone": "03-2877600",
                 "capacity": 45,
-                "status": 34,
+                "status": 27,
                 "is_active": true
             },
             "geometry": {
@@ -32750,7 +32730,7 @@
                 "address": "320桃園市中壢區興和里環北路161號1樓",
                 "phone": "03-4341168",
                 "capacity": 43,
-                "status": 42,
+                "status": 38,
                 "is_active": true
             },
             "geometry": {
@@ -33030,7 +33010,7 @@
                 "address": "408臺中市南屯區文山里文山東巷11之29號1-2樓",
                 "phone": "23800018",
                 "capacity": 55,
-                "status": 22,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -33290,7 +33270,7 @@
                 "address": "330桃園市桃園區大有里民有十街216號3樓",
                 "phone": "03-3580518",
                 "capacity": 40,
-                "status": 38,
+                "status": 40,
                 "is_active": true
             },
             "geometry": {
@@ -33367,8 +33347,8 @@
                 "id": "CW11303007",
                 "name": "臺北市私立籽兒托嬰中心",
                 "city": "臺北市",
-                "address": "104臺北市中山區大直街20巷10號1樓",
-                "phone": "",
+                "address": "104臺北市中山區大直里大直街20巷10號1樓",
+                "phone": "(02)2533-3449",
                 "capacity": 22,
                 "status": 22,
                 "is_active": true
@@ -33376,8 +33356,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.545677,
-                    25.081248
+                    121.54567712766685,
+                    25.081247927674777
                 ]
             }
         },
@@ -33390,7 +33370,7 @@
                 "address": "334桃園市八德區瑞德里豐德路382號1樓",
                 "phone": "033686548",
                 "capacity": 19,
-                "status": 17,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -33430,7 +33410,7 @@
                 "address": "325桃園市龍潭區中興里中興路396-22號3樓",
                 "phone": "03-4799866",
                 "capacity": 52,
-                "status": 49,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -33590,7 +33570,7 @@
                 "address": "710臺南市永康區龍埔里八德街87巷19號1-2樓",
                 "phone": "06-2315589",
                 "capacity": 29,
-                "status": 23,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -33890,14 +33870,14 @@
                 "address": "105臺北市松山區吉祥里八德路4段111號3樓",
                 "phone": "02-2767-2855",
                 "capacity": 56,
-                "status": 31,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.561435,
-                    25.048679
+                    121.56143532721389,
+                    25.04867933543257
                 ]
             }
         },
@@ -34470,7 +34450,7 @@
                 "address": "330桃園市桃園區中山里中平路172、176、178號1樓",
                 "phone": "03-2288218",
                 "capacity": 35,
-                "status": 35,
+                "status": 34,
                 "is_active": true
             },
             "geometry": {
@@ -34690,7 +34670,7 @@
                 "address": "325桃園市龍潭區中山里大昌路一段6號1樓及1樓夾層、8號1樓",
                 "phone": "034800448",
                 "capacity": 65,
-                "status": 62,
+                "status": 64,
                 "is_active": true
             },
             "geometry": {
@@ -35150,7 +35130,7 @@
                 "address": "741臺南市善化區蓮潭里陽光大道181號1-2樓",
                 "phone": "06-5839584",
                 "capacity": 25,
-                "status": 25,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -35330,7 +35310,7 @@
                 "address": "708臺南市安平區怡平里慶平路372號",
                 "phone": "06-2993131",
                 "capacity": 39,
-                "status": 10,
+                "status": 11,
                 "is_active": true
             },
             "geometry": {
@@ -35590,7 +35570,7 @@
                 "address": "247新北市蘆洲區保新里三民路366-2號1樓",
                 "phone": "82862768",
                 "capacity": 28,
-                "status": 26,
+                "status": 27,
                 "is_active": true
             },
             "geometry": {
@@ -35690,7 +35670,7 @@
                 "address": "710臺南市永康區大橋里大橋一街73巷8號1-2樓（含一樓夾層）",
                 "phone": "06-3023656",
                 "capacity": 39,
-                "status": 37,
+                "status": 39,
                 "is_active": true
             },
             "geometry": {
@@ -35970,7 +35950,7 @@
                 "address": "525彰化縣竹塘鄉竹塘村竹林路一段306號",
                 "phone": "8970299",
                 "capacity": 20,
-                "status": 20,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -36290,7 +36270,7 @@
                 "address": "114臺北市內湖區安湖里10鄰東湖路1號2樓",
                 "phone": "0226330628",
                 "capacity": 48,
-                "status": 47,
+                "status": 48,
                 "is_active": true
             },
             "geometry": {
@@ -36816,8 +36796,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.513459,
-                    25.065011
+                    121.51345867505565,
+                    25.06501129782862
                 ]
             }
         },
@@ -36850,7 +36830,7 @@
                 "address": "964臺東縣金峰鄉正興村正興村正興33-1號",
                 "phone": "780178",
                 "capacity": 24,
-                "status": 19,
+                "status": 18,
                 "is_active": true
             },
             "geometry": {
@@ -37490,7 +37470,7 @@
                 "address": "333桃園市龜山區樂善里樂善二路185、187號1-2樓",
                 "phone": "033978968",
                 "capacity": 45,
-                "status": 20,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -37730,7 +37710,7 @@
                 "address": "708臺南市安平區國平里健康路三段320號1-2樓",
                 "phone": "(06)2990661",
                 "capacity": 19,
-                "status": 17,
+                "status": 16,
                 "is_active": true
             },
             "geometry": {
@@ -37750,7 +37730,7 @@
                 "address": "702臺南市南區萬年七街265號1-3樓",
                 "phone": "06-2621881",
                 "capacity": 46,
-                "status": 28,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -37930,7 +37910,7 @@
                 "address": "709臺南市安南區溪心里海佃路二段786號1-2樓",
                 "phone": "(06)2471457",
                 "capacity": 49,
-                "status": 49,
+                "status": 48,
                 "is_active": true
             },
             "geometry": {
@@ -38090,7 +38070,7 @@
                 "address": "700臺南市中西區赤嵌里忠義路二段140號1至2樓",
                 "phone": "06-2216738",
                 "capacity": 55,
-                "status": 9,
+                "status": 10,
                 "is_active": true
             },
             "geometry": {
@@ -38150,7 +38130,7 @@
                 "address": "510彰化縣員林市南興里員林大道6段365號",
                 "phone": "048390365",
                 "capacity": 100,
-                "status": 61,
+                "status": 62,
                 "is_active": true
             },
             "geometry": {
@@ -38230,7 +38210,7 @@
                 "address": "508彰化縣和美鎮柑井里美寮路二段480號1-3樓",
                 "phone": "04-7558128",
                 "capacity": 56,
-                "status": 43,
+                "status": 42,
                 "is_active": true
             },
             "geometry": {
@@ -38530,7 +38510,7 @@
                 "address": "330桃園市桃園區東門里成功路二段69、71、73號",
                 "phone": "033312666",
                 "capacity": 72,
-                "status": 10,
+                "status": 12,
                 "is_active": true
             },
             "geometry": {
@@ -38550,7 +38530,7 @@
                 "address": "852高雄市茄萣區吉定里成功路1號附設幼兒園大樓3樓",
                 "phone": "07-6900970",
                 "capacity": 16,
-                "status": 15,
+                "status": 16,
                 "is_active": true
             },
             "geometry": {
@@ -38570,7 +38550,7 @@
                 "address": "900屏東縣屏東市瑞光里香揚巷1號",
                 "phone": "08-7223999",
                 "capacity": 30,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -38650,7 +38630,7 @@
                 "address": "406臺中市北屯區松竹里崇德二路二段60號1-2樓",
                 "phone": "04-22472025",
                 "capacity": 68,
-                "status": 26,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -38830,7 +38810,7 @@
                 "address": "324桃園市平鎮區北華里振平街82號1樓",
                 "phone": "4686822",
                 "capacity": 23,
-                "status": 12,
+                "status": 13,
                 "is_active": true
             },
             "geometry": {
@@ -39070,7 +39050,7 @@
                 "address": "231新北市新店區寶福里中興路2段188號2樓",
                 "phone": "77051167",
                 "capacity": 82,
-                "status": 2,
+                "status": 3,
                 "is_active": true
             },
             "geometry": {
@@ -39170,7 +39150,7 @@
                 "address": "235新北市中和區東南里興南路一段75號3樓",
                 "phone": "29446938",
                 "capacity": 37,
-                "status": 14,
+                "status": 15,
                 "is_active": true
             },
             "geometry": {
@@ -39210,7 +39190,7 @@
                 "address": "265宜蘭縣羅東鎮公正里林森路161號",
                 "phone": "039568828",
                 "capacity": 20,
-                "status": 15,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -39298,6 +39278,26 @@
                 "coordinates": [
                     120.34589963743113,
                     22.672106067584444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "CW11502006",
+                "name": "宜蘭縣羅東鎮公設民營托嬰中心",
+                "city": "宜蘭縣",
+                "address": "265宜蘭縣羅東鎮成功里南門路11巷28號2樓",
+                "phone": "03-9530260",
+                "capacity": 60,
+                "status": 0,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.76949270457821,
+                    24.67209213274176
                 ]
             }
         }
