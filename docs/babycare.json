@@ -2124,6 +2124,26 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "CW10112216",
+                "name": "南投縣私立柏克萊托嬰中心",
+                "city": "南投縣",
+                "address": "542南投縣草屯鎮山腳里草屯鎮富林路一段579號",
+                "phone": "049-2339338",
+                "capacity": 38,
+                "status": 38,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.690784,
+                    23.970927
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "CW10112217",
                 "name": "雲林縣私立傳家寶托嬰中心",
                 "city": "雲林縣",
@@ -6370,7 +6390,7 @@
                 "address": "813高雄市左營區福山里高雄市左營區重信路138號1-2樓、重信路146巷6號1樓",
                 "phone": "07-3591113",
                 "capacity": 100,
-                "status": 54,
+                "status": 53,
                 "is_active": true
             },
             "geometry": {
@@ -8730,7 +8750,7 @@
                 "address": "114臺北市內湖區寶湖里民權東路6段190號1樓",
                 "phone": "(02)2792-3235",
                 "capacity": 58,
-                "status": 57,
+                "status": 58,
                 "is_active": true
             },
             "geometry": {
@@ -14450,7 +14470,7 @@
                 "address": "632雲林縣虎尾鎮新興里和平路16號",
                 "phone": "05-6328601",
                 "capacity": 33,
-                "status": 31,
+                "status": 33,
                 "is_active": true
             },
             "geometry": {
@@ -19630,7 +19650,7 @@
                 "address": "407臺中市西屯區西安里光明路58號1樓",
                 "phone": "24510108",
                 "capacity": 29,
-                "status": 27,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -35650,7 +35670,7 @@
                 "address": "843高雄市美濃區龍山街62號1樓",
                 "phone": "07-6830696",
                 "capacity": 16,
-                "status": 14,
+                "status": 15,
                 "is_active": true
             },
             "geometry": {
@@ -37350,7 +37370,7 @@
                 "address": "241新北市三重區碧華里集英路83號1、2層",
                 "phone": "28559377",
                 "capacity": 36,
-                "status": 27,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -38270,7 +38290,7 @@
                 "address": "334桃園市八德區竹園里長興路666號3樓",
                 "phone": "3659161",
                 "capacity": 75,
-                "status": 46,
+                "status": 47,
                 "is_active": true
             },
             "geometry": {
