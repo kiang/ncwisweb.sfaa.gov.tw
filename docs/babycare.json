@@ -330,7 +330,7 @@
                 "address": "247新北市蘆洲區正義里蘆洲區長榮路251號1樓",
                 "phone": "02-22881068",
                 "capacity": 49,
-                "status": 49,
+                "status": 47,
                 "is_active": true
             },
             "geometry": {
@@ -350,7 +350,7 @@
                 "address": "238新北市樹林區三福里三寶街19號",
                 "phone": "02-26881508",
                 "capacity": 46,
-                "status": 31,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -450,7 +450,7 @@
                 "address": "235新北市中和區積穗里中山路3段39號2樓之1",
                 "phone": "02-22219500",
                 "capacity": 97,
-                "status": 94,
+                "status": 92,
                 "is_active": true
             },
             "geometry": {
@@ -650,7 +650,7 @@
                 "address": "231新北市新店區寶安里中興路3段234號2樓",
                 "phone": "02-89146716",
                 "capacity": 73,
-                "status": 72,
+                "status": 73,
                 "is_active": true
             },
             "geometry": {
@@ -770,7 +770,7 @@
                 "address": "330桃園市桃園區泰山里中山路505號2樓之1",
                 "phone": "03-3359035",
                 "capacity": 35,
-                "status": 31,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -1390,7 +1390,7 @@
                 "address": "302新竹縣竹北市鹿場里成功二街116號",
                 "phone": "03-6587686",
                 "capacity": 40,
-                "status": 30,
+                "status": 31,
                 "is_active": true
             },
             "geometry": {
@@ -1590,7 +1590,7 @@
                 "address": "420臺中市豐原區南陽里北陽一街38號1樓",
                 "phone": "04-25252429",
                 "capacity": 5,
-                "status": 4,
+                "status": 5,
                 "is_active": true
             },
             "geometry": {
@@ -1790,7 +1790,7 @@
                 "address": "500彰化縣彰化市光南里彰化市光南里南校街56號",
                 "phone": "04-7261091",
                 "capacity": 35,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -2491,7 +2491,7 @@
                 "phone": "07-6312395",
                 "capacity": 17,
                 "status": 0,
-                "is_active": true
+                "is_active": false
             },
             "geometry": {
                 "type": "Point",
@@ -2670,7 +2670,7 @@
                 "address": "973花蓮縣吉安鄉永興村永興六街83號",
                 "phone": "03-8536563",
                 "capacity": 60,
-                "status": 27,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -2890,7 +2890,7 @@
                 "address": "300新竹市東區建華里東南街188巷13號1樓",
                 "phone": "(03)5624358",
                 "capacity": 20,
-                "status": 20,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -3310,7 +3310,7 @@
                 "address": "406臺中市北屯區松安里松文街46號1-2樓",
                 "phone": "04-22433377",
                 "capacity": 38,
-                "status": 34,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -4050,7 +4050,7 @@
                 "address": "708臺南市安平區育平里臺南市安平區育平四街67、69號1-2樓",
                 "phone": "06-8996633",
                 "capacity": 35,
-                "status": 24,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -4130,7 +4130,7 @@
                 "address": "704臺南市北區成德里臺南市北區文成二街212巷21弄2號1-3樓",
                 "phone": "062835295",
                 "capacity": 47,
-                "status": 27,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -4250,7 +4250,7 @@
                 "address": "106臺北市大安區永康里臺北市大安區金華街223之5、223之9號2樓",
                 "phone": "(02)2391-4431",
                 "capacity": 26,
-                "status": 18,
+                "status": 19,
                 "is_active": true
             },
             "geometry": {
@@ -4490,7 +4490,7 @@
                 "address": "112臺北市北投區振華里石牌路2段90巷17號2樓",
                 "phone": "(02)2823-7932",
                 "capacity": 34,
-                "status": 32,
+                "status": 31,
                 "is_active": true
             },
             "geometry": {
@@ -4607,7 +4607,7 @@
                 "id": "CW10112502",
                 "name": "高雄市私立頂尖小子托嬰中心",
                 "city": "高雄市",
-                "address": "807高雄市三民區寶國里高雄市三民區民豐路70號1-2樓",
+                "address": "807高雄市三民區寶國里民豐路70號1-2樓",
                 "phone": "07-3954611",
                 "capacity": 20,
                 "status": 20,
@@ -4667,7 +4667,7 @@
                 "id": "CW10112513",
                 "name": "高雄市私立佑幼房托嬰中心",
                 "city": "高雄市",
-                "address": "812高雄市小港區高雄市小港區山明路389號1-2樓",
+                "address": "812高雄市小港區宏亮里高雄市小港區山明路389號1-2樓",
                 "phone": "07-8022165",
                 "capacity": 17,
                 "status": 14,
@@ -4727,7 +4727,7 @@
                 "id": "CW10112516",
                 "name": "高雄市私立芽芽與豆豆托嬰中心",
                 "city": "高雄市",
-                "address": "813高雄市左營區高雄市左營區重上街225號1至3樓",
+                "address": "813高雄市左營區新光里重上街225號1至3樓",
                 "phone": "07-3487228",
                 "capacity": 34,
                 "status": 33,
@@ -4736,8 +4736,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.303013,
-                    22.676853
+                    120.30301300836655,
+                    22.676853514029073
                 ]
             }
         },
@@ -4767,7 +4767,7 @@
                 "id": "CW10112520",
                 "name": "高雄市私立貝安托嬰中心",
                 "city": "高雄市",
-                "address": "813高雄市左營區高雄市左營區立大路80號3樓",
+                "address": "813高雄市左營區新光里立大路80號3樓",
                 "phone": "07-3591681",
                 "capacity": 20,
                 "status": 19,
@@ -4776,8 +4776,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.30255218708886,
-                    22.675341107635674
+                    120.30255212879368,
+                    22.675341089320543
                 ]
             }
         },
@@ -4870,7 +4870,7 @@
                 "address": "100臺北市中正區文祥里臺北市中正區杭州南路1段131巷5號2樓",
                 "phone": "(02)3322-5686",
                 "capacity": 30,
-                "status": 29,
+                "status": 26,
                 "is_active": true
             },
             "geometry": {
@@ -4950,7 +4950,7 @@
                 "address": "116臺北市文山區興豐里興隆路2段61巷6號2樓",
                 "phone": "(02)2930-3666",
                 "capacity": 50,
-                "status": 50,
+                "status": 49,
                 "is_active": true
             },
             "geometry": {
@@ -5450,7 +5450,7 @@
                 "address": "231新北市新店區中興里中興路1段197巷6號1樓、行政街45號1,2樓",
                 "phone": "02-29116755",
                 "capacity": 42,
-                "status": 37,
+                "status": 38,
                 "is_active": true
             },
             "geometry": {
@@ -5490,7 +5490,7 @@
                 "address": "231新北市新店區公崙里安康路2段120號2樓",
                 "phone": "02-86662789",
                 "capacity": 65,
-                "status": 65,
+                "status": 64,
                 "is_active": true
             },
             "geometry": {
@@ -5607,10 +5607,10 @@
                 "id": "CW10112604",
                 "name": "高雄市私立傑西愷洱河堤托嬰中心",
                 "city": "高雄市",
-                "address": "807高雄市三民區灣興里高雄市三民區聯興路46號1-2樓",
+                "address": "807高雄市三民區灣興里聯興路46號1-2樓",
                 "phone": "07-3909680",
                 "capacity": 32,
-                "status": 30,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -5630,7 +5630,7 @@
                 "address": "106臺北市大安區龍雲里臺北市大安區瑞安街31巷5之2號1樓",
                 "phone": "(02)2755-1866",
                 "capacity": 20,
-                "status": 11,
+                "status": 12,
                 "is_active": true
             },
             "geometry": {
@@ -6167,7 +6167,7 @@
                 "id": "CW10203012",
                 "name": "高雄市私立禾園托嬰中心",
                 "city": "高雄市",
-                "address": "807高雄市三民區正興里高雄市三民區興隆街67號1樓、夾層、2樓",
+                "address": "807高雄市三民區正興里興隆街67號1樓、夾層、2樓",
                 "phone": "07-3909558",
                 "capacity": 32,
                 "status": 29,
@@ -6176,8 +6176,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.32136283346983,
-                    22.645389065789256
+                    120.31639234213668,
+                    22.64665941650492
                 ]
             }
         },
@@ -6187,7 +6187,7 @@
                 "id": "CW10203013",
                 "name": "高雄市政府社會局委託財團法人靖娟兒童安全文教基金會辦理高雄市三民公共托嬰中心",
                 "city": "高雄市",
-                "address": "807高雄市三民區本揚里高雄市三民區陽明路300號2樓",
+                "address": "807高雄市三民區本揚里陽明路300號2樓",
                 "phone": "07-3801856",
                 "capacity": 52,
                 "status": 52,
@@ -6196,8 +6196,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.342424,
-                    22.643336
+                    120.34242428538306,
+                    22.643336351803566
                 ]
             }
         },
@@ -6210,7 +6210,7 @@
                 "address": "236新北市土城區員信里土城區中正路18號2樓",
                 "phone": "02-22609588",
                 "capacity": 75,
-                "status": 75,
+                "status": 74,
                 "is_active": true
             },
             "geometry": {
@@ -6870,7 +6870,7 @@
                 "address": "806高雄市前鎮區竹西里高雄市前鎮區廣東三街73號2樓",
                 "phone": "07-7161625",
                 "capacity": 52,
-                "status": 52,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -7070,7 +7070,7 @@
                 "address": "302新竹縣竹北市中興里嘉豐十一路一段17號",
                 "phone": "03-6580678",
                 "capacity": 92,
-                "status": 49,
+                "status": 50,
                 "is_active": true
             },
             "geometry": {
@@ -7410,7 +7410,7 @@
                 "address": "242新北市新莊區裕民里中正路新生巷66號1~3樓",
                 "phone": "02-29068321",
                 "capacity": 75,
-                "status": 75,
+                "status": 74,
                 "is_active": true
             },
             "geometry": {
@@ -8110,7 +8110,7 @@
                 "address": "220新北市板橋區深丘里區運路101號1樓",
                 "phone": "89520855",
                 "capacity": 42,
-                "status": 34,
+                "status": 36,
                 "is_active": true
             },
             "geometry": {
@@ -8167,7 +8167,7 @@
                 "id": "CW10306010",
                 "name": "高雄市私立桔康托嬰中心",
                 "city": "高雄市",
-                "address": "813高雄市左營區重和路119號",
+                "address": "813高雄市左營區福山里重和路119號",
                 "phone": "07-3431385",
                 "capacity": 17,
                 "status": 15,
@@ -8176,8 +8176,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.30711318054549,
-                    22.67459928910101
+                    120.3121031244865,
+                    22.68466121864282
                 ]
             }
         },
@@ -8590,7 +8590,7 @@
                 "address": "100臺北市中正區文祥里臺北市中正區杭州南路1段131巷3號2樓",
                 "phone": "(02)3322-5686",
                 "capacity": 30,
-                "status": 26,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -9450,7 +9450,7 @@
                 "address": "242新北市新莊區頭前里化成路492巷5號1樓",
                 "phone": "02-29929193",
                 "capacity": 35,
-                "status": 29,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -9470,7 +9470,7 @@
                 "address": "234新北市永和區永元里得和路241號2樓",
                 "phone": "02-29234200",
                 "capacity": 25,
-                "status": 25,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -9530,7 +9530,7 @@
                 "address": "242新北市新莊區後德里後港一路65巷7號1,2樓",
                 "phone": "02-22041267",
                 "capacity": 44,
-                "status": 25,
+                "status": 26,
                 "is_active": true
             },
             "geometry": {
@@ -9650,7 +9650,7 @@
                 "address": "403臺中市西區吉龍里五權七街142號1-2樓",
                 "phone": "04-23730065",
                 "capacity": 82,
-                "status": 59,
+                "status": 60,
                 "is_active": true
             },
             "geometry": {
@@ -10107,7 +10107,7 @@
                 "id": "CW10406002",
                 "name": "高雄市政府社會局委託嘉藥學校財團法人嘉南藥理大學辦理高雄市路竹公共托嬰中心",
                 "city": "高雄市",
-                "address": "821高雄市路竹區竹東里中正路51號",
+                "address": "821高雄市路竹區竹南里中正路51號",
                 "phone": "07-6071101",
                 "capacity": 40,
                 "status": 40,
@@ -10810,7 +10810,7 @@
                 "address": "333桃園市龜山區文化里文化三路373號1樓及1樓夾層",
                 "phone": "03-3279229",
                 "capacity": 59,
-                "status": 51,
+                "status": 52,
                 "is_active": true
             },
             "geometry": {
@@ -10907,7 +10907,7 @@
                 "id": "CW10411006",
                 "name": "高雄市私立貝比鹿沐穗托嬰中心",
                 "city": "高雄市",
-                "address": "813高雄市左營區重上街164巷7號1-2樓",
+                "address": "813高雄市左營區新光里重上街164巷7號1-2樓",
                 "phone": "07-3593975",
                 "capacity": 105,
                 "status": 101,
@@ -11190,7 +11190,7 @@
                 "address": "804高雄市鼓山區美術東五路66號2樓",
                 "phone": "07-5597099",
                 "capacity": 37,
-                "status": 37,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -11207,7 +11207,7 @@
                 "id": "CW10502002",
                 "name": "高雄市政府社會局委託財團法人伊甸社會福利基金會辦理高雄市旗山公共托嬰中心",
                 "city": "高雄市",
-                "address": "842高雄市旗山區中正路199號1樓",
+                "address": "842高雄市旗山區湄洲里中正路199號1樓",
                 "phone": "07-6622281",
                 "capacity": 44,
                 "status": 44,
@@ -11747,7 +11747,7 @@
                 "id": "CW10508001",
                 "name": "高雄市政府社會局委託嘉藥學校財團法人嘉南藥理大學辦理高雄市楠梓公共托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區後昌路960巷19號3樓",
+                "address": "811高雄市楠梓區宏昌里後昌路960巷19號3樓",
                 "phone": "07-3640791",
                 "capacity": 40,
                 "status": 39,
@@ -12410,7 +12410,7 @@
                 "address": "640雲林縣斗六市三平里宏泰路38號",
                 "phone": "055338976",
                 "capacity": 26,
-                "status": 25,
+                "status": 24,
                 "is_active": true
             },
             "geometry": {
@@ -12550,7 +12550,7 @@
                 "address": "708臺南市安平區國平里健康路三段342號1至2樓",
                 "phone": "06-2982220",
                 "capacity": 30,
-                "status": 21,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -13170,7 +13170,7 @@
                 "address": "106臺北市大安區龍生里瑞安街155巷2號",
                 "phone": "(02)2704-8288",
                 "capacity": 35,
-                "status": 34,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -13190,7 +13190,7 @@
                 "address": "244新北市林口區仁愛里公園路59號2樓",
                 "phone": "02-2608-3659",
                 "capacity": 65,
-                "status": 65,
+                "status": 62,
                 "is_active": true
             },
             "geometry": {
@@ -13567,10 +13567,10 @@
                 "id": "CW10607011",
                 "name": "高雄市私立康斐托嬰中心",
                 "city": "高雄市",
-                "address": "813高雄市左營區文川路42號1-2樓",
+                "address": "813高雄市左營區菜公里文川路42號1-2樓",
                 "phone": "07-3460282",
                 "capacity": 30,
-                "status": 19,
+                "status": 20,
                 "is_active": true
             },
             "geometry": {
@@ -13850,7 +13850,7 @@
                 "address": "235新北市中和區秀峰里景德街23號",
                 "phone": "02-86689000",
                 "capacity": 60,
-                "status": 59,
+                "status": 57,
                 "is_active": true
             },
             "geometry": {
@@ -14090,7 +14090,7 @@
                 "address": "300新竹市東區埔頂里慈雲路85號3樓之1",
                 "phone": "(03)5771393",
                 "capacity": 17,
-                "status": 10,
+                "status": 11,
                 "is_active": true
             },
             "geometry": {
@@ -14590,7 +14590,7 @@
                 "address": "236新北市土城區柑林里金城路2段258號2樓",
                 "phone": "02-82602366",
                 "capacity": 84,
-                "status": 60,
+                "status": 61,
                 "is_active": true
             },
             "geometry": {
@@ -15270,7 +15270,7 @@
                 "address": "111臺北市士林區蘭興里磺溪街57號(士林區蘭雅國小)",
                 "phone": "(02)2838-4896",
                 "capacity": 12,
-                "status": 12,
+                "status": 11,
                 "is_active": true
             },
             "geometry": {
@@ -15470,7 +15470,7 @@
                 "address": "338桃園市蘆竹區錦中里南崁路348巷18號3樓",
                 "phone": "03-2123266",
                 "capacity": 55,
-                "status": 55,
+                "status": 54,
                 "is_active": true
             },
             "geometry": {
@@ -16030,7 +16030,7 @@
                 "address": "407臺中市西屯區福中里中工二路56號1-3樓",
                 "phone": "04-23506201",
                 "capacity": 64,
-                "status": 3,
+                "status": 4,
                 "is_active": true
             },
             "geometry": {
@@ -16090,7 +16090,7 @@
                 "address": "404臺中市北區賴興里永定一街41號1-2樓",
                 "phone": "04-22993835",
                 "capacity": 58,
-                "status": 53,
+                "status": 54,
                 "is_active": true
             },
             "geometry": {
@@ -16170,7 +16170,7 @@
                 "address": "251新北市淡水區崁頂里濱海路2段212號1樓及1樓夾層",
                 "phone": "02-26281602",
                 "capacity": 60,
-                "status": 60,
+                "status": 59,
                 "is_active": true
             },
             "geometry": {
@@ -16410,7 +16410,7 @@
                 "address": "404臺中市北區錦平里中華路二段195號2樓",
                 "phone": "04-22065696",
                 "capacity": 50,
-                "status": 46,
+                "status": 45,
                 "is_active": true
             },
             "geometry": {
@@ -17410,7 +17410,7 @@
                 "address": "330桃園市桃園區瑞慶里寶慶路498號1-2樓",
                 "phone": "03-3019181",
                 "capacity": 26,
-                "status": 8,
+                "status": 9,
                 "is_active": true
             },
             "geometry": {
@@ -17450,7 +17450,7 @@
                 "address": "244新北市林口區中湖里文化一路二段173號1樓及2樓",
                 "phone": "02-26012838",
                 "capacity": 94,
-                "status": 65,
+                "status": 64,
                 "is_active": true
             },
             "geometry": {
@@ -17590,7 +17590,7 @@
                 "address": "116臺北市文山區萬有里羅斯福路6段159巷1弄18號",
                 "phone": "(02)2931-5288",
                 "capacity": 40,
-                "status": 40,
+                "status": 39,
                 "is_active": true
             },
             "geometry": {
@@ -19690,7 +19690,7 @@
                 "address": "244新北市林口區仁愛里文化一路1段105號",
                 "phone": "02-26001861",
                 "capacity": 54,
-                "status": 54,
+                "status": 52,
                 "is_active": true
             },
             "geometry": {
@@ -20110,7 +20110,7 @@
                 "address": "408臺中市南屯區豐樂里永春東路803號1樓",
                 "phone": "2380-0857 \/ 0933-520964",
                 "capacity": 49,
-                "status": 45,
+                "status": 46,
                 "is_active": true
             },
             "geometry": {
@@ -20270,7 +20270,7 @@
                 "address": "116臺北市文山區木新里木新路2段11號1、2樓",
                 "phone": "(02)2939-0569",
                 "capacity": 48,
-                "status": 45,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -20370,7 +20370,7 @@
                 "address": "326桃園市楊梅區四維里文化街202號2-3樓",
                 "phone": "03-4317555",
                 "capacity": 55,
-                "status": 44,
+                "status": 45,
                 "is_active": true
             },
             "geometry": {
@@ -20950,7 +20950,7 @@
                 "address": "238新北市樹林區大同里中華路114號",
                 "phone": "86866466",
                 "capacity": 27,
-                "status": 20,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -21410,7 +21410,7 @@
                 "address": "815高雄市大社區觀音里文明路100號",
                 "phone": "07-3534387",
                 "capacity": 24,
-                "status": 24,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -21510,7 +21510,7 @@
                 "address": "244新北市林口區東勢里文化一路一段166號",
                 "phone": "02-26002786",
                 "capacity": 49,
-                "status": 44,
+                "status": 43,
                 "is_active": true
             },
             "geometry": {
@@ -21830,7 +21830,7 @@
                 "address": "300新竹市東區關新里關東路149號1-2樓",
                 "phone": "(03)6686221",
                 "capacity": 37,
-                "status": 32,
+                "status": 33,
                 "is_active": true
             },
             "geometry": {
@@ -21947,17 +21947,17 @@
                 "id": "CW10909001",
                 "name": "高雄市私立愛米利亞托嬰中心",
                 "city": "高雄市",
-                "address": "822高雄市阿蓮區和平路193號",
+                "address": "822高雄市阿蓮區阿蓮里和平路193號",
                 "phone": "07-6320773",
                 "capacity": 93,
-                "status": 65,
+                "status": 68,
                 "is_active": true
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.332538,
-                    22.883786
+                    120.33253768148496,
+                    22.883785533260085
                 ]
             }
         },
@@ -22290,7 +22290,7 @@
                 "address": "711臺南市歸仁區南保里文化街三段167號1-3樓",
                 "phone": "06-2396829",
                 "capacity": 55,
-                "status": 36,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -22307,17 +22307,17 @@
                 "id": "CW10910005",
                 "name": "高雄市私立森淶特托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區加昌路653號1-3樓",
+                "address": "811高雄市楠梓區宏榮里加昌路653號1-3樓",
                 "phone": "07-3655077",
                 "capacity": 24,
-                "status": 19,
+                "status": 18,
                 "is_active": true
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.297793,
-                    22.71495
+                    120.29779341707433,
+                    22.714949740642254
                 ]
             }
         },
@@ -22370,7 +22370,7 @@
                 "address": "236新北市土城區峯廷里峯延街58號1、2樓",
                 "phone": "02-22661237",
                 "capacity": 33,
-                "status": 30,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -23070,7 +23070,7 @@
                 "address": "241新北市三重區福安里六張街66號2樓",
                 "phone": "89858913",
                 "capacity": 30,
-                "status": 27,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -23230,7 +23230,7 @@
                 "address": "334桃園市八德區福興里豐田七街31號1-3樓",
                 "phone": "03-3732077",
                 "capacity": 60,
-                "status": 50,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -23987,7 +23987,7 @@
                 "id": "CW11004014",
                 "name": "高雄市私立禾穗托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區加昌里020鄰加宏路22巷6號1-2樓",
+                "address": "811高雄市楠梓區加昌里加宏路22巷6號1-2樓",
                 "phone": "07-3641262",
                 "capacity": 20,
                 "status": 20,
@@ -23996,8 +23996,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.297947,
-                    22.718989
+                    120.29794658488771,
+                    22.718989339496034
                 ]
             }
         },
@@ -24070,7 +24070,7 @@
                 "address": "247新北市蘆洲區保新里三民路368-3號1樓",
                 "phone": "82867599",
                 "capacity": 32,
-                "status": 29,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -24156,8 +24156,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.250789,
-                    22.782206
+                    120.25078901466945,
+                    22.782206135206064
                 ]
             }
         },
@@ -24307,7 +24307,7 @@
                 "id": "CW11006004",
                 "name": "高雄市私立幸福日光托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區大學東路210號1樓",
+                "address": "811高雄市楠梓區藍田里大學東路210號1樓",
                 "phone": "07-364-8268",
                 "capacity": 55,
                 "status": 41,
@@ -24316,8 +24316,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.290462,
-                    22.728634
+                    120.29046240529357,
+                    22.72863444850778
                 ]
             }
         },
@@ -24650,7 +24650,7 @@
                 "address": "807高雄市三民區鼎泰里民族一路702號1-2樓",
                 "phone": "07-3107687",
                 "capacity": 54,
-                "status": 54,
+                "status": 53,
                 "is_active": true
             },
             "geometry": {
@@ -24810,7 +24810,7 @@
                 "address": "242新北市新莊區化成里思源路166巷43號1、2樓",
                 "phone": "02-29907257",
                 "capacity": 26,
-                "status": 11,
+                "status": 12,
                 "is_active": true
             },
             "geometry": {
@@ -24930,7 +24930,7 @@
                 "address": "104臺北市中山區朱崙里臺北市中山區龍江路23號2樓",
                 "phone": "(02)2711-6825",
                 "capacity": 62,
-                "status": 33,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -25590,7 +25590,7 @@
                 "address": "231新北市新店區大豐里民族路110號1樓",
                 "phone": "22181106",
                 "capacity": 30,
-                "status": 30,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -25810,7 +25810,7 @@
                 "address": "632雲林縣虎尾鎮平和里光明路70號",
                 "phone": "(05)6327066",
                 "capacity": 30,
-                "status": 28,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -26067,7 +26067,7 @@
                 "id": "CW11101014",
                 "name": "高雄市私立婗荳托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區旗楠路837巷8號",
+                "address": "811高雄市楠梓區清豐里旗楠路837巷8號",
                 "phone": "07-3511555",
                 "capacity": 160,
                 "status": 112,
@@ -26076,8 +26076,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.335804,
-                    22.740796
+                    120.33580448906727,
+                    22.740795745379486
                 ]
             }
         },
@@ -27030,7 +27030,7 @@
                 "address": "337桃園市大園區青峰里中山南路二段663號1樓",
                 "phone": "03-2873283",
                 "capacity": 87,
-                "status": 57,
+                "status": 56,
                 "is_active": true
             },
             "geometry": {
@@ -27650,7 +27650,7 @@
                 "address": "330桃園市桃園區汴洲里幸福路316號1、2樓",
                 "phone": "03-3565628",
                 "capacity": 80,
-                "status": 49,
+                "status": 50,
                 "is_active": true
             },
             "geometry": {
@@ -27747,7 +27747,7 @@
                 "id": "CW11108003",
                 "name": "高雄市政府社會局委託財團法人高雄市華仁社會福利慈善事業基金會辦理高雄市右昌公共托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區德民路717號",
+                "address": "811高雄市楠梓區宏昌里德民路717號",
                 "phone": "07-3600656",
                 "capacity": 48,
                 "status": 40,
@@ -27756,8 +27756,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.293772,
-                    22.720952
+                    120.29377218410124,
+                    22.72095241833681
                 ]
             }
         },
@@ -27810,7 +27810,7 @@
                 "address": "830高雄市鳳山區文山里016鄰文龍東路630號",
                 "phone": "07-7774119",
                 "capacity": 80,
-                "status": 65,
+                "status": 64,
                 "is_active": true
             },
             "geometry": {
@@ -28110,7 +28110,7 @@
                 "address": "435臺中市梧棲區草湳里文昌路715號1樓",
                 "phone": "04-26580333",
                 "capacity": 73,
-                "status": 44,
+                "status": 46,
                 "is_active": true
             },
             "geometry": {
@@ -28296,8 +28296,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.247203,
-                    22.807364
+                    120.25084603206153,
+                    22.807866131886616
                 ]
             }
         },
@@ -29150,7 +29150,7 @@
                 "address": "231新北市新店區新安里永新街22號2樓",
                 "phone": "89110518",
                 "capacity": 58,
-                "status": 52,
+                "status": 51,
                 "is_active": true
             },
             "geometry": {
@@ -29376,8 +29376,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.482848,
-                    22.898897
+                    120.4828479455861,
+                    22.898896617137424
                 ]
             }
         },
@@ -29416,8 +29416,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.282991,
-                    22.64012
+                    120.28299101884981,
+                    22.64011980702099
                 ]
             }
         },
@@ -29807,7 +29807,7 @@
                 "id": "CW11202038",
                 "name": "高雄市政府社會局委託社團法人臺南市心技能全齡學習推廣學會辦理高雄市前金民生公共托嬰中心",
                 "city": "高雄市",
-                "address": "801高雄市前金區大同二路61號",
+                "address": "801高雄市前金區國民里大同二路61號",
                 "phone": "0958456082",
                 "capacity": 28,
                 "status": 28,
@@ -29816,8 +29816,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.293922,
-                    22.626351
+                    120.29392229385743,
+                    22.626350999816296
                 ]
             }
         },
@@ -31450,7 +31450,7 @@
                 "address": "324桃園市平鎮區新勢里中豐路14號1樓18號1樓",
                 "phone": "03-4916060",
                 "capacity": 50,
-                "status": 16,
+                "status": 17,
                 "is_active": true
             },
             "geometry": {
@@ -31970,7 +31970,7 @@
                 "address": "830高雄市鳳山區保安里南華一路123巷1、3號1-3樓",
                 "phone": "07-7929096",
                 "capacity": 60,
-                "status": 43,
+                "status": 44,
                 "is_active": true
             },
             "geometry": {
@@ -31990,7 +31990,7 @@
                 "address": "247新北市蘆洲區正義里長榮路376號2樓、378號2樓",
                 "phone": "82860326",
                 "capacity": 105,
-                "status": 71,
+                "status": 72,
                 "is_active": true
             },
             "geometry": {
@@ -32247,7 +32247,7 @@
                 "id": "CW11211002",
                 "name": "高雄市私立佳貝樂托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區高雄市楠梓區高雄大學路397號1-2樓",
+                "address": "811高雄市楠梓區藍田里高雄大學路397號1-2樓",
                 "phone": "07-3010238",
                 "capacity": 86,
                 "status": 79,
@@ -32256,8 +32256,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.284242,
-                    22.7293
+                    120.28424187074603,
+                    22.72929990141182
                 ]
             }
         },
@@ -32530,7 +32530,7 @@
                 "address": "500彰化縣彰化市大竹里彰南路二段256-9號1-3樓",
                 "phone": "7388871",
                 "capacity": 35,
-                "status": 35,
+                "status": 34,
                 "is_active": true
             },
             "geometry": {
@@ -33590,7 +33590,7 @@
                 "address": "710臺南市永康區龍埔里八德街87巷19號1-2樓",
                 "phone": "06-2315589",
                 "capacity": 29,
-                "status": 22,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -33827,7 +33827,7 @@
                 "id": "CW11305002",
                 "name": "高雄市政府社會局委託財團法人臺南市燕豐教育基金會辦理高雄市路竹國昌公共托嬰中心",
                 "city": "高雄市",
-                "address": "821高雄市路竹區竹南里24鄰國昌路76號3樓",
+                "address": "821高雄市路竹區竹南里國昌路76號3樓",
                 "phone": "07-6966495",
                 "capacity": 32,
                 "status": 20,
@@ -33836,8 +33836,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.259282,
-                    22.854794
+                    120.25928168202115,
+                    22.8547942450761
                 ]
             }
         },
@@ -33970,7 +33970,7 @@
                 "address": "970花蓮縣花蓮市民享里華民街8巷5號",
                 "phone": "03-8222005",
                 "capacity": 49,
-                "status": 34,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -34150,7 +34150,7 @@
                 "address": "320桃園市中壢區過嶺里松義路86、88號1-2樓",
                 "phone": "03-4906088",
                 "capacity": 73,
-                "status": 66,
+                "status": 65,
                 "is_active": true
             },
             "geometry": {
@@ -35170,7 +35170,7 @@
                 "address": "510彰化縣員林市新生里至平街11號2樓",
                 "phone": "04-8382398",
                 "capacity": 80,
-                "status": 62,
+                "status": 60,
                 "is_active": true
             },
             "geometry": {
@@ -35390,7 +35390,7 @@
                 "address": "251新北市淡水區崁頂里沙崙路二段717號1樓",
                 "phone": "28050555",
                 "capacity": 36,
-                "status": 29,
+                "status": 28,
                 "is_active": true
             },
             "geometry": {
@@ -35487,7 +35487,7 @@
                 "id": "CW11311010",
                 "name": "高雄市私立飛比托嬰中心",
                 "city": "高雄市",
-                "address": "811高雄市楠梓區高雄大學路383、385號1-2樓",
+                "address": "811高雄市楠梓區藍田里高雄大學路383、385號1-2樓",
                 "phone": "07-3626161",
                 "capacity": 35,
                 "status": 35,
@@ -35496,8 +35496,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.284257,
-                    22.729017
+                    120.2842505549999,
+                    22.72940082052914
                 ]
             }
         },
@@ -35667,7 +35667,7 @@
                 "id": "CW11312005",
                 "name": "高雄市政府社會局委託高雄市晨曦社會福利促進協會辦理高雄市美濃龍山公共托嬰中心",
                 "city": "高雄市",
-                "address": "843高雄市美濃區龍山街62號1樓",
+                "address": "843高雄市美濃區龍山里龍山街62號1樓",
                 "phone": "07-6830696",
                 "capacity": 16,
                 "status": 16,
@@ -35676,8 +35676,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.556245,
-                    22.864499
+                    120.55624527130915,
+                    22.864499389357693
                 ]
             }
         },
@@ -35730,7 +35730,7 @@
                 "address": "830高雄市鳳山區過埤里過埤路659號1-2樓",
                 "phone": "07-7962687",
                 "capacity": 94,
-                "status": 70,
+                "status": 71,
                 "is_active": true
             },
             "geometry": {
@@ -35830,7 +35830,7 @@
                 "address": "302新竹縣竹北市東平里六家五路二段240號1樓-2樓",
                 "phone": "03-6587273",
                 "capacity": 30,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -36827,7 +36827,7 @@
                 "id": "CW11403012",
                 "name": "高雄市政府社會局委託財團法人臺南市燕豐教育基金會辦理高雄市梓官蚵寮公共托嬰中心",
                 "city": "高雄市",
-                "address": "826高雄市梓官區中正二街60號3樓",
+                "address": "826高雄市梓官區智蚵里中正二街60號3樓",
                 "phone": "07-6100780",
                 "capacity": 40,
                 "status": 40,
@@ -36836,8 +36836,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.25873,
-                    22.728551
+                    120.25873037261778,
+                    22.728551046094545
                 ]
             }
         },
@@ -37230,7 +37230,7 @@
                 "address": "804高雄市鼓山區雄峰路18號2樓(舊中山國小信義樓2樓)",
                 "phone": "0921180756",
                 "capacity": 60,
-                "status": 59,
+                "status": 60,
                 "is_active": true
             },
             "geometry": {
@@ -37890,7 +37890,7 @@
                 "address": "351苗栗縣頭份市文化里合興街32號",
                 "phone": "037-664193",
                 "capacity": 60,
-                "status": 55,
+                "status": 57,
                 "is_active": true
             },
             "geometry": {
@@ -38267,7 +38267,7 @@
                 "id": "CW11409014",
                 "name": "高雄市私立新寶貝屋托嬰中心",
                 "city": "高雄市",
-                "address": "822高雄市阿蓮區和平路167號1至2樓",
+                "address": "822高雄市阿蓮區阿蓮里和平路167號1至2樓",
                 "phone": "07-6312395",
                 "capacity": 71,
                 "status": 32,
@@ -38630,7 +38630,7 @@
                 "address": "351苗栗縣頭份市合興里中央路597號",
                 "phone": "037-690332",
                 "capacity": 80,
-                "status": 24,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -39438,6 +39438,26 @@
                 "coordinates": [
                     120.872095,
                     24.686577
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "CW11502013",
+                "name": "永康區南灣公設民營托嬰中心",
+                "city": "臺南市",
+                "address": "710臺南市永康區南灣里立興街83號3樓",
+                "phone": "(06)2053921",
+                "capacity": 20,
+                "status": 0,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.2640005230916,
+                    23.002568088015828
                 ]
             }
         }
