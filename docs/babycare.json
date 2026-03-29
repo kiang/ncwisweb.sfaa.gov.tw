@@ -670,7 +670,7 @@
                 "address": "220新北市板橋區福星里忠孝路28號2樓",
                 "phone": "29633660",
                 "capacity": 37,
-                "status": 17,
+                "status": 18,
                 "is_active": true
             },
             "geometry": {
@@ -35370,7 +35370,7 @@
                 "address": "110臺北市信義區松友里信義路六段12巷21號",
                 "phone": "(02)2346-1221",
                 "capacity": 25,
-                "status": 21,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -39818,6 +39818,26 @@
                 "coordinates": [
                     121.51778166858506,
                     24.991320270981475
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "CW11503018",
+                "name": "蘭湖公辦民營托嬰中心",
+                "city": "金門縣",
+                "address": "891金門縣金湖鎮瓊林里瓊徑路35號",
+                "phone": "082330665",
+                "capacity": 30,
+                "status": 0,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.380936,
+                    24.452612
                 ]
             }
         }
