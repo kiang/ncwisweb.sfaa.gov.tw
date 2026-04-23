@@ -244,18 +244,14 @@ foreach ($cities as $cityKey => $city) {
         }
       }
       $data['longitude'] = $data['latitude'] = '';
-      if (isset($lnglat[$detailId])) {
-        $data['longitude'] = $lnglat[$detailId][0];
-        $data['latitude'] = $lnglat[$detailId][1];
-      } else {
-        $address = $data['所在地'];
-        $addressPos = strpos($address, '號');
-        if (false !== $addressPos) {
-          $address = substr($address, 0, $addressPos) . '號';
-        }
-        $addressFile = $addressPath . '/' . $address . '.json';
-        if (!file_exists($addressFile)) {
-          $command = <<<EOD
+      $address = $data['所在地'];
+      $addressPos = strpos($address, '號');
+      if (false !== $addressPos) {
+        $address = substr($address, 0, $addressPos) . '號';
+      }
+      $addressFile = $addressPath . '/' . $address . '.json';
+      if (!file_exists($addressFile)) {
+        $command = <<<EOD
 curl 'https://api.nlsc.gov.tw/MapSearch/ContentSearch?word=___KEYWORD___&mode=AutoComplete&count=1&feedback=XML' \
 -H 'Accept: application/xml, text/xml, */*; q=0.01' \
 -H 'Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
@@ -270,54 +266,57 @@ curl 'https://api.nlsc.gov.tw/MapSearch/ContentSearch?word=___KEYWORD___&mode=Au
 -H 'sec-ch-ua-mobile: ?0' \
 -H 'sec-ch-ua-platform: "Linux"'
 EOD;
+        $result = shell_exec(strtr($command, [
+          '___KEYWORD___' => urlencode($address),
+        ]));
+        $cleanKeyword = trim(strip_tags($result));
+        if (!empty($cleanKeyword)) {
+          $command = <<<EOD
+            curl 'https://api.nlsc.gov.tw/MapSearch/QuerySearch' \
+              -H 'Accept: application/xml, text/xml, */*; q=0.01' \
+              -H 'Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+              -H 'Connection: keep-alive' \
+              -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+              -H 'Origin: https://maps.nlsc.gov.tw' \
+              -H 'Referer: https://maps.nlsc.gov.tw/' \
+              -H 'Sec-Fetch-Dest: empty' \
+              -H 'Sec-Fetch-Mode: cors' \
+              -H 'Sec-Fetch-Site: same-site' \
+              -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' \
+              -H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
+              -H 'sec-ch-ua-mobile: ?0' \
+              -H 'sec-ch-ua-platform: "Linux"' \
+              --data-raw 'word=___KEYWORD___&feedback=XML&center=120.218280%2C23.007292'
+            EOD;
           $result = shell_exec(strtr($command, [
-            '___KEYWORD___' => urlencode($address),
+            '___KEYWORD___' => urlencode(urlencode($cleanKeyword)),
           ]));
-          $cleanKeyword = trim(strip_tags($result));
-          if (!empty($cleanKeyword)) {
-            $command = <<<EOD
-              curl 'https://api.nlsc.gov.tw/MapSearch/QuerySearch' \
-                -H 'Accept: application/xml, text/xml, */*; q=0.01' \
-                -H 'Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
-                -H 'Connection: keep-alive' \
-                -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
-                -H 'Origin: https://maps.nlsc.gov.tw' \
-                -H 'Referer: https://maps.nlsc.gov.tw/' \
-                -H 'Sec-Fetch-Dest: empty' \
-                -H 'Sec-Fetch-Mode: cors' \
-                -H 'Sec-Fetch-Site: same-site' \
-                -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' \
-                -H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
-                -H 'sec-ch-ua-mobile: ?0' \
-                -H 'sec-ch-ua-platform: "Linux"' \
-                --data-raw 'word=___KEYWORD___&feedback=XML&center=120.218280%2C23.007292'
-              EOD;
-            $result = shell_exec(strtr($command, [
-              '___KEYWORD___' => urlencode(urlencode($cleanKeyword)),
-            ]));
-            $json = json_decode(json_encode(simplexml_load_string($result)), true);
-            if (!empty($json['ITEM']['LOCATION'])) {
-              $parts = explode(',', $json['ITEM']['LOCATION']);
-              if (count($parts) === 2) {
-                file_put_contents($addressFile, json_encode([
-                  'AddressList' => [
-                    [
-                      'X' => $parts[0],
-                      'Y' => $parts[1],
-                    ],
+          $json = json_decode(json_encode(simplexml_load_string($result)), true);
+          if (!empty($json['ITEM']['LOCATION'])) {
+            $parts = explode(',', $json['ITEM']['LOCATION']);
+            if (count($parts) === 2) {
+              file_put_contents($addressFile, json_encode([
+                'AddressList' => [
+                  [
+                    'X' => $parts[0],
+                    'Y' => $parts[1],
                   ],
-                ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-              }
+                ],
+              ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
             }
           }
         }
-        if (file_exists($addressFile)) {
-          $addressData = json_decode(file_get_contents($addressFile), true);
-          if (isset($addressData['AddressList'][0])) {
-            $data['longitude'] = floatval($addressData['AddressList'][0]['X']);
-            $data['latitude'] = floatval($addressData['AddressList'][0]['Y']);
-          }
+      }
+      if (file_exists($addressFile)) {
+        $addressData = json_decode(file_get_contents($addressFile), true);
+        if (isset($addressData['AddressList'][0])) {
+          $data['longitude'] = floatval($addressData['AddressList'][0]['X']);
+          $data['latitude'] = floatval($addressData['AddressList'][0]['Y']);
         }
+      }
+      if (empty($data['longitude']) && isset($lnglat[$detailId])) {
+        $data['longitude'] = $lnglat[$detailId][0];
+        $data['latitude'] = $lnglat[$detailId][1];
       }
       $data['核定收托'] = intval($data['核定收托']);
       $data['實際收托'] = intval($data['實際收托']);
