@@ -790,7 +790,7 @@
                 "address": "330桃園市桃園區中寧里大興西路二段55號2樓",
                 "phone": "03-3025188",
                 "capacity": 19,
-                "status": 13,
+                "status": 14,
                 "is_active": true
             },
             "geometry": {
@@ -6976,8 +6976,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.49250232688753,
-                    25.13787493159479
+                    121.492502,
+                    25.137875
                 ]
             }
         },
@@ -18510,7 +18510,7 @@
                 "address": "414臺中市烏日區九德里11鄰長春街176號2樓、3樓",
                 "phone": "04-23383665",
                 "capacity": 60,
-                "status": 52,
+                "status": 54,
                 "is_active": true
             },
             "geometry": {
@@ -31090,7 +31090,7 @@
                 "address": "337桃園市大園區橫峰里致祥三街46號1-2樓",
                 "phone": "03-2873904",
                 "capacity": 38,
-                "status": 37,
+                "status": 38,
                 "is_active": true
             },
             "geometry": {
@@ -39870,7 +39870,7 @@
                 "address": "432臺中市大肚區大德一街68號2樓",
                 "phone": "04-26990233",
                 "capacity": 68,
-                "status": 38,
+                "status": 57,
                 "is_active": true
             },
             "geometry": {
