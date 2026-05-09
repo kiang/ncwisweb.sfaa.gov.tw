@@ -6810,7 +6810,7 @@
                 "address": "237新北市三峽區龍恩里新北市三峽區大學路89號1、2樓及91號1、2樓",
                 "phone": "26742363",
                 "capacity": 52,
-                "status": 51,
+                "status": 52,
                 "is_active": true
             },
             "geometry": {
@@ -30830,7 +30830,7 @@
                 "address": "300新竹市東區武功里建功一路59巷22號1樓",
                 "phone": "(03)5165000",
                 "capacity": 42,
-                "status": 34,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -38330,7 +38330,7 @@
                 "address": "334桃園市八德區竹園里長興路666號3樓",
                 "phone": "3659161",
                 "capacity": 75,
-                "status": 52,
+                "status": 55,
                 "is_active": true
             },
             "geometry": {
@@ -40116,8 +40116,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.72069491970835,
-                    24.246684048630907
+                    120.720695,
+                    24.246684
                 ]
             }
         }
