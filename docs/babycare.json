@@ -7070,7 +7070,7 @@
                 "address": "302新竹縣竹北市中興里嘉豐十一路一段17號",
                 "phone": "03-6580678",
                 "capacity": 92,
-                "status": 51,
+                "status": 52,
                 "is_active": true
             },
             "geometry": {
@@ -8750,7 +8750,7 @@
                 "address": "114臺北市內湖區寶湖里民權東路6段190號1樓",
                 "phone": "(02)2792-3235",
                 "capacity": 58,
-                "status": 55,
+                "status": 58,
                 "is_active": true
             },
             "geometry": {
@@ -34990,7 +34990,7 @@
                 "address": "338桃園市蘆竹區中興里大興路371號1-2樓",
                 "phone": "03-3239169",
                 "capacity": 30,
-                "status": 5,
+                "status": 6,
                 "is_active": true
             },
             "geometry": {
@@ -37170,7 +37170,7 @@
                 "address": "300新竹市東區埔頂里占梅路12號",
                 "phone": "(03)6667599",
                 "capacity": 36,
-                "status": 26,
+                "status": 27,
                 "is_active": true
             },
             "geometry": {
@@ -39190,7 +39190,7 @@
                 "address": "500彰化縣彰化市建寶里介壽北路108巷8號2樓",
                 "phone": "047135638",
                 "capacity": 60,
-                "status": 59,
+                "status": 58,
                 "is_active": true
             },
             "geometry": {
@@ -40096,8 +40096,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.25553499039718,
-                    25.041620980131285
+                    121.255535,
+                    25.041621
                 ]
             }
         },
