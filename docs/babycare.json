@@ -5090,7 +5090,7 @@
                 "address": "712臺南市新化區太平里中正路542巷9號",
                 "phone": "06-5985216",
                 "capacity": 65,
-                "status": 32,
+                "status": 33,
                 "is_active": true
             },
             "geometry": {
@@ -35751,7 +35751,7 @@
                 "phone": "03-9255161",
                 "capacity": 35,
                 "status": 0,
-                "is_active": true
+                "is_active": false
             },
             "geometry": {
                 "type": "Point",
@@ -40478,6 +40478,26 @@
                 "coordinates": [
                     120.742861,
                     22.012598
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "CW11506011",
+                "name": "宜蘭縣私立丹垛托嬰中心",
+                "city": "宜蘭縣",
+                "address": "260宜蘭縣宜蘭市建業里公園東路125巷37號",
+                "phone": "03-9255161",
+                "capacity": 33,
+                "status": 0,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.758086,
+                    24.742934
                 ]
             }
         }
