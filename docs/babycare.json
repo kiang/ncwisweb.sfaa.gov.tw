@@ -450,7 +450,7 @@
                 "address": "235新北市中和區積穗里中山路3段39號2樓之1",
                 "phone": "02-22219500",
                 "capacity": 97,
-                "status": 95,
+                "status": 94,
                 "is_active": true
             },
             "geometry": {
@@ -510,7 +510,7 @@
                 "address": "243新北市泰山區全興里仁義路15號1樓",
                 "phone": "02-85316493",
                 "capacity": 25,
-                "status": 25,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -1650,7 +1650,7 @@
                 "address": "411臺中市太平區豐年里大源十九街28-6號1.2樓",
                 "phone": "04-23923197",
                 "capacity": 22,
-                "status": 21,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -4710,7 +4710,7 @@
                 "address": "804高雄市鼓山區龍子里裕誠路2026號1~3樓",
                 "phone": "07-5543608",
                 "capacity": 45,
-                "status": 43,
+                "status": 45,
                 "is_active": true
             },
             "geometry": {
@@ -13190,7 +13190,7 @@
                 "address": "244新北市林口區仁愛里公園路59號2樓",
                 "phone": "02-2608-3659",
                 "capacity": 65,
-                "status": 64,
+                "status": 65,
                 "is_active": true
             },
             "geometry": {
@@ -16050,7 +16050,7 @@
                 "address": "411臺中市太平區中興里永平路2段15號1樓、2樓、3樓",
                 "phone": "04-23511222",
                 "capacity": 56,
-                "status": 54,
+                "status": 56,
                 "is_active": true
             },
             "geometry": {
@@ -23070,7 +23070,7 @@
                 "address": "241新北市三重區福安里六張街66號2樓",
                 "phone": "89858913",
                 "capacity": 30,
-                "status": 30,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -25070,7 +25070,7 @@
                 "address": "238新北市樹林區南園里學成路687號1樓及夾層",
                 "phone": "26801881",
                 "capacity": 37,
-                "status": 34,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -25950,7 +25950,7 @@
                 "address": "330桃園市桃園區中正里正光路201號1樓",
                 "phone": "03-3609337",
                 "capacity": 67,
-                "status": 58,
+                "status": 59,
                 "is_active": true
             },
             "geometry": {
@@ -33970,7 +33970,7 @@
                 "address": "970花蓮縣花蓮市民享里華民街8巷5號",
                 "phone": "03-8222005",
                 "capacity": 49,
-                "status": 45,
+                "status": 46,
                 "is_active": true
             },
             "geometry": {
@@ -36350,7 +36350,7 @@
                 "address": "200基隆市仁愛區和明里仁一路299號3樓",
                 "phone": "2428-3196",
                 "capacity": 70,
-                "status": 23,
+                "status": 22,
                 "is_active": true
             },
             "geometry": {
@@ -38130,7 +38130,7 @@
                 "address": "830高雄市鳳山區誠智里杭州西街128號1至2樓",
                 "phone": "07-7820787",
                 "capacity": 50,
-                "status": 48,
+                "status": 50,
                 "is_active": true
             },
             "geometry": {
@@ -40450,7 +40450,7 @@
                 "address": "235新北市中和區安順里宜安路29號1、2樓",
                 "phone": "31518858",
                 "capacity": 40,
-                "status": 0,
+                "status": 2,
                 "is_active": true
             },
             "geometry": {
@@ -40618,6 +40618,26 @@
                 "coordinates": [
                     121.477643,
                     25.049144
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "CW11507003",
+                "name": "臺中市私立中托嬰中心",
+                "city": "臺中市",
+                "address": "406臺中市北屯區舊社里南興三路208號",
+                "phone": "04-24361928",
+                "capacity": 85,
+                "status": 0,
+                "is_active": true
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.704982,
+                    24.17843
                 ]
             }
         }
