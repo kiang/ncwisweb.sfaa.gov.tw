@@ -4390,7 +4390,7 @@
                 "address": "114臺北市內湖區葫洲里民權東路6段282號2樓",
                 "phone": "(02)2632-1036",
                 "capacity": 30,
-                "status": 30,
+                "status": 29,
                 "is_active": true
             },
             "geometry": {
@@ -7070,7 +7070,7 @@
                 "address": "302新竹縣竹北市中興里嘉豐十一路一段17號",
                 "phone": "03-6580678",
                 "capacity": 92,
-                "status": 38,
+                "status": 39,
                 "is_active": true
             },
             "geometry": {
@@ -12290,7 +12290,7 @@
                 "address": "114臺北市內湖區葫洲里民權東路6段296巷41號及41之1號1樓",
                 "phone": "(02)2634-6475",
                 "capacity": 40,
-                "status": 38,
+                "status": 37,
                 "is_active": true
             },
             "geometry": {
@@ -19670,7 +19670,7 @@
                 "address": "114臺北市內湖區紫星里星雲街99號1樓及夾層",
                 "phone": "(02)2790-4747",
                 "capacity": 27,
-                "status": 24,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -24690,7 +24690,7 @@
                 "address": "108臺北市萬華區日祥里13鄰萬大路423巷46號1樓",
                 "phone": "(02)2307-3636",
                 "capacity": 24,
-                "status": 24,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -24770,7 +24770,7 @@
                 "address": "302新竹縣竹北市北興里勝利十一路137號2樓",
                 "phone": "03-5505933",
                 "capacity": 40,
-                "status": 31,
+                "status": 32,
                 "is_active": true
             },
             "geometry": {
@@ -32210,7 +32210,7 @@
                 "address": "325桃園市龍潭區百年里百年三街31號1樓",
                 "phone": "034801897",
                 "capacity": 43,
-                "status": 29,
+                "status": 30,
                 "is_active": true
             },
             "geometry": {
@@ -34810,7 +34810,7 @@
                 "address": "333桃園市龜山區大華里文化三路388號2樓",
                 "phone": "03-3979291",
                 "capacity": 70,
-                "status": 44,
+                "status": 46,
                 "is_active": true
             },
             "geometry": {
@@ -38570,7 +38570,7 @@
                 "address": "300新竹市東區埔頂里埔頂三路12號1樓至2樓",
                 "phone": "(03)5777212",
                 "capacity": 28,
-                "status": 22,
+                "status": 21,
                 "is_active": true
             },
             "geometry": {
@@ -39350,7 +39350,7 @@
                 "address": "265宜蘭縣羅東鎮公正里林森路161號",
                 "phone": "039568828",
                 "capacity": 20,
-                "status": 15,
+                "status": 16,
                 "is_active": true
             },
             "geometry": {
@@ -40796,8 +40796,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.49471381826244,
-                    24.108820777381865
+                    120.494714,
+                    24.108821
                 ]
             }
         },
