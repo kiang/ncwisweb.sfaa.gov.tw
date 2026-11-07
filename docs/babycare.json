@@ -14930,7 +14930,7 @@
                 "address": "632雲林縣虎尾鎮德興里公安路189號",
                 "phone": "05-6323672",
                 "capacity": 35,
-                "status": 34,
+                "status": 35,
                 "is_active": true
             },
             "geometry": {
@@ -35590,7 +35590,7 @@
                 "address": "247新北市蘆洲區保新里三民路366-2號1樓",
                 "phone": "82862768",
                 "capacity": 28,
-                "status": 24,
+                "status": 25,
                 "is_active": true
             },
             "geometry": {
@@ -41390,7 +41390,7 @@
                 "address": "407臺中市西屯區福雅里福雅路128巷9號",
                 "phone": "04-24616698",
                 "capacity": 56,
-                "status": 22,
+                "status": 23,
                 "is_active": true
             },
             "geometry": {
@@ -41590,7 +41590,7 @@
                 "address": "235新北市中和區福祥里福祥路68號1、2樓",
                 "phone": "22559596",
                 "capacity": 38,
-                "status": 2,
+                "status": 3,
                 "is_active": true
             },
             "geometry": {
@@ -41750,7 +41750,7 @@
                 "address": "741臺南市善化區陽光大道239號1樓",
                 "phone": "(06)5832145",
                 "capacity": 40,
-                "status": 35,
+                "status": 38,
                 "is_active": true
             },
             "geometry": {
@@ -41816,8 +41816,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    120.31724883983486,
-                    22.688959876333236
+                    120.316931,
+                    22.688872
                 ]
             }
         },
@@ -41876,8 +41876,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.37469375298265,
-                    25.084347696181116
+                    121.374694,
+                    25.084348
                 ]
             }
         }
